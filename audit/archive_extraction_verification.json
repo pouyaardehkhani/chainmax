@@ -1,0 +1,7 @@
+{
+  "archive_extraction_check": "PASS",
+  "record_count": 2000,
+  "member_checksums_verified": 22023,
+  "archive_sha256": "f2f26b17d4d87cec036b1620d30ef52a393ac945251d8f5e817d3f4d5523dbbb",
+  "method": "Fresh native tar extraction; every manifest member rehashed; catalog identical to audited source."
+}

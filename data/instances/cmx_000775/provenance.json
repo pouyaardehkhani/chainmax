@@ -1,0 +1,25 @@
+{
+  "attempt": 0,
+  "config_hash": "80792a9f625f6407ad63d5251752a8579b3f792268a5a38c5cec223a41c361d8",
+  "dataset_migration": {
+    "dataset_config_hash": "c12dd96d973a9d7cb707edaa60029c390c551cc65453b713e976d71688b19783",
+    "from_catalog_sha256": "1968eeb64086e7e4821c70111fbee781300b07e2265170422528f52a8c0f41cf",
+    "from_dataset": "ChainMax-1K",
+    "migrated_at": "2026-10-25T11:39:56.711638+00:00",
+    "migration_source_revision": "028c31ad75649e20b98381f185d1ef5655d1fae1"
+  },
+  "generated_at": "2026-10-25T11:06:15.990286+00:00",
+  "seed": 477249446,
+  "source_revision": "1a54890319b75e4cfde3279b0fe7057188347021",
+  "source_tree_hash": "9455fa69c771bfd2363e77419df9e8e131afdef4dea34682903f325e8b1a07d8",
+  "tool_versions": {
+    "PyYAML": "6.0.3",
+    "chainmax-dataset": "1.0.0",
+    "jsonschema": "4.26.0",
+    "ortools": "9.15.6755",
+    "pindakaas": "0.6.1",
+    "psutil": "7.2.2",
+    "python": "3.12.0",
+    "python-sat": "1.9.dev17"
+  }
+}

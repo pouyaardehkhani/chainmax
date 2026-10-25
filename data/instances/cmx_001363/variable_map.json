@@ -1,0 +1,253 @@
+{
+  "auxiliary_range": [
+    41,
+    158
+  ],
+  "dialect": "legacy_dimacs_wcnf",
+  "encoder": "pindakaas/PySAT PBEnc BDD",
+  "hard_clauses": 522,
+  "objective_transform": {
+    "multiplier": 1,
+    "offset": 0
+  },
+  "primary_end": 40,
+  "schema_version": "1.0.0",
+  "soft_clauses": 12,
+  "soft_weight_sum": 154,
+  "top": 155,
+  "variable_count": 158,
+  "variables": {
+    "inventory:M0:P0:0:0": {
+      "bits": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:M0:P0:0:0",
+      "unit": "item",
+      "upper": 9
+    },
+    "inventory:M1:P0:0:0": {
+      "bits": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M1",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:M1:P0:0:0",
+      "unit": "item",
+      "upper": 9
+    },
+    "inventory:W0:P0:0:0": {
+      "bits": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:W0:P0:0:0",
+      "unit": "item",
+      "upper": 9
+    },
+    "inventory:W1:P0:0:0": {
+      "bits": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:W1:P0:0:0",
+      "unit": "item",
+      "upper": 9
+    },
+    "inventory:W2:P0:0:0": {
+      "bits": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:W2:P0:0:0",
+      "unit": "item",
+      "upper": 9
+    },
+    "serve:M0:P0:0:0": {
+      "bits": [
+        21,
+        22,
+        23
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M0",
+        "P0",
+        0,
+        0
+      ],
+      "name": "serve:M0:P0:0:0",
+      "unit": "item",
+      "upper": 4
+    },
+    "serve:M1:P0:0:0": {
+      "bits": [
+        24,
+        25
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M1",
+        "P0",
+        0,
+        0
+      ],
+      "name": "serve:M1:P0:0:0",
+      "unit": "item",
+      "upper": 3
+    },
+    "ship:R_W0_M0_standard:P0:0:0": {
+      "bits": [
+        26,
+        27,
+        28
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_M0_standard",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W0_M0_standard:P0:0:0",
+      "unit": "item",
+      "upper": 5
+    },
+    "ship:R_W0_M1_standard:P0:0:0": {
+      "bits": [
+        29,
+        30,
+        31
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_M1_standard",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W0_M1_standard:P0:0:0",
+      "unit": "item",
+      "upper": 6
+    },
+    "ship:R_W1_M0_standard:P0:0:0": {
+      "bits": [
+        32,
+        33,
+        34
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M0_standard",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W1_M0_standard:P0:0:0",
+      "unit": "item",
+      "upper": 4
+    },
+    "ship:R_W1_M1_standard:P0:0:0": {
+      "bits": [
+        35,
+        36,
+        37
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M1_standard",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W1_M1_standard:P0:0:0",
+      "unit": "item",
+      "upper": 5
+    },
+    "ship:R_W2_M1_standard:P0:0:0": {
+      "bits": [
+        38,
+        39,
+        40
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_M1_standard",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W2_M1_standard:P0:0:0",
+      "unit": "item",
+      "upper": 7
+    }
+  }
+}

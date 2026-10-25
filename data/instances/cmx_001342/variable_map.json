@@ -1,0 +1,324 @@
+{
+  "auxiliary_range": [
+    48,
+    151
+  ],
+  "dialect": "legacy_dimacs_wcnf",
+  "encoder": "pindakaas/PySAT PBEnc BDD",
+  "hard_clauses": 435,
+  "objective_transform": {
+    "multiplier": 1,
+    "offset": 0
+  },
+  "primary_end": 47,
+  "schema_version": "1.0.0",
+  "soft_clauses": 9,
+  "soft_weight_sum": 42,
+  "top": 43,
+  "variable_count": 151,
+  "variables": {
+    "inventory:M0:P0:0:0": {
+      "bits": [
+        1,
+        2,
+        3
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:M0:P0:0:0",
+      "unit": "item",
+      "upper": 5
+    },
+    "inventory:M0:P0:1:0": {
+      "bits": [
+        4,
+        5,
+        6
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P0",
+        1,
+        0
+      ],
+      "name": "inventory:M0:P0:1:0",
+      "unit": "item",
+      "upper": 5
+    },
+    "inventory:M0:P0:2:0": {
+      "bits": [
+        7,
+        8,
+        9
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P0",
+        2,
+        0
+      ],
+      "name": "inventory:M0:P0:2:0",
+      "unit": "item",
+      "upper": 5
+    },
+    "inventory:W0:P0:0:0": {
+      "bits": [
+        10,
+        11,
+        12
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:W0:P0:0:0",
+      "unit": "item",
+      "upper": 5
+    },
+    "inventory:W0:P0:1:0": {
+      "bits": [
+        13,
+        14,
+        15
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P0",
+        1,
+        0
+      ],
+      "name": "inventory:W0:P0:1:0",
+      "unit": "item",
+      "upper": 5
+    },
+    "inventory:W0:P0:2:0": {
+      "bits": [
+        16,
+        17,
+        18
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P0",
+        2,
+        0
+      ],
+      "name": "inventory:W0:P0:2:0",
+      "unit": "item",
+      "upper": 5
+    },
+    "inventory:W1:P0:0:0": {
+      "bits": [
+        19,
+        20,
+        21
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:W1:P0:0:0",
+      "unit": "item",
+      "upper": 5
+    },
+    "inventory:W1:P0:1:0": {
+      "bits": [
+        22,
+        23,
+        24
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P0",
+        1,
+        0
+      ],
+      "name": "inventory:W1:P0:1:0",
+      "unit": "item",
+      "upper": 5
+    },
+    "inventory:W1:P0:2:0": {
+      "bits": [
+        25,
+        26,
+        27
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P0",
+        2,
+        0
+      ],
+      "name": "inventory:W1:P0:2:0",
+      "unit": "item",
+      "upper": 5
+    },
+    "inventory:W2:P0:0:0": {
+      "bits": [
+        28,
+        29,
+        30
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:W2:P0:0:0",
+      "unit": "item",
+      "upper": 5
+    },
+    "inventory:W2:P0:1:0": {
+      "bits": [
+        31,
+        32,
+        33
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P0",
+        1,
+        0
+      ],
+      "name": "inventory:W2:P0:1:0",
+      "unit": "item",
+      "upper": 5
+    },
+    "inventory:W2:P0:2:0": {
+      "bits": [
+        34,
+        35,
+        36
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P0",
+        2,
+        0
+      ],
+      "name": "inventory:W2:P0:2:0",
+      "unit": "item",
+      "upper": 5
+    },
+    "serve:M0:P0:2:0": {
+      "bits": [
+        37,
+        38
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M0",
+        "P0",
+        2,
+        0
+      ],
+      "name": "serve:M0:P0:2:0",
+      "unit": "item",
+      "upper": 2
+    },
+    "ship:R_W0_M0_standard:P0:0:0": {
+      "bits": [
+        39,
+        40,
+        41
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_M0_standard",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W0_M0_standard:P0:0:0",
+      "unit": "item",
+      "upper": 5
+    },
+    "ship:R_W2_M0_standard:P0:0:0": {
+      "bits": [
+        42,
+        43,
+        44
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_M0_standard",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W2_M0_standard:P0:0:0",
+      "unit": "item",
+      "upper": 5
+    },
+    "ship:R_W2_M0_standard:P0:1:0": {
+      "bits": [
+        45,
+        46,
+        47
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_M0_standard",
+        "P0",
+        1,
+        0
+      ],
+      "name": "ship:R_W2_M0_standard:P0:1:0",
+      "unit": "item",
+      "upper": 5
+    }
+  }
+}

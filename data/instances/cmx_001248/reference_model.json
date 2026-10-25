@@ -1,0 +1,805 @@
+{
+  "constraints": [
+    {
+      "id": "c000000",
+      "rhs": 2,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_H0_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000001",
+      "rhs": 5,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_H1_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000002",
+      "rhs": 6,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_H0_standard:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_H1_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000003",
+      "rhs": 2,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:W3:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W3_H1_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000004",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:H0:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_H0_M0_standard:P0:0:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W0_H0_standard:P0:0:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W2_H0_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000005",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:H1:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_H1_M0_standard:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_H1_M1_standard:P0:0:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_H1_standard:P0:0:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W2_H1_standard:P0:0:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W3_H1_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000006",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P0:0:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_H0_M0_standard:P0:0:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_H1_M0_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000007",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P0:0:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_H1_M1_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000008",
+      "rhs": 4,
+      "sense": "eq",
+      "source": "demands",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000009",
+      "rhs": 5,
+      "sense": "eq",
+      "source": "demands",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000010",
+      "rhs": 2,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000011",
+      "rhs": 2,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_H0_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000012",
+      "rhs": 1,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000013",
+      "rhs": 5,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_H1_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000014",
+      "rhs": 4,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000015",
+      "rhs": 6,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_H0_standard:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_H1_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000016",
+      "rhs": 4,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:W3:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000017",
+      "rhs": 2,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_W3_H1_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000018",
+      "rhs": 0,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:H0:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000019",
+      "rhs": 5,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_H0_M0_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000020",
+      "rhs": 1,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:H1:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000021",
+      "rhs": 6,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_H1_M0_standard:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_H1_M1_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000022",
+      "rhs": 2,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000023",
+      "rhs": 1,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [],
+      "type": "linear"
+    },
+    {
+      "id": "c000024",
+      "rhs": 1,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000025",
+      "rhs": 1,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [],
+      "type": "linear"
+    },
+    {
+      "id": "c000026",
+      "rhs": 4,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_H0_M0_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000027",
+      "rhs": 6,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_H1_M0_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000028",
+      "rhs": 5,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_H1_M1_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000029",
+      "rhs": 8,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_H0_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000030",
+      "rhs": 6,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_H1_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000031",
+      "rhs": 5,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_H0_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000032",
+      "rhs": 8,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_H1_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000033",
+      "rhs": 2,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_W3_H1_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    }
+  ],
+  "objective": {
+    "constant": 0,
+    "sense": "min",
+    "terms": [
+      {
+        "coefficient": 11,
+        "var": "ship:R_H0_M0_standard:P0:0:0"
+      },
+      {
+        "coefficient": 5,
+        "var": "ship:R_H1_M0_standard:P0:0:0"
+      },
+      {
+        "coefficient": 7,
+        "var": "ship:R_W0_H0_standard:P0:0:0"
+      },
+      {
+        "coefficient": 8,
+        "var": "ship:R_W1_H1_standard:P0:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "ship:R_W2_H0_standard:P0:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "ship:R_W2_H1_standard:P0:0:0"
+      },
+      {
+        "coefficient": 3,
+        "var": "ship:R_W3_H1_standard:P0:0:0"
+      }
+    ]
+  },
+  "schema_version": "1.0.0",
+  "variables": [
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "H0",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:H0:P0:0:0",
+      "unit": "item",
+      "upper": 15
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "H1",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:H1:P0:0:0",
+      "unit": "item",
+      "upper": 15
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:M0:P0:0:0",
+      "unit": "item",
+      "upper": 15
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M1",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:M1:P0:0:0",
+      "unit": "item",
+      "upper": 15
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:W0:P0:0:0",
+      "unit": "item",
+      "upper": 15
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:W1:P0:0:0",
+      "unit": "item",
+      "upper": 15
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:W2:P0:0:0",
+      "unit": "item",
+      "upper": 15
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W3",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:W3:P0:0:0",
+      "unit": "item",
+      "upper": 15
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M0",
+        "P0",
+        0,
+        0
+      ],
+      "name": "serve:M0:P0:0:0",
+      "unit": "item",
+      "upper": 4
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M1",
+        "P0",
+        0,
+        0
+      ],
+      "name": "serve:M1:P0:0:0",
+      "unit": "item",
+      "upper": 5
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_H0_M0_standard",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_H0_M0_standard:P0:0:0",
+      "unit": "item",
+      "upper": 4
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_H1_M0_standard",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_H1_M0_standard:P0:0:0",
+      "unit": "item",
+      "upper": 6
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_H1_M1_standard",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_H1_M1_standard:P0:0:0",
+      "unit": "item",
+      "upper": 5
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_H0_standard",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W0_H0_standard:P0:0:0",
+      "unit": "item",
+      "upper": 8
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_H1_standard",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W1_H1_standard:P0:0:0",
+      "unit": "item",
+      "upper": 6
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_H0_standard",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W2_H0_standard:P0:0:0",
+      "unit": "item",
+      "upper": 5
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_H1_standard",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W2_H1_standard:P0:0:0",
+      "unit": "item",
+      "upper": 8
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W3_H1_standard",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W3_H1_standard:P0:0:0",
+      "unit": "item",
+      "upper": 2
+    }
+  ]
+}

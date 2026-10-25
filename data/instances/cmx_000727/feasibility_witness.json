@@ -1,0 +1,15 @@
+{
+  "inventory:H0:P0:0:0": 0,
+  "inventory:M0:P0:0:0": 0,
+  "inventory:M1:P0:0:0": 0,
+  "inventory:W0:P0:0:0": 2,
+  "inventory:W1:P0:0:0": 0,
+  "inventory:W2:P0:0:0": 0,
+  "serve:M0:P0:0:0": 2,
+  "serve:M1:P0:0:0": 2,
+  "ship:R_H0_M0_standard:P0:0:0": 2,
+  "ship:R_H0_M1_standard:P0:0:0": 2,
+  "ship:R_W0_H0_standard:P0:0:0": 0,
+  "ship:R_W1_H0_standard:P0:0:0": 2,
+  "ship:R_W2_H0_standard:P0:0:0": 2
+}

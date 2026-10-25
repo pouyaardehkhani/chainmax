@@ -1,0 +1,8 @@
+{
+  "active:R_W1_M0_standard:0": 1,
+  "inventory:M0:P0:0:0": 0,
+  "inventory:W0:P0:0:0": 2,
+  "inventory:W1:P0:0:0": 1,
+  "serve:M0:P0:0:0": 4,
+  "ship:R_W1_M0_standard:P0:0:0": 4
+}

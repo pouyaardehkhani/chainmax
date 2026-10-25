@@ -1,0 +1,21 @@
+{
+  "inventory:M0:P0:0:0": 0,
+  "inventory:M1:P0:0:0": 0,
+  "inventory:W0:P0:0:0": 2,
+  "inventory:W1:P0:0:0": 0,
+  "inventory:W2:P0:0:0": 1,
+  "inventory:W3:P0:0:0": 2,
+  "open:W0": 0,
+  "open:W1": 0,
+  "open:W2": 1,
+  "open:W3": 1,
+  "serve:M0:P0:0:0": 3,
+  "serve:M1:P0:0:0": 2,
+  "ship:R_W0_M0_standard:P0:0:0": 0,
+  "ship:R_W0_M1_standard:P0:0:0": 0,
+  "ship:R_W1_M0_standard:P0:0:0": 0,
+  "ship:R_W1_M1_standard:P0:0:0": 0,
+  "ship:R_W2_M0_standard:P0:0:0": 3,
+  "ship:R_W2_M1_standard:P0:0:0": 0,
+  "ship:R_W3_M1_standard:P0:0:0": 2
+}

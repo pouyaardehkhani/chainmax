@@ -1,0 +1,15 @@
+{
+  "inventory:M0:P0:0:0": 0,
+  "inventory:W0:P0:0:0": 0,
+  "inventory:W1:P0:0:0": 1,
+  "inventory:W2:P0:0:0": 2,
+  "serve:M0:P0:0:0": 3,
+  "ship:R_W0_M0_road:P0:0:0": 0,
+  "ship:R_W1_M0_road:P0:0:0": 0,
+  "ship:R_W2_M0_rail:P0:0:0": 0,
+  "ship:R_W2_M0_road:P0:0:0": 3,
+  "trucks:R_W0_M0_road:0": 0,
+  "trucks:R_W1_M0_road:0": 0,
+  "trucks:R_W2_M0_rail:0": 0,
+  "trucks:R_W2_M0_road:0": 2
+}

@@ -1,0 +1,136 @@
+{
+  "demands": [
+    {
+      "node": "M0",
+      "period": 0,
+      "product": "P0",
+      "quantity": 4
+    }
+  ],
+  "family": "F10",
+  "features": [
+    "transport",
+    "bounded_inventory",
+    "exact_demand",
+    "integer_bill_of_materials"
+  ],
+  "initial_stock": [
+    {
+      "age": 0,
+      "node": "W0",
+      "product": "RAW",
+      "quantity": 1
+    },
+    {
+      "age": 0,
+      "node": "W1",
+      "product": "RAW",
+      "quantity": 4
+    }
+  ],
+  "locations": [
+    {
+      "id": "W0",
+      "opening_cost": 0,
+      "role": "plant",
+      "storage_capacity": 1,
+      "throughput_capacity": 2
+    },
+    {
+      "id": "W1",
+      "opening_cost": 0,
+      "role": "plant",
+      "storage_capacity": 5,
+      "throughput_capacity": 8
+    },
+    {
+      "id": "M0",
+      "opening_cost": 0,
+      "role": "market",
+      "storage_capacity": 1,
+      "throughput_capacity": 0
+    }
+  ],
+  "narrative_template": 2,
+  "objective_constant": 0,
+  "periods": 1,
+  "products": [
+    {
+      "disposal_cost": 0,
+      "holding_cost": 0,
+      "id": "P0",
+      "shelf_life": null,
+      "volume": 1
+    },
+    {
+      "disposal_cost": 0,
+      "holding_cost": 0,
+      "id": "RAW",
+      "shelf_life": null,
+      "volume": 1
+    }
+  ],
+  "recipes": [
+    {
+      "capacity": 1,
+      "cost": 8,
+      "id": "B_W0",
+      "inputs": [
+        {
+          "product": "RAW",
+          "quantity": 2
+        }
+      ],
+      "node": "W0",
+      "output": "P0",
+      "output_quantity": 2
+    },
+    {
+      "capacity": 4,
+      "cost": 1,
+      "id": "B_W1",
+      "inputs": [
+        {
+          "product": "RAW",
+          "quantity": 1
+        }
+      ],
+      "node": "W1",
+      "output": "P0",
+      "output_quantity": 2
+    }
+  ],
+  "routes": [
+    {
+      "capacity": 5,
+      "destination": "M0",
+      "fixed_cost": 0,
+      "id": "R_W1_M0_standard",
+      "lead_time": 0,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0"
+      ],
+      "source": "W1",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 11
+    }
+  ],
+  "schema_version": "1.0.0",
+  "sourcing": {
+    "dependencies": [],
+    "max_active_suppliers": null
+  },
+  "structural_level": "L1",
+  "units": {
+    "capacity": "volume_unit",
+    "currency": "cent",
+    "production": "batch",
+    "quantity": "item",
+    "time": "period",
+    "truck": "truck"
+  }
+}

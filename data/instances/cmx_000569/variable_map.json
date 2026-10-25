@@ -1,0 +1,143 @@
+{
+  "auxiliary_range": [
+    17,
+    44
+  ],
+  "dialect": "legacy_dimacs_wcnf",
+  "encoder": "pindakaas/PySAT PBEnc BDD",
+  "hard_clauses": 99,
+  "objective_transform": {
+    "multiplier": 1,
+    "offset": 0
+  },
+  "primary_end": 16,
+  "schema_version": "1.0.0",
+  "soft_clauses": 5,
+  "soft_weight_sum": 120,
+  "top": 121,
+  "variable_count": 44,
+  "variables": {
+    "inventory:M0:P0:0:0": {
+      "bits": [
+        1,
+        2,
+        3
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:M0:P0:0:0",
+      "unit": "item",
+      "upper": 5
+    },
+    "inventory:W0:P0:0:0": {
+      "bits": [
+        4,
+        5,
+        6
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:W0:P0:0:0",
+      "unit": "item",
+      "upper": 5
+    },
+    "inventory:W1:P0:0:0": {
+      "bits": [
+        7,
+        8,
+        9
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:W1:P0:0:0",
+      "unit": "item",
+      "upper": 5
+    },
+    "open:W0": {
+      "bits": [
+        10
+      ],
+      "kind": "boolean",
+      "lower": 0,
+      "meaning": [
+        "open",
+        "W0"
+      ],
+      "name": "open:W0",
+      "unit": "activation",
+      "upper": 1
+    },
+    "open:W1": {
+      "bits": [
+        11
+      ],
+      "kind": "boolean",
+      "lower": 0,
+      "meaning": [
+        "open",
+        "W1"
+      ],
+      "name": "open:W1",
+      "unit": "activation",
+      "upper": 1
+    },
+    "serve:M0:P0:0:0": {
+      "bits": [
+        12,
+        13
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M0",
+        "P0",
+        0,
+        0
+      ],
+      "name": "serve:M0:P0:0:0",
+      "unit": "item",
+      "upper": 2
+    },
+    "ship:R_W1_M0_standard:P0:0:0": {
+      "bits": [
+        14,
+        15,
+        16
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M0_standard",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W1_M0_standard:P0:0:0",
+      "unit": "item",
+      "upper": 5
+    }
+  }
+}

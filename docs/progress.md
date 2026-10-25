@@ -46,3 +46,16 @@ examples and links passed. All final records identify the construction source
 commit. Human review remains incomplete (0/1,000 primary, 0/100 stratified second),
 so final acceptance is INCOMPLETE_RELEASE. The package is prepared for review,
 not published. See BUILD_REPORT.md for the remaining work.
+
+## chainmax-2k expansion and publication
+
+The owner requested 2,000 records and publication of the full data and archive.
+All original 1K business/solver artifact hashes were preserved through the explicit
+migration. The expansion reached 2,000 CROSS_CHECKED records, 200 per family and
+50 per cell, with zero full-audit errors and zero exact business duplicates.
+All 65 tests passed, as did the fresh construction smoke test, documentation
+examples/links, staged publication checks, and fresh extraction of all 22,023
+archive members. The 31,674,439-byte archive checksum is in SHA256SUMS.
+The public pouyaardehkhani/chainmax repository was created with its description.
+Actual upload receipts are recorded separately in PUBLICATION.json. Human review
+remains pending: 2,000 primary and 200 stratified second reviews.

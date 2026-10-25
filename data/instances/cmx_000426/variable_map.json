@@ -1,0 +1,222 @@
+{
+  "auxiliary_range": [
+    32,
+    114
+  ],
+  "dialect": "legacy_dimacs_wcnf",
+  "encoder": "pindakaas/PySAT PBEnc BDD",
+  "hard_clauses": 318,
+  "objective_transform": {
+    "multiplier": 1,
+    "offset": 0
+  },
+  "primary_end": 31,
+  "schema_version": "1.0.0",
+  "soft_clauses": 13,
+  "soft_weight_sum": 180,
+  "top": 181,
+  "variable_count": 114,
+  "variables": {
+    "inventory:M0:P0:0:0": {
+      "bits": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:M0:P0:0:0",
+      "unit": "item",
+      "upper": 10
+    },
+    "inventory:W0:P0:0:0": {
+      "bits": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:W0:P0:0:0",
+      "unit": "item",
+      "upper": 10
+    },
+    "inventory:W1:P0:0:0": {
+      "bits": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:W1:P0:0:0",
+      "unit": "item",
+      "upper": 10
+    },
+    "inventory:W2:P0:0:0": {
+      "bits": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:W2:P0:0:0",
+      "unit": "item",
+      "upper": 10
+    },
+    "serve:M0:P0:0:0": {
+      "bits": [
+        17,
+        18
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M0",
+        "P0",
+        0,
+        0
+      ],
+      "name": "serve:M0:P0:0:0",
+      "unit": "item",
+      "upper": 2
+    },
+    "ship:R_W0_M0_rail:P0:0:0": {
+      "bits": [
+        19,
+        20
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_M0_rail",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W0_M0_rail:P0:0:0",
+      "unit": "item",
+      "upper": 2
+    },
+    "ship:R_W1_M0_road:P0:0:0": {
+      "bits": [
+        21,
+        22,
+        23
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M0_road",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W1_M0_road:P0:0:0",
+      "unit": "item",
+      "upper": 6
+    },
+    "ship:R_W2_M0_rail:P0:0:0": {
+      "bits": [
+        24,
+        25,
+        26
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_M0_rail",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W2_M0_rail:P0:0:0",
+      "unit": "item",
+      "upper": 6
+    },
+    "trucks:R_W0_M0_rail:0": {
+      "bits": [
+        27
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "trucks",
+        "R_W0_M0_rail",
+        0
+      ],
+      "name": "trucks:R_W0_M0_rail:0",
+      "unit": "truck",
+      "upper": 1
+    },
+    "trucks:R_W1_M0_road:0": {
+      "bits": [
+        28,
+        29
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "trucks",
+        "R_W1_M0_road",
+        0
+      ],
+      "name": "trucks:R_W1_M0_road:0",
+      "unit": "truck",
+      "upper": 2
+    },
+    "trucks:R_W2_M0_rail:0": {
+      "bits": [
+        30,
+        31
+      ],
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "trucks",
+        "R_W2_M0_rail",
+        0
+      ],
+      "name": "trucks:R_W2_M0_rail:0",
+      "unit": "truck",
+      "upper": 3
+    }
+  }
+}

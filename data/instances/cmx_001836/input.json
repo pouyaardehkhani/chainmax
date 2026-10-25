@@ -1,0 +1,260 @@
+{
+  "demands": [
+    {
+      "node": "M0",
+      "period": 1,
+      "product": "P0",
+      "quantity": 3
+    },
+    {
+      "node": "M0",
+      "period": 1,
+      "product": "P1",
+      "quantity": 3
+    },
+    {
+      "node": "M1",
+      "period": 1,
+      "product": "P0",
+      "quantity": 3
+    },
+    {
+      "node": "M1",
+      "period": 1,
+      "product": "P1",
+      "quantity": 2
+    },
+    {
+      "node": "M0",
+      "period": 2,
+      "product": "P0",
+      "quantity": 2
+    },
+    {
+      "node": "M0",
+      "period": 2,
+      "product": "P1",
+      "quantity": 2
+    },
+    {
+      "node": "M1",
+      "period": 2,
+      "product": "P0",
+      "quantity": 3
+    },
+    {
+      "node": "M1",
+      "period": 2,
+      "product": "P1",
+      "quantity": 2
+    }
+  ],
+  "family": "F09",
+  "features": [
+    "transport",
+    "bounded_inventory",
+    "exact_demand",
+    "age_and_expiry"
+  ],
+  "initial_stock": [
+    {
+      "age": 0,
+      "node": "W0",
+      "product": "P0",
+      "quantity": 1
+    },
+    {
+      "age": 0,
+      "node": "W0",
+      "product": "P1",
+      "quantity": 3
+    },
+    {
+      "age": 0,
+      "node": "W1",
+      "product": "P0",
+      "quantity": 3
+    },
+    {
+      "age": 0,
+      "node": "W1",
+      "product": "P1",
+      "quantity": 2
+    },
+    {
+      "age": 0,
+      "node": "W2",
+      "product": "P0",
+      "quantity": 9
+    },
+    {
+      "age": 0,
+      "node": "W2",
+      "product": "P1",
+      "quantity": 5
+    }
+  ],
+  "locations": [
+    {
+      "id": "W0",
+      "opening_cost": 0,
+      "role": "warehouse",
+      "storage_capacity": 8,
+      "throughput_capacity": 5
+    },
+    {
+      "id": "W1",
+      "opening_cost": 0,
+      "role": "warehouse",
+      "storage_capacity": 11,
+      "throughput_capacity": 10
+    },
+    {
+      "id": "W2",
+      "opening_cost": 0,
+      "role": "warehouse",
+      "storage_capacity": 17,
+      "throughput_capacity": 15
+    },
+    {
+      "id": "M0",
+      "opening_cost": 0,
+      "role": "market",
+      "storage_capacity": 0,
+      "throughput_capacity": 1
+    },
+    {
+      "id": "M1",
+      "opening_cost": 0,
+      "role": "market",
+      "storage_capacity": 1,
+      "throughput_capacity": 1
+    }
+  ],
+  "narrative_template": 1,
+  "objective_constant": 0,
+  "periods": 3,
+  "products": [
+    {
+      "disposal_cost": 4,
+      "holding_cost": 0,
+      "id": "P0",
+      "shelf_life": 3,
+      "volume": 2
+    },
+    {
+      "disposal_cost": 2,
+      "holding_cost": 3,
+      "id": "P1",
+      "shelf_life": 3,
+      "volume": 2
+    }
+  ],
+  "recipes": [],
+  "routes": [
+    {
+      "capacity": 5,
+      "destination": "M0",
+      "fixed_cost": 0,
+      "id": "R_W0_M0_standard",
+      "lead_time": 1,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0",
+        "P1"
+      ],
+      "source": "W0",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 0
+    },
+    {
+      "capacity": 6,
+      "destination": "M0",
+      "fixed_cost": 0,
+      "id": "R_W1_M0_standard",
+      "lead_time": 0,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0",
+        "P1"
+      ],
+      "source": "W1",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 2
+    },
+    {
+      "capacity": 5,
+      "destination": "M1",
+      "fixed_cost": 0,
+      "id": "R_W1_M1_standard",
+      "lead_time": 0,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0",
+        "P1"
+      ],
+      "source": "W1",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 11
+    },
+    {
+      "capacity": 7,
+      "destination": "M0",
+      "fixed_cost": 0,
+      "id": "R_W2_M0_standard",
+      "lead_time": 1,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0",
+        "P1"
+      ],
+      "source": "W2",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 11
+    },
+    {
+      "capacity": 12,
+      "destination": "M1",
+      "fixed_cost": 0,
+      "id": "R_W2_M1_standard",
+      "lead_time": 1,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0",
+        "P1"
+      ],
+      "source": "W2",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 1
+    }
+  ],
+  "schema_version": "1.0.0",
+  "sourcing": {
+    "dependencies": [],
+    "max_active_suppliers": null
+  },
+  "structural_level": "L4",
+  "units": {
+    "capacity": "volume_unit",
+    "currency": "cent",
+    "production": "batch",
+    "quantity": "item",
+    "time": "period",
+    "truck": "truck"
+  }
+}

@@ -1,0 +1,8635 @@
+{
+  "constraints": [
+    {
+      "id": "c000000",
+      "rhs": 5,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W0:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_standard:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M1_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000001",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W0:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_standard:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M1_standard:P0:0:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000002",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W0:P0:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P0:0:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000003",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W0:P0:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P0:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_standard:P0:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M1_standard:P0:1:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000004",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W0:P0:1:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W0:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_standard:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M1_standard:P0:1:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000005",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W0:P0:1:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W0:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P0:1:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000006",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W0:P0:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P0:2:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000007",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W0:P0:2:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W0:P0:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P0:2:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000008",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W0:P0:2:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W0:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P0:2:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000009",
+      "rhs": 5,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W0:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_standard:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M1_standard:P1:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000010",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W0:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_standard:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M1_standard:P1:0:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000011",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W0:P1:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P1:0:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000012",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W0:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_standard:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M1_standard:P1:1:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000013",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W0:P1:1:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W0:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_standard:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M1_standard:P1:1:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000014",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W0:P1:1:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W0:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P1:1:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000015",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W0:P1:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P1:2:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000016",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W0:P1:2:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W0:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P1:2:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000017",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W0:P1:2:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W0:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P1:2:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000018",
+      "rhs": 1,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W1:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000019",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W1:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P0:0:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000020",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W1:P0:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P0:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P0:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P0:0:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000021",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W1:P0:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P0:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P0:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P0:1:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000022",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W1:P0:1:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W1:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P0:1:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000023",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W1:P0:1:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W1:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P0:1:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P0:1:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P0:1:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000024",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W1:P0:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P0:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P0:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P0:2:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000025",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W1:P0:2:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W1:P0:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P0:2:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P0:2:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P0:2:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000026",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W1:P0:2:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W1:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P0:2:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P0:2:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P0:2:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000027",
+      "rhs": 3,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W1:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000028",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W1:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:0:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000029",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W1:P1:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P1:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:0:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000030",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W1:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:1:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000031",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W1:P1:1:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W1:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:1:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000032",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W1:P1:1:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W1:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P1:1:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:1:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:1:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000033",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W1:P1:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P1:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:2:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000034",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W1:P1:2:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W1:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P1:2:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:2:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:2:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000035",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W1:P1:2:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W1:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P1:2:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:2:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:2:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000036",
+      "rhs": 10,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W2:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_standard:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M1_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000037",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W2:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_standard:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M1_standard:P0:0:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000038",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W2:P0:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P0:0:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000039",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W2:P0:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P0:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_standard:P0:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M1_standard:P0:1:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000040",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W2:P0:1:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W2:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_standard:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M1_standard:P0:1:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000041",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W2:P0:1:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W2:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P0:1:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000042",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W2:P0:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P0:2:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000043",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W2:P0:2:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W2:P0:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P0:2:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000044",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W2:P0:2:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W2:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P0:2:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000045",
+      "rhs": 4,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W2:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_standard:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M1_standard:P1:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000046",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W2:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_standard:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M1_standard:P1:0:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000047",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W2:P1:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P1:0:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000048",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W2:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_standard:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M1_standard:P1:1:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000049",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W2:P1:1:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W2:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_standard:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M1_standard:P1:1:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000050",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W2:P1:1:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W2:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P1:1:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000051",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W2:P1:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P1:2:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000052",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W2:P1:2:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W2:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P1:2:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000053",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:W2:P1:2:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:W2:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P1:2:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000054",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M0:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P0:0:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M0_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000055",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M0:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P0:0:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M0_standard:P0:0:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000056",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M0:P0:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P0:0:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M0_standard:P0:0:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000057",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M0:P0:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P0:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P0:1:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M0_standard:P0:1:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000058",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M0:P0:1:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:M0:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P0:1:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W0_M0_standard:P0:0:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M0_standard:P0:1:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W2_M0_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000059",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M0:P0:1:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:M0:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P0:1:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P0:1:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W0_M0_standard:P0:0:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M0_standard:P0:1:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W2_M0_standard:P0:0:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000060",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M0:P0:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P0:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P0:2:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M0_standard:P0:2:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000061",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M0:P0:2:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:M0:P0:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P0:2:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P0:2:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W0_M0_standard:P0:1:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M0_standard:P0:2:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W2_M0_standard:P0:1:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000062",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M0:P0:2:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:M0:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P0:2:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P0:2:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W0_M0_standard:P0:1:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M0_standard:P0:2:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W2_M0_standard:P0:1:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000063",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M0:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P1:0:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M0_standard:P1:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000064",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M0:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P1:0:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M0_standard:P1:0:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000065",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M0:P1:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P1:0:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M0_standard:P1:0:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000066",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M0:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P1:1:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M0_standard:P1:1:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000067",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M0:P1:1:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:M0:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P1:1:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W0_M0_standard:P1:0:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M0_standard:P1:1:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W2_M0_standard:P1:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000068",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M0:P1:1:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:M0:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P1:1:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P1:1:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W0_M0_standard:P1:0:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M0_standard:P1:1:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W2_M0_standard:P1:0:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000069",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M0:P1:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P1:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P1:2:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M0_standard:P1:2:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000070",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M0:P1:2:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:M0:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P1:2:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P1:2:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W0_M0_standard:P1:1:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M0_standard:P1:2:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W2_M0_standard:P1:1:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000071",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M0:P1:2:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:M0:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P1:2:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P1:2:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W0_M0_standard:P1:1:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M0_standard:P1:2:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W2_M0_standard:P1:1:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000072",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M1:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P0:0:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M1_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000073",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M1:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P0:0:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M1_standard:P0:0:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000074",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M1:P0:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P0:0:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M1_standard:P0:0:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000075",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M1:P0:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P0:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P0:1:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M1_standard:P0:1:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000076",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M1:P0:1:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:M1:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P0:1:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W0_M1_standard:P0:0:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M1_standard:P0:1:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W2_M1_standard:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000077",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M1:P0:1:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:M1:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P0:1:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P0:1:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W0_M1_standard:P0:0:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M1_standard:P0:1:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W2_M1_standard:P0:0:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000078",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M1:P0:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P0:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P0:2:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M1_standard:P0:2:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000079",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M1:P0:2:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:M1:P0:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P0:2:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P0:2:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W0_M1_standard:P0:1:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M1_standard:P0:2:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W2_M1_standard:P0:1:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000080",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M1:P0:2:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:M1:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P0:2:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P0:2:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W0_M1_standard:P0:1:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M1_standard:P0:2:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W2_M1_standard:P0:1:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000081",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M1:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P1:0:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M1_standard:P1:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000082",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M1:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P1:0:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M1_standard:P1:0:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000083",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M1:P1:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P1:0:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M1_standard:P1:0:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000084",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M1:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P1:1:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M1_standard:P1:1:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000085",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M1:P1:1:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:M1:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P1:1:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W0_M1_standard:P1:0:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M1_standard:P1:1:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W2_M1_standard:P1:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000086",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M1:P1:1:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:M1:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P1:1:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P1:1:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W0_M1_standard:P1:0:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M1_standard:P1:1:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W2_M1_standard:P1:0:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000087",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M1:P1:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P1:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P1:2:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M1_standard:P1:2:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000088",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M1:P1:2:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:M1:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P1:2:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P1:2:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W0_M1_standard:P1:1:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M1_standard:P1:2:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W2_M1_standard:P1:1:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000089",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "dispose:M1:P1:2:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "inventory:M1:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P1:2:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P1:2:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W0_M1_standard:P1:1:1"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M1_standard:P1:2:2"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W2_M1_standard:P1:1:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000090",
+      "rhs": 3,
+      "sense": "eq",
+      "source": "demands",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P0:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P0:1:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000091",
+      "rhs": 2,
+      "sense": "eq",
+      "source": "demands",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P1:1:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000092",
+      "rhs": 2,
+      "sense": "eq",
+      "source": "demands",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P0:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P0:1:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000093",
+      "rhs": 2,
+      "sense": "eq",
+      "source": "demands",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P1:1:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000094",
+      "rhs": 3,
+      "sense": "eq",
+      "source": "demands",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P0:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P0:2:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P0:2:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000095",
+      "rhs": 2,
+      "sense": "eq",
+      "source": "demands",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P1:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P1:2:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P1:2:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000096",
+      "rhs": 3,
+      "sense": "eq",
+      "source": "demands",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P0:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P0:2:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P0:2:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000097",
+      "rhs": 2,
+      "sense": "eq",
+      "source": "demands",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P1:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P1:2:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M1:P1:2:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000098",
+      "rhs": 14,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "inventory:W0:P0:0:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:W0:P0:0:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:W0:P0:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P1:0:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000099",
+      "rhs": 8,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "ship:R_W0_M0_standard:P0:0:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W0_M0_standard:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_standard:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_standard:P1:0:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W0_M1_standard:P0:0:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W0_M1_standard:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M1_standard:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M1_standard:P1:0:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000100",
+      "rhs": 14,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "inventory:W0:P0:1:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:W0:P0:1:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:W0:P0:1:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P1:1:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000101",
+      "rhs": 8,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "ship:R_W0_M0_standard:P0:1:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W0_M0_standard:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_standard:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_standard:P1:1:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W0_M1_standard:P0:1:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W0_M1_standard:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M1_standard:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M1_standard:P1:1:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000102",
+      "rhs": 14,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "inventory:W0:P0:2:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:W0:P0:2:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:W0:P0:2:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P1:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P1:2:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P1:2:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000103",
+      "rhs": 8,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [],
+      "type": "linear"
+    },
+    {
+      "id": "c000104",
+      "rhs": 5,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "inventory:W1:P0:0:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:W1:P0:0:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:W1:P0:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P1:0:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000105",
+      "rhs": 4,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M0_standard:P0:0:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M0_standard:P0:0:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M0_standard:P0:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:0:2"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M1_standard:P0:0:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M1_standard:P0:0:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M1_standard:P0:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:0:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000106",
+      "rhs": 5,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "inventory:W1:P0:1:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:W1:P0:1:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:W1:P0:1:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P1:1:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000107",
+      "rhs": 4,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M0_standard:P0:1:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M0_standard:P0:1:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M0_standard:P0:1:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:1:2"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M1_standard:P0:1:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M1_standard:P0:1:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M1_standard:P0:1:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:1:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000108",
+      "rhs": 5,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "inventory:W1:P0:2:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:W1:P0:2:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:W1:P0:2:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P1:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P1:2:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P1:2:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000109",
+      "rhs": 4,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M0_standard:P0:2:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M0_standard:P0:2:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M0_standard:P0:2:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:2:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:2:2"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M1_standard:P0:2:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M1_standard:P0:2:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M1_standard:P0:2:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:2:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:2:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000110",
+      "rhs": 14,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "inventory:W2:P0:0:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:W2:P0:0:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:W2:P0:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P1:0:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000111",
+      "rhs": 10,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "ship:R_W2_M0_standard:P0:0:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W2_M0_standard:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_standard:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_standard:P1:0:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W2_M1_standard:P0:0:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W2_M1_standard:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M1_standard:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M1_standard:P1:0:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000112",
+      "rhs": 14,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "inventory:W2:P0:1:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:W2:P0:1:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:W2:P0:1:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P1:1:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000113",
+      "rhs": 10,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "ship:R_W2_M0_standard:P0:1:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W2_M0_standard:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_standard:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_standard:P1:1:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W2_M1_standard:P0:1:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W2_M1_standard:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M1_standard:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M1_standard:P1:1:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000114",
+      "rhs": 14,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "inventory:W2:P0:2:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:W2:P0:2:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:W2:P0:2:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P1:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P1:2:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P1:2:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000115",
+      "rhs": 10,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [],
+      "type": "linear"
+    },
+    {
+      "id": "c000116",
+      "rhs": 2,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "inventory:M0:P0:0:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:M0:P0:0:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:M0:P0:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P1:0:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000117",
+      "rhs": 2,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [],
+      "type": "linear"
+    },
+    {
+      "id": "c000118",
+      "rhs": 2,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "inventory:M0:P0:1:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:M0:P0:1:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:M0:P0:1:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P1:1:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000119",
+      "rhs": 2,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [],
+      "type": "linear"
+    },
+    {
+      "id": "c000120",
+      "rhs": 2,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "inventory:M0:P0:2:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:M0:P0:2:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:M0:P0:2:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P1:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P1:2:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P1:2:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000121",
+      "rhs": 2,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [],
+      "type": "linear"
+    },
+    {
+      "id": "c000122",
+      "rhs": 1,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "inventory:M1:P0:0:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:M1:P0:0:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:M1:P0:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P1:0:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000123",
+      "rhs": 0,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [],
+      "type": "linear"
+    },
+    {
+      "id": "c000124",
+      "rhs": 1,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "inventory:M1:P0:1:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:M1:P0:1:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:M1:P0:1:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P1:1:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000125",
+      "rhs": 0,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [],
+      "type": "linear"
+    },
+    {
+      "id": "c000126",
+      "rhs": 1,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "inventory:M1:P0:2:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:M1:P0:2:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "inventory:M1:P0:2:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P1:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P1:2:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "inventory:M1:P1:2:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000127",
+      "rhs": 0,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [],
+      "type": "linear"
+    },
+    {
+      "id": "c000128",
+      "rhs": 10,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "ship:R_W0_M0_standard:P0:0:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W0_M0_standard:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_standard:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_standard:P1:0:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000129",
+      "rhs": 10,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "ship:R_W0_M0_standard:P0:1:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W0_M0_standard:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_standard:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_standard:P1:1:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000130",
+      "rhs": 10,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [],
+      "type": "linear"
+    },
+    {
+      "id": "c000131",
+      "rhs": 3,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "ship:R_W0_M1_standard:P0:0:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W0_M1_standard:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M1_standard:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M1_standard:P1:0:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000132",
+      "rhs": 3,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "ship:R_W0_M1_standard:P0:1:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W0_M1_standard:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M1_standard:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M1_standard:P1:1:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000133",
+      "rhs": 3,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [],
+      "type": "linear"
+    },
+    {
+      "id": "c000134",
+      "rhs": 8,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M0_standard:P0:0:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M0_standard:P0:0:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M0_standard:P0:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:0:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000135",
+      "rhs": 8,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M0_standard:P0:1:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M0_standard:P0:1:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M0_standard:P0:1:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:1:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000136",
+      "rhs": 8,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M0_standard:P0:2:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M0_standard:P0:2:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M0_standard:P0:2:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:2:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_standard:P1:2:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000137",
+      "rhs": 3,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M1_standard:P0:0:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M1_standard:P0:0:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M1_standard:P0:0:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:0:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000138",
+      "rhs": 3,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M1_standard:P0:1:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M1_standard:P0:1:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M1_standard:P0:1:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:1:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000139",
+      "rhs": 3,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M1_standard:P0:2:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M1_standard:P0:2:1"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W1_M1_standard:P0:2:2"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:2:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:2:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M1_standard:P1:2:2"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000140",
+      "rhs": 8,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "ship:R_W2_M0_standard:P0:0:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W2_M0_standard:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_standard:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_standard:P1:0:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000141",
+      "rhs": 8,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "ship:R_W2_M0_standard:P0:1:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W2_M0_standard:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_standard:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_standard:P1:1:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000142",
+      "rhs": 8,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [],
+      "type": "linear"
+    },
+    {
+      "id": "c000143",
+      "rhs": 9,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "ship:R_W2_M1_standard:P0:0:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W2_M1_standard:P0:0:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M1_standard:P1:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M1_standard:P1:0:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000144",
+      "rhs": 9,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 2,
+          "var": "ship:R_W2_M1_standard:P0:1:0"
+        },
+        {
+          "coefficient": 2,
+          "var": "ship:R_W2_M1_standard:P0:1:1"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M1_standard:P1:1:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M1_standard:P1:1:1"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000145",
+      "rhs": 9,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [],
+      "type": "linear"
+    }
+  ],
+  "objective": {
+    "constant": 0,
+    "sense": "min",
+    "terms": [
+      {
+        "coefficient": 2,
+        "var": "dispose:M0:P0:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M0:P0:0:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M0:P0:0:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M0:P0:1:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M0:P0:1:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M0:P0:1:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M0:P0:2:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M0:P0:2:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M0:P0:2:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M0:P1:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M0:P1:0:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M0:P1:0:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M0:P1:1:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M0:P1:1:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M0:P1:1:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M0:P1:2:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M0:P1:2:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M0:P1:2:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M1:P0:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M1:P0:0:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M1:P0:0:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M1:P0:1:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M1:P0:1:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M1:P0:1:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M1:P0:2:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M1:P0:2:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M1:P0:2:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M1:P1:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M1:P1:0:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M1:P1:0:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M1:P1:1:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M1:P1:1:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M1:P1:1:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M1:P1:2:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M1:P1:2:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:M1:P1:2:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W0:P0:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W0:P0:0:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W0:P0:0:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W0:P0:1:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W0:P0:1:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W0:P0:1:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W0:P0:2:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W0:P0:2:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W0:P0:2:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W0:P1:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W0:P1:0:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W0:P1:0:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W0:P1:1:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W0:P1:1:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W0:P1:1:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W0:P1:2:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W0:P1:2:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W0:P1:2:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W1:P0:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W1:P0:0:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W1:P0:0:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W1:P0:1:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W1:P0:1:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W1:P0:1:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W1:P0:2:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W1:P0:2:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W1:P0:2:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W1:P1:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W1:P1:0:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W1:P1:0:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W1:P1:1:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W1:P1:1:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W1:P1:1:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W1:P1:2:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W1:P1:2:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W1:P1:2:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W2:P0:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W2:P0:0:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W2:P0:0:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W2:P0:1:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W2:P0:1:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W2:P0:1:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W2:P0:2:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W2:P0:2:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W2:P0:2:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W2:P1:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W2:P1:0:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W2:P1:0:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W2:P1:1:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W2:P1:1:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W2:P1:1:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W2:P1:2:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W2:P1:2:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "dispose:W2:P1:2:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M0:P0:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M0:P0:0:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M0:P0:0:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M0:P0:1:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M0:P0:1:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M0:P0:1:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M0:P0:2:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M0:P0:2:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M0:P0:2:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M0:P1:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M0:P1:0:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M0:P1:0:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M0:P1:1:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M0:P1:1:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M0:P1:1:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M0:P1:2:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M0:P1:2:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M0:P1:2:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M1:P0:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M1:P0:0:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M1:P0:0:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M1:P0:1:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M1:P0:1:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M1:P0:1:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M1:P0:2:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M1:P0:2:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M1:P0:2:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M1:P1:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M1:P1:0:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M1:P1:0:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M1:P1:1:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M1:P1:1:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M1:P1:1:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M1:P1:2:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M1:P1:2:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:M1:P1:2:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W0:P0:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W0:P0:0:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W0:P0:0:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W0:P0:1:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W0:P0:1:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W0:P0:1:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W0:P0:2:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W0:P0:2:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W0:P0:2:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W0:P1:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W0:P1:0:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W0:P1:0:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W0:P1:1:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W0:P1:1:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W0:P1:1:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W0:P1:2:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W0:P1:2:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W0:P1:2:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W1:P0:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W1:P0:0:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W1:P0:0:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W1:P0:1:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W1:P0:1:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W1:P0:1:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W1:P0:2:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W1:P0:2:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W1:P0:2:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W1:P1:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W1:P1:0:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W1:P1:0:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W1:P1:1:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W1:P1:1:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W1:P1:1:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W1:P1:2:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W1:P1:2:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W1:P1:2:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W2:P0:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W2:P0:0:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W2:P0:0:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W2:P0:1:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W2:P0:1:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W2:P0:1:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W2:P0:2:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W2:P0:2:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W2:P0:2:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W2:P1:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W2:P1:0:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W2:P1:0:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W2:P1:1:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W2:P1:1:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W2:P1:1:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W2:P1:2:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W2:P1:2:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "inventory:W2:P1:2:2"
+      },
+      {
+        "coefficient": 2,
+        "var": "ship:R_W0_M0_standard:P0:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "ship:R_W0_M0_standard:P0:0:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "ship:R_W0_M0_standard:P0:1:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "ship:R_W0_M0_standard:P0:1:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "ship:R_W0_M0_standard:P1:0:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "ship:R_W0_M0_standard:P1:0:1"
+      },
+      {
+        "coefficient": 2,
+        "var": "ship:R_W0_M0_standard:P1:1:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "ship:R_W0_M0_standard:P1:1:1"
+      },
+      {
+        "coefficient": 3,
+        "var": "ship:R_W0_M1_standard:P0:0:0"
+      },
+      {
+        "coefficient": 3,
+        "var": "ship:R_W0_M1_standard:P0:0:1"
+      },
+      {
+        "coefficient": 3,
+        "var": "ship:R_W0_M1_standard:P0:1:0"
+      },
+      {
+        "coefficient": 3,
+        "var": "ship:R_W0_M1_standard:P0:1:1"
+      },
+      {
+        "coefficient": 3,
+        "var": "ship:R_W0_M1_standard:P1:0:0"
+      },
+      {
+        "coefficient": 3,
+        "var": "ship:R_W0_M1_standard:P1:0:1"
+      },
+      {
+        "coefficient": 3,
+        "var": "ship:R_W0_M1_standard:P1:1:0"
+      },
+      {
+        "coefficient": 3,
+        "var": "ship:R_W0_M1_standard:P1:1:1"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W1_M0_standard:P0:0:0"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W1_M0_standard:P0:0:1"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W1_M0_standard:P0:0:2"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W1_M0_standard:P0:1:0"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W1_M0_standard:P0:1:1"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W1_M0_standard:P0:1:2"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W1_M0_standard:P0:2:0"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W1_M0_standard:P0:2:1"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W1_M0_standard:P0:2:2"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W1_M0_standard:P1:0:0"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W1_M0_standard:P1:0:1"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W1_M0_standard:P1:0:2"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W1_M0_standard:P1:1:0"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W1_M0_standard:P1:1:1"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W1_M0_standard:P1:1:2"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W1_M0_standard:P1:2:0"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W1_M0_standard:P1:2:1"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W1_M0_standard:P1:2:2"
+      },
+      {
+        "coefficient": 4,
+        "var": "ship:R_W1_M1_standard:P0:0:0"
+      },
+      {
+        "coefficient": 4,
+        "var": "ship:R_W1_M1_standard:P0:0:1"
+      },
+      {
+        "coefficient": 4,
+        "var": "ship:R_W1_M1_standard:P0:0:2"
+      },
+      {
+        "coefficient": 4,
+        "var": "ship:R_W1_M1_standard:P0:1:0"
+      },
+      {
+        "coefficient": 4,
+        "var": "ship:R_W1_M1_standard:P0:1:1"
+      },
+      {
+        "coefficient": 4,
+        "var": "ship:R_W1_M1_standard:P0:1:2"
+      },
+      {
+        "coefficient": 4,
+        "var": "ship:R_W1_M1_standard:P0:2:0"
+      },
+      {
+        "coefficient": 4,
+        "var": "ship:R_W1_M1_standard:P0:2:1"
+      },
+      {
+        "coefficient": 4,
+        "var": "ship:R_W1_M1_standard:P0:2:2"
+      },
+      {
+        "coefficient": 4,
+        "var": "ship:R_W1_M1_standard:P1:0:0"
+      },
+      {
+        "coefficient": 4,
+        "var": "ship:R_W1_M1_standard:P1:0:1"
+      },
+      {
+        "coefficient": 4,
+        "var": "ship:R_W1_M1_standard:P1:0:2"
+      },
+      {
+        "coefficient": 4,
+        "var": "ship:R_W1_M1_standard:P1:1:0"
+      },
+      {
+        "coefficient": 4,
+        "var": "ship:R_W1_M1_standard:P1:1:1"
+      },
+      {
+        "coefficient": 4,
+        "var": "ship:R_W1_M1_standard:P1:1:2"
+      },
+      {
+        "coefficient": 4,
+        "var": "ship:R_W1_M1_standard:P1:2:0"
+      },
+      {
+        "coefficient": 4,
+        "var": "ship:R_W1_M1_standard:P1:2:1"
+      },
+      {
+        "coefficient": 4,
+        "var": "ship:R_W1_M1_standard:P1:2:2"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W2_M0_standard:P0:0:0"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W2_M0_standard:P0:0:1"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W2_M0_standard:P0:1:0"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W2_M0_standard:P0:1:1"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W2_M0_standard:P1:0:0"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W2_M0_standard:P1:0:1"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W2_M0_standard:P1:1:0"
+      },
+      {
+        "coefficient": 10,
+        "var": "ship:R_W2_M0_standard:P1:1:1"
+      },
+      {
+        "coefficient": 3,
+        "var": "ship:R_W2_M1_standard:P0:0:0"
+      },
+      {
+        "coefficient": 3,
+        "var": "ship:R_W2_M1_standard:P0:0:1"
+      },
+      {
+        "coefficient": 3,
+        "var": "ship:R_W2_M1_standard:P0:1:0"
+      },
+      {
+        "coefficient": 3,
+        "var": "ship:R_W2_M1_standard:P0:1:1"
+      },
+      {
+        "coefficient": 3,
+        "var": "ship:R_W2_M1_standard:P1:0:0"
+      },
+      {
+        "coefficient": 3,
+        "var": "ship:R_W2_M1_standard:P1:0:1"
+      },
+      {
+        "coefficient": 3,
+        "var": "ship:R_W2_M1_standard:P1:1:0"
+      },
+      {
+        "coefficient": 3,
+        "var": "ship:R_W2_M1_standard:P1:1:1"
+      }
+    ]
+  },
+  "schema_version": "1.0.0",
+  "variables": [
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M0",
+        "P0",
+        0,
+        0
+      ],
+      "name": "dispose:M0:P0:0:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M0",
+        "P0",
+        0,
+        1
+      ],
+      "name": "dispose:M0:P0:0:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M0",
+        "P0",
+        0,
+        2
+      ],
+      "name": "dispose:M0:P0:0:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M0",
+        "P0",
+        1,
+        0
+      ],
+      "name": "dispose:M0:P0:1:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M0",
+        "P0",
+        1,
+        1
+      ],
+      "name": "dispose:M0:P0:1:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M0",
+        "P0",
+        1,
+        2
+      ],
+      "name": "dispose:M0:P0:1:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M0",
+        "P0",
+        2,
+        0
+      ],
+      "name": "dispose:M0:P0:2:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M0",
+        "P0",
+        2,
+        1
+      ],
+      "name": "dispose:M0:P0:2:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M0",
+        "P0",
+        2,
+        2
+      ],
+      "name": "dispose:M0:P0:2:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M0",
+        "P1",
+        0,
+        0
+      ],
+      "name": "dispose:M0:P1:0:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M0",
+        "P1",
+        0,
+        1
+      ],
+      "name": "dispose:M0:P1:0:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M0",
+        "P1",
+        0,
+        2
+      ],
+      "name": "dispose:M0:P1:0:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M0",
+        "P1",
+        1,
+        0
+      ],
+      "name": "dispose:M0:P1:1:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M0",
+        "P1",
+        1,
+        1
+      ],
+      "name": "dispose:M0:P1:1:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M0",
+        "P1",
+        1,
+        2
+      ],
+      "name": "dispose:M0:P1:1:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M0",
+        "P1",
+        2,
+        0
+      ],
+      "name": "dispose:M0:P1:2:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M0",
+        "P1",
+        2,
+        1
+      ],
+      "name": "dispose:M0:P1:2:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M0",
+        "P1",
+        2,
+        2
+      ],
+      "name": "dispose:M0:P1:2:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M1",
+        "P0",
+        0,
+        0
+      ],
+      "name": "dispose:M1:P0:0:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M1",
+        "P0",
+        0,
+        1
+      ],
+      "name": "dispose:M1:P0:0:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M1",
+        "P0",
+        0,
+        2
+      ],
+      "name": "dispose:M1:P0:0:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M1",
+        "P0",
+        1,
+        0
+      ],
+      "name": "dispose:M1:P0:1:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M1",
+        "P0",
+        1,
+        1
+      ],
+      "name": "dispose:M1:P0:1:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M1",
+        "P0",
+        1,
+        2
+      ],
+      "name": "dispose:M1:P0:1:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M1",
+        "P0",
+        2,
+        0
+      ],
+      "name": "dispose:M1:P0:2:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M1",
+        "P0",
+        2,
+        1
+      ],
+      "name": "dispose:M1:P0:2:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M1",
+        "P0",
+        2,
+        2
+      ],
+      "name": "dispose:M1:P0:2:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M1",
+        "P1",
+        0,
+        0
+      ],
+      "name": "dispose:M1:P1:0:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M1",
+        "P1",
+        0,
+        1
+      ],
+      "name": "dispose:M1:P1:0:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M1",
+        "P1",
+        0,
+        2
+      ],
+      "name": "dispose:M1:P1:0:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M1",
+        "P1",
+        1,
+        0
+      ],
+      "name": "dispose:M1:P1:1:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M1",
+        "P1",
+        1,
+        1
+      ],
+      "name": "dispose:M1:P1:1:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M1",
+        "P1",
+        1,
+        2
+      ],
+      "name": "dispose:M1:P1:1:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M1",
+        "P1",
+        2,
+        0
+      ],
+      "name": "dispose:M1:P1:2:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M1",
+        "P1",
+        2,
+        1
+      ],
+      "name": "dispose:M1:P1:2:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "M1",
+        "P1",
+        2,
+        2
+      ],
+      "name": "dispose:M1:P1:2:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W0",
+        "P0",
+        0,
+        0
+      ],
+      "name": "dispose:W0:P0:0:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W0",
+        "P0",
+        0,
+        1
+      ],
+      "name": "dispose:W0:P0:0:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W0",
+        "P0",
+        0,
+        2
+      ],
+      "name": "dispose:W0:P0:0:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W0",
+        "P0",
+        1,
+        0
+      ],
+      "name": "dispose:W0:P0:1:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W0",
+        "P0",
+        1,
+        1
+      ],
+      "name": "dispose:W0:P0:1:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W0",
+        "P0",
+        1,
+        2
+      ],
+      "name": "dispose:W0:P0:1:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W0",
+        "P0",
+        2,
+        0
+      ],
+      "name": "dispose:W0:P0:2:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W0",
+        "P0",
+        2,
+        1
+      ],
+      "name": "dispose:W0:P0:2:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W0",
+        "P0",
+        2,
+        2
+      ],
+      "name": "dispose:W0:P0:2:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W0",
+        "P1",
+        0,
+        0
+      ],
+      "name": "dispose:W0:P1:0:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W0",
+        "P1",
+        0,
+        1
+      ],
+      "name": "dispose:W0:P1:0:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W0",
+        "P1",
+        0,
+        2
+      ],
+      "name": "dispose:W0:P1:0:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W0",
+        "P1",
+        1,
+        0
+      ],
+      "name": "dispose:W0:P1:1:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W0",
+        "P1",
+        1,
+        1
+      ],
+      "name": "dispose:W0:P1:1:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W0",
+        "P1",
+        1,
+        2
+      ],
+      "name": "dispose:W0:P1:1:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W0",
+        "P1",
+        2,
+        0
+      ],
+      "name": "dispose:W0:P1:2:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W0",
+        "P1",
+        2,
+        1
+      ],
+      "name": "dispose:W0:P1:2:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W0",
+        "P1",
+        2,
+        2
+      ],
+      "name": "dispose:W0:P1:2:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W1",
+        "P0",
+        0,
+        0
+      ],
+      "name": "dispose:W1:P0:0:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W1",
+        "P0",
+        0,
+        1
+      ],
+      "name": "dispose:W1:P0:0:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W1",
+        "P0",
+        0,
+        2
+      ],
+      "name": "dispose:W1:P0:0:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W1",
+        "P0",
+        1,
+        0
+      ],
+      "name": "dispose:W1:P0:1:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W1",
+        "P0",
+        1,
+        1
+      ],
+      "name": "dispose:W1:P0:1:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W1",
+        "P0",
+        1,
+        2
+      ],
+      "name": "dispose:W1:P0:1:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W1",
+        "P0",
+        2,
+        0
+      ],
+      "name": "dispose:W1:P0:2:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W1",
+        "P0",
+        2,
+        1
+      ],
+      "name": "dispose:W1:P0:2:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W1",
+        "P0",
+        2,
+        2
+      ],
+      "name": "dispose:W1:P0:2:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W1",
+        "P1",
+        0,
+        0
+      ],
+      "name": "dispose:W1:P1:0:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W1",
+        "P1",
+        0,
+        1
+      ],
+      "name": "dispose:W1:P1:0:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W1",
+        "P1",
+        0,
+        2
+      ],
+      "name": "dispose:W1:P1:0:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W1",
+        "P1",
+        1,
+        0
+      ],
+      "name": "dispose:W1:P1:1:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W1",
+        "P1",
+        1,
+        1
+      ],
+      "name": "dispose:W1:P1:1:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W1",
+        "P1",
+        1,
+        2
+      ],
+      "name": "dispose:W1:P1:1:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W1",
+        "P1",
+        2,
+        0
+      ],
+      "name": "dispose:W1:P1:2:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W1",
+        "P1",
+        2,
+        1
+      ],
+      "name": "dispose:W1:P1:2:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W1",
+        "P1",
+        2,
+        2
+      ],
+      "name": "dispose:W1:P1:2:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W2",
+        "P0",
+        0,
+        0
+      ],
+      "name": "dispose:W2:P0:0:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W2",
+        "P0",
+        0,
+        1
+      ],
+      "name": "dispose:W2:P0:0:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W2",
+        "P0",
+        0,
+        2
+      ],
+      "name": "dispose:W2:P0:0:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W2",
+        "P0",
+        1,
+        0
+      ],
+      "name": "dispose:W2:P0:1:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W2",
+        "P0",
+        1,
+        1
+      ],
+      "name": "dispose:W2:P0:1:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W2",
+        "P0",
+        1,
+        2
+      ],
+      "name": "dispose:W2:P0:1:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W2",
+        "P0",
+        2,
+        0
+      ],
+      "name": "dispose:W2:P0:2:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W2",
+        "P0",
+        2,
+        1
+      ],
+      "name": "dispose:W2:P0:2:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W2",
+        "P0",
+        2,
+        2
+      ],
+      "name": "dispose:W2:P0:2:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W2",
+        "P1",
+        0,
+        0
+      ],
+      "name": "dispose:W2:P1:0:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W2",
+        "P1",
+        0,
+        1
+      ],
+      "name": "dispose:W2:P1:0:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W2",
+        "P1",
+        0,
+        2
+      ],
+      "name": "dispose:W2:P1:0:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W2",
+        "P1",
+        1,
+        0
+      ],
+      "name": "dispose:W2:P1:1:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W2",
+        "P1",
+        1,
+        1
+      ],
+      "name": "dispose:W2:P1:1:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W2",
+        "P1",
+        1,
+        2
+      ],
+      "name": "dispose:W2:P1:1:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W2",
+        "P1",
+        2,
+        0
+      ],
+      "name": "dispose:W2:P1:2:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W2",
+        "P1",
+        2,
+        1
+      ],
+      "name": "dispose:W2:P1:2:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "dispose",
+        "W2",
+        "P1",
+        2,
+        2
+      ],
+      "name": "dispose:W2:P1:2:2",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:M0:P0:0:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P0",
+        0,
+        1
+      ],
+      "name": "inventory:M0:P0:0:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P0",
+        0,
+        2
+      ],
+      "name": "inventory:M0:P0:0:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P0",
+        1,
+        0
+      ],
+      "name": "inventory:M0:P0:1:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P0",
+        1,
+        1
+      ],
+      "name": "inventory:M0:P0:1:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P0",
+        1,
+        2
+      ],
+      "name": "inventory:M0:P0:1:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P0",
+        2,
+        0
+      ],
+      "name": "inventory:M0:P0:2:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P0",
+        2,
+        1
+      ],
+      "name": "inventory:M0:P0:2:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P0",
+        2,
+        2
+      ],
+      "name": "inventory:M0:P0:2:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P1",
+        0,
+        0
+      ],
+      "name": "inventory:M0:P1:0:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P1",
+        0,
+        1
+      ],
+      "name": "inventory:M0:P1:0:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P1",
+        0,
+        2
+      ],
+      "name": "inventory:M0:P1:0:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P1",
+        1,
+        0
+      ],
+      "name": "inventory:M0:P1:1:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P1",
+        1,
+        1
+      ],
+      "name": "inventory:M0:P1:1:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P1",
+        1,
+        2
+      ],
+      "name": "inventory:M0:P1:1:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P1",
+        2,
+        0
+      ],
+      "name": "inventory:M0:P1:2:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P1",
+        2,
+        1
+      ],
+      "name": "inventory:M0:P1:2:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P1",
+        2,
+        2
+      ],
+      "name": "inventory:M0:P1:2:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M1",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:M1:P0:0:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M1",
+        "P0",
+        0,
+        1
+      ],
+      "name": "inventory:M1:P0:0:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M1",
+        "P0",
+        0,
+        2
+      ],
+      "name": "inventory:M1:P0:0:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M1",
+        "P0",
+        1,
+        0
+      ],
+      "name": "inventory:M1:P0:1:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M1",
+        "P0",
+        1,
+        1
+      ],
+      "name": "inventory:M1:P0:1:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M1",
+        "P0",
+        1,
+        2
+      ],
+      "name": "inventory:M1:P0:1:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M1",
+        "P0",
+        2,
+        0
+      ],
+      "name": "inventory:M1:P0:2:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M1",
+        "P0",
+        2,
+        1
+      ],
+      "name": "inventory:M1:P0:2:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M1",
+        "P0",
+        2,
+        2
+      ],
+      "name": "inventory:M1:P0:2:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M1",
+        "P1",
+        0,
+        0
+      ],
+      "name": "inventory:M1:P1:0:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M1",
+        "P1",
+        0,
+        1
+      ],
+      "name": "inventory:M1:P1:0:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M1",
+        "P1",
+        0,
+        2
+      ],
+      "name": "inventory:M1:P1:0:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M1",
+        "P1",
+        1,
+        0
+      ],
+      "name": "inventory:M1:P1:1:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M1",
+        "P1",
+        1,
+        1
+      ],
+      "name": "inventory:M1:P1:1:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M1",
+        "P1",
+        1,
+        2
+      ],
+      "name": "inventory:M1:P1:1:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M1",
+        "P1",
+        2,
+        0
+      ],
+      "name": "inventory:M1:P1:2:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M1",
+        "P1",
+        2,
+        1
+      ],
+      "name": "inventory:M1:P1:2:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M1",
+        "P1",
+        2,
+        2
+      ],
+      "name": "inventory:M1:P1:2:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:W0:P0:0:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P0",
+        0,
+        1
+      ],
+      "name": "inventory:W0:P0:0:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P0",
+        0,
+        2
+      ],
+      "name": "inventory:W0:P0:0:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P0",
+        1,
+        0
+      ],
+      "name": "inventory:W0:P0:1:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P0",
+        1,
+        1
+      ],
+      "name": "inventory:W0:P0:1:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P0",
+        1,
+        2
+      ],
+      "name": "inventory:W0:P0:1:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P0",
+        2,
+        0
+      ],
+      "name": "inventory:W0:P0:2:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P0",
+        2,
+        1
+      ],
+      "name": "inventory:W0:P0:2:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P0",
+        2,
+        2
+      ],
+      "name": "inventory:W0:P0:2:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P1",
+        0,
+        0
+      ],
+      "name": "inventory:W0:P1:0:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P1",
+        0,
+        1
+      ],
+      "name": "inventory:W0:P1:0:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P1",
+        0,
+        2
+      ],
+      "name": "inventory:W0:P1:0:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P1",
+        1,
+        0
+      ],
+      "name": "inventory:W0:P1:1:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P1",
+        1,
+        1
+      ],
+      "name": "inventory:W0:P1:1:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P1",
+        1,
+        2
+      ],
+      "name": "inventory:W0:P1:1:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P1",
+        2,
+        0
+      ],
+      "name": "inventory:W0:P1:2:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P1",
+        2,
+        1
+      ],
+      "name": "inventory:W0:P1:2:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P1",
+        2,
+        2
+      ],
+      "name": "inventory:W0:P1:2:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:W1:P0:0:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P0",
+        0,
+        1
+      ],
+      "name": "inventory:W1:P0:0:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P0",
+        0,
+        2
+      ],
+      "name": "inventory:W1:P0:0:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P0",
+        1,
+        0
+      ],
+      "name": "inventory:W1:P0:1:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P0",
+        1,
+        1
+      ],
+      "name": "inventory:W1:P0:1:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P0",
+        1,
+        2
+      ],
+      "name": "inventory:W1:P0:1:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P0",
+        2,
+        0
+      ],
+      "name": "inventory:W1:P0:2:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P0",
+        2,
+        1
+      ],
+      "name": "inventory:W1:P0:2:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P0",
+        2,
+        2
+      ],
+      "name": "inventory:W1:P0:2:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P1",
+        0,
+        0
+      ],
+      "name": "inventory:W1:P1:0:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P1",
+        0,
+        1
+      ],
+      "name": "inventory:W1:P1:0:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P1",
+        0,
+        2
+      ],
+      "name": "inventory:W1:P1:0:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P1",
+        1,
+        0
+      ],
+      "name": "inventory:W1:P1:1:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P1",
+        1,
+        1
+      ],
+      "name": "inventory:W1:P1:1:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P1",
+        1,
+        2
+      ],
+      "name": "inventory:W1:P1:1:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P1",
+        2,
+        0
+      ],
+      "name": "inventory:W1:P1:2:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P1",
+        2,
+        1
+      ],
+      "name": "inventory:W1:P1:2:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P1",
+        2,
+        2
+      ],
+      "name": "inventory:W1:P1:2:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:W2:P0:0:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P0",
+        0,
+        1
+      ],
+      "name": "inventory:W2:P0:0:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P0",
+        0,
+        2
+      ],
+      "name": "inventory:W2:P0:0:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P0",
+        1,
+        0
+      ],
+      "name": "inventory:W2:P0:1:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P0",
+        1,
+        1
+      ],
+      "name": "inventory:W2:P0:1:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P0",
+        1,
+        2
+      ],
+      "name": "inventory:W2:P0:1:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P0",
+        2,
+        0
+      ],
+      "name": "inventory:W2:P0:2:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P0",
+        2,
+        1
+      ],
+      "name": "inventory:W2:P0:2:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P0",
+        2,
+        2
+      ],
+      "name": "inventory:W2:P0:2:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P1",
+        0,
+        0
+      ],
+      "name": "inventory:W2:P1:0:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P1",
+        0,
+        1
+      ],
+      "name": "inventory:W2:P1:0:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P1",
+        0,
+        2
+      ],
+      "name": "inventory:W2:P1:0:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P1",
+        1,
+        0
+      ],
+      "name": "inventory:W2:P1:1:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P1",
+        1,
+        1
+      ],
+      "name": "inventory:W2:P1:1:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P1",
+        1,
+        2
+      ],
+      "name": "inventory:W2:P1:1:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P1",
+        2,
+        0
+      ],
+      "name": "inventory:W2:P1:2:0",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P1",
+        2,
+        1
+      ],
+      "name": "inventory:W2:P1:2:1",
+      "unit": "item",
+      "upper": 28
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P1",
+        2,
+        2
+      ],
+      "name": "inventory:W2:P1:2:2",
+      "unit": "item",
+      "upper": 0
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M0",
+        "P0",
+        1,
+        0
+      ],
+      "name": "serve:M0:P0:1:0",
+      "unit": "item",
+      "upper": 3
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M0",
+        "P0",
+        1,
+        1
+      ],
+      "name": "serve:M0:P0:1:1",
+      "unit": "item",
+      "upper": 3
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M0",
+        "P0",
+        1,
+        2
+      ],
+      "name": "serve:M0:P0:1:2",
+      "unit": "item",
+      "upper": 3
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M0",
+        "P0",
+        2,
+        0
+      ],
+      "name": "serve:M0:P0:2:0",
+      "unit": "item",
+      "upper": 3
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M0",
+        "P0",
+        2,
+        1
+      ],
+      "name": "serve:M0:P0:2:1",
+      "unit": "item",
+      "upper": 3
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M0",
+        "P0",
+        2,
+        2
+      ],
+      "name": "serve:M0:P0:2:2",
+      "unit": "item",
+      "upper": 3
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M0",
+        "P1",
+        1,
+        0
+      ],
+      "name": "serve:M0:P1:1:0",
+      "unit": "item",
+      "upper": 2
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M0",
+        "P1",
+        1,
+        1
+      ],
+      "name": "serve:M0:P1:1:1",
+      "unit": "item",
+      "upper": 2
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M0",
+        "P1",
+        1,
+        2
+      ],
+      "name": "serve:M0:P1:1:2",
+      "unit": "item",
+      "upper": 2
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M0",
+        "P1",
+        2,
+        0
+      ],
+      "name": "serve:M0:P1:2:0",
+      "unit": "item",
+      "upper": 2
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M0",
+        "P1",
+        2,
+        1
+      ],
+      "name": "serve:M0:P1:2:1",
+      "unit": "item",
+      "upper": 2
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M0",
+        "P1",
+        2,
+        2
+      ],
+      "name": "serve:M0:P1:2:2",
+      "unit": "item",
+      "upper": 2
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M1",
+        "P0",
+        1,
+        0
+      ],
+      "name": "serve:M1:P0:1:0",
+      "unit": "item",
+      "upper": 2
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M1",
+        "P0",
+        1,
+        1
+      ],
+      "name": "serve:M1:P0:1:1",
+      "unit": "item",
+      "upper": 2
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M1",
+        "P0",
+        1,
+        2
+      ],
+      "name": "serve:M1:P0:1:2",
+      "unit": "item",
+      "upper": 2
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M1",
+        "P0",
+        2,
+        0
+      ],
+      "name": "serve:M1:P0:2:0",
+      "unit": "item",
+      "upper": 3
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M1",
+        "P0",
+        2,
+        1
+      ],
+      "name": "serve:M1:P0:2:1",
+      "unit": "item",
+      "upper": 3
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M1",
+        "P0",
+        2,
+        2
+      ],
+      "name": "serve:M1:P0:2:2",
+      "unit": "item",
+      "upper": 3
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M1",
+        "P1",
+        1,
+        0
+      ],
+      "name": "serve:M1:P1:1:0",
+      "unit": "item",
+      "upper": 2
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M1",
+        "P1",
+        1,
+        1
+      ],
+      "name": "serve:M1:P1:1:1",
+      "unit": "item",
+      "upper": 2
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M1",
+        "P1",
+        1,
+        2
+      ],
+      "name": "serve:M1:P1:1:2",
+      "unit": "item",
+      "upper": 2
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M1",
+        "P1",
+        2,
+        0
+      ],
+      "name": "serve:M1:P1:2:0",
+      "unit": "item",
+      "upper": 2
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M1",
+        "P1",
+        2,
+        1
+      ],
+      "name": "serve:M1:P1:2:1",
+      "unit": "item",
+      "upper": 2
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M1",
+        "P1",
+        2,
+        2
+      ],
+      "name": "serve:M1:P1:2:2",
+      "unit": "item",
+      "upper": 2
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_M0_standard",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W0_M0_standard:P0:0:0",
+      "unit": "item",
+      "upper": 5
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_M0_standard",
+        "P0",
+        0,
+        1
+      ],
+      "name": "ship:R_W0_M0_standard:P0:0:1",
+      "unit": "item",
+      "upper": 5
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_M0_standard",
+        "P0",
+        1,
+        0
+      ],
+      "name": "ship:R_W0_M0_standard:P0:1:0",
+      "unit": "item",
+      "upper": 5
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_M0_standard",
+        "P0",
+        1,
+        1
+      ],
+      "name": "ship:R_W0_M0_standard:P0:1:1",
+      "unit": "item",
+      "upper": 5
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_M0_standard",
+        "P1",
+        0,
+        0
+      ],
+      "name": "ship:R_W0_M0_standard:P1:0:0",
+      "unit": "item",
+      "upper": 10
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_M0_standard",
+        "P1",
+        0,
+        1
+      ],
+      "name": "ship:R_W0_M0_standard:P1:0:1",
+      "unit": "item",
+      "upper": 10
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_M0_standard",
+        "P1",
+        1,
+        0
+      ],
+      "name": "ship:R_W0_M0_standard:P1:1:0",
+      "unit": "item",
+      "upper": 10
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_M0_standard",
+        "P1",
+        1,
+        1
+      ],
+      "name": "ship:R_W0_M0_standard:P1:1:1",
+      "unit": "item",
+      "upper": 10
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_M1_standard",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W0_M1_standard:P0:0:0",
+      "unit": "item",
+      "upper": 1
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_M1_standard",
+        "P0",
+        0,
+        1
+      ],
+      "name": "ship:R_W0_M1_standard:P0:0:1",
+      "unit": "item",
+      "upper": 1
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_M1_standard",
+        "P0",
+        1,
+        0
+      ],
+      "name": "ship:R_W0_M1_standard:P0:1:0",
+      "unit": "item",
+      "upper": 1
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_M1_standard",
+        "P0",
+        1,
+        1
+      ],
+      "name": "ship:R_W0_M1_standard:P0:1:1",
+      "unit": "item",
+      "upper": 1
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_M1_standard",
+        "P1",
+        0,
+        0
+      ],
+      "name": "ship:R_W0_M1_standard:P1:0:0",
+      "unit": "item",
+      "upper": 3
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_M1_standard",
+        "P1",
+        0,
+        1
+      ],
+      "name": "ship:R_W0_M1_standard:P1:0:1",
+      "unit": "item",
+      "upper": 3
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_M1_standard",
+        "P1",
+        1,
+        0
+      ],
+      "name": "ship:R_W0_M1_standard:P1:1:0",
+      "unit": "item",
+      "upper": 3
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_M1_standard",
+        "P1",
+        1,
+        1
+      ],
+      "name": "ship:R_W0_M1_standard:P1:1:1",
+      "unit": "item",
+      "upper": 3
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M0_standard",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W1_M0_standard:P0:0:0",
+      "unit": "item",
+      "upper": 4
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M0_standard",
+        "P0",
+        0,
+        1
+      ],
+      "name": "ship:R_W1_M0_standard:P0:0:1",
+      "unit": "item",
+      "upper": 4
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M0_standard",
+        "P0",
+        0,
+        2
+      ],
+      "name": "ship:R_W1_M0_standard:P0:0:2",
+      "unit": "item",
+      "upper": 4
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M0_standard",
+        "P0",
+        1,
+        0
+      ],
+      "name": "ship:R_W1_M0_standard:P0:1:0",
+      "unit": "item",
+      "upper": 4
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M0_standard",
+        "P0",
+        1,
+        1
+      ],
+      "name": "ship:R_W1_M0_standard:P0:1:1",
+      "unit": "item",
+      "upper": 4
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M0_standard",
+        "P0",
+        1,
+        2
+      ],
+      "name": "ship:R_W1_M0_standard:P0:1:2",
+      "unit": "item",
+      "upper": 4
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M0_standard",
+        "P0",
+        2,
+        0
+      ],
+      "name": "ship:R_W1_M0_standard:P0:2:0",
+      "unit": "item",
+      "upper": 4
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M0_standard",
+        "P0",
+        2,
+        1
+      ],
+      "name": "ship:R_W1_M0_standard:P0:2:1",
+      "unit": "item",
+      "upper": 4
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M0_standard",
+        "P0",
+        2,
+        2
+      ],
+      "name": "ship:R_W1_M0_standard:P0:2:2",
+      "unit": "item",
+      "upper": 4
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M0_standard",
+        "P1",
+        0,
+        0
+      ],
+      "name": "ship:R_W1_M0_standard:P1:0:0",
+      "unit": "item",
+      "upper": 8
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M0_standard",
+        "P1",
+        0,
+        1
+      ],
+      "name": "ship:R_W1_M0_standard:P1:0:1",
+      "unit": "item",
+      "upper": 8
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M0_standard",
+        "P1",
+        0,
+        2
+      ],
+      "name": "ship:R_W1_M0_standard:P1:0:2",
+      "unit": "item",
+      "upper": 8
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M0_standard",
+        "P1",
+        1,
+        0
+      ],
+      "name": "ship:R_W1_M0_standard:P1:1:0",
+      "unit": "item",
+      "upper": 8
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M0_standard",
+        "P1",
+        1,
+        1
+      ],
+      "name": "ship:R_W1_M0_standard:P1:1:1",
+      "unit": "item",
+      "upper": 8
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M0_standard",
+        "P1",
+        1,
+        2
+      ],
+      "name": "ship:R_W1_M0_standard:P1:1:2",
+      "unit": "item",
+      "upper": 8
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M0_standard",
+        "P1",
+        2,
+        0
+      ],
+      "name": "ship:R_W1_M0_standard:P1:2:0",
+      "unit": "item",
+      "upper": 8
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M0_standard",
+        "P1",
+        2,
+        1
+      ],
+      "name": "ship:R_W1_M0_standard:P1:2:1",
+      "unit": "item",
+      "upper": 8
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M0_standard",
+        "P1",
+        2,
+        2
+      ],
+      "name": "ship:R_W1_M0_standard:P1:2:2",
+      "unit": "item",
+      "upper": 8
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M1_standard",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W1_M1_standard:P0:0:0",
+      "unit": "item",
+      "upper": 1
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M1_standard",
+        "P0",
+        0,
+        1
+      ],
+      "name": "ship:R_W1_M1_standard:P0:0:1",
+      "unit": "item",
+      "upper": 1
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M1_standard",
+        "P0",
+        0,
+        2
+      ],
+      "name": "ship:R_W1_M1_standard:P0:0:2",
+      "unit": "item",
+      "upper": 1
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M1_standard",
+        "P0",
+        1,
+        0
+      ],
+      "name": "ship:R_W1_M1_standard:P0:1:0",
+      "unit": "item",
+      "upper": 1
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M1_standard",
+        "P0",
+        1,
+        1
+      ],
+      "name": "ship:R_W1_M1_standard:P0:1:1",
+      "unit": "item",
+      "upper": 1
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M1_standard",
+        "P0",
+        1,
+        2
+      ],
+      "name": "ship:R_W1_M1_standard:P0:1:2",
+      "unit": "item",
+      "upper": 1
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M1_standard",
+        "P0",
+        2,
+        0
+      ],
+      "name": "ship:R_W1_M1_standard:P0:2:0",
+      "unit": "item",
+      "upper": 1
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M1_standard",
+        "P0",
+        2,
+        1
+      ],
+      "name": "ship:R_W1_M1_standard:P0:2:1",
+      "unit": "item",
+      "upper": 1
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M1_standard",
+        "P0",
+        2,
+        2
+      ],
+      "name": "ship:R_W1_M1_standard:P0:2:2",
+      "unit": "item",
+      "upper": 1
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M1_standard",
+        "P1",
+        0,
+        0
+      ],
+      "name": "ship:R_W1_M1_standard:P1:0:0",
+      "unit": "item",
+      "upper": 3
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M1_standard",
+        "P1",
+        0,
+        1
+      ],
+      "name": "ship:R_W1_M1_standard:P1:0:1",
+      "unit": "item",
+      "upper": 3
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M1_standard",
+        "P1",
+        0,
+        2
+      ],
+      "name": "ship:R_W1_M1_standard:P1:0:2",
+      "unit": "item",
+      "upper": 3
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M1_standard",
+        "P1",
+        1,
+        0
+      ],
+      "name": "ship:R_W1_M1_standard:P1:1:0",
+      "unit": "item",
+      "upper": 3
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M1_standard",
+        "P1",
+        1,
+        1
+      ],
+      "name": "ship:R_W1_M1_standard:P1:1:1",
+      "unit": "item",
+      "upper": 3
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M1_standard",
+        "P1",
+        1,
+        2
+      ],
+      "name": "ship:R_W1_M1_standard:P1:1:2",
+      "unit": "item",
+      "upper": 3
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M1_standard",
+        "P1",
+        2,
+        0
+      ],
+      "name": "ship:R_W1_M1_standard:P1:2:0",
+      "unit": "item",
+      "upper": 3
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M1_standard",
+        "P1",
+        2,
+        1
+      ],
+      "name": "ship:R_W1_M1_standard:P1:2:1",
+      "unit": "item",
+      "upper": 3
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M1_standard",
+        "P1",
+        2,
+        2
+      ],
+      "name": "ship:R_W1_M1_standard:P1:2:2",
+      "unit": "item",
+      "upper": 3
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_M0_standard",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W2_M0_standard:P0:0:0",
+      "unit": "item",
+      "upper": 4
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_M0_standard",
+        "P0",
+        0,
+        1
+      ],
+      "name": "ship:R_W2_M0_standard:P0:0:1",
+      "unit": "item",
+      "upper": 4
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_M0_standard",
+        "P0",
+        1,
+        0
+      ],
+      "name": "ship:R_W2_M0_standard:P0:1:0",
+      "unit": "item",
+      "upper": 4
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_M0_standard",
+        "P0",
+        1,
+        1
+      ],
+      "name": "ship:R_W2_M0_standard:P0:1:1",
+      "unit": "item",
+      "upper": 4
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_M0_standard",
+        "P1",
+        0,
+        0
+      ],
+      "name": "ship:R_W2_M0_standard:P1:0:0",
+      "unit": "item",
+      "upper": 8
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_M0_standard",
+        "P1",
+        0,
+        1
+      ],
+      "name": "ship:R_W2_M0_standard:P1:0:1",
+      "unit": "item",
+      "upper": 8
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_M0_standard",
+        "P1",
+        1,
+        0
+      ],
+      "name": "ship:R_W2_M0_standard:P1:1:0",
+      "unit": "item",
+      "upper": 8
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_M0_standard",
+        "P1",
+        1,
+        1
+      ],
+      "name": "ship:R_W2_M0_standard:P1:1:1",
+      "unit": "item",
+      "upper": 8
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_M1_standard",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W2_M1_standard:P0:0:0",
+      "unit": "item",
+      "upper": 4
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_M1_standard",
+        "P0",
+        0,
+        1
+      ],
+      "name": "ship:R_W2_M1_standard:P0:0:1",
+      "unit": "item",
+      "upper": 4
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_M1_standard",
+        "P0",
+        1,
+        0
+      ],
+      "name": "ship:R_W2_M1_standard:P0:1:0",
+      "unit": "item",
+      "upper": 4
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_M1_standard",
+        "P0",
+        1,
+        1
+      ],
+      "name": "ship:R_W2_M1_standard:P0:1:1",
+      "unit": "item",
+      "upper": 4
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_M1_standard",
+        "P1",
+        0,
+        0
+      ],
+      "name": "ship:R_W2_M1_standard:P1:0:0",
+      "unit": "item",
+      "upper": 9
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_M1_standard",
+        "P1",
+        0,
+        1
+      ],
+      "name": "ship:R_W2_M1_standard:P1:0:1",
+      "unit": "item",
+      "upper": 9
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_M1_standard",
+        "P1",
+        1,
+        0
+      ],
+      "name": "ship:R_W2_M1_standard:P1:1:0",
+      "unit": "item",
+      "upper": 9
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_M1_standard",
+        "P1",
+        1,
+        1
+      ],
+      "name": "ship:R_W2_M1_standard:P1:1:1",
+      "unit": "item",
+      "upper": 9
+    }
+  ]
+}

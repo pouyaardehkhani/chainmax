@@ -1,2 +1,5 @@
 * text=auto eol=lf
 *.tar.gz binary
+data/** -text
+audit/** -text
+releases/** -text

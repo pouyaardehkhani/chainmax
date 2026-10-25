@@ -1,0 +1,619 @@
+{
+  "constraints": [
+    {
+      "id": "c000000",
+      "rhs": 2,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_rail:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_road:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000001",
+      "rhs": 3,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_road:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000002",
+      "rhs": 7,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_rail:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_road:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000003",
+      "rhs": 0,
+      "sense": "eq",
+      "source": "balance/initial_stock/routes/recipes",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P0:0:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W0_M0_rail:P0:0:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W0_M0_road:P0:0:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W1_M0_road:P0:0:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W2_M0_rail:P0:0:0"
+        },
+        {
+          "coefficient": -1,
+          "var": "ship:R_W2_M0_road:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000004",
+      "rhs": 5,
+      "sense": "eq",
+      "source": "demands",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "serve:M0:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000005",
+      "rhs": 2,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:W0:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000006",
+      "rhs": 0,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_rail:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_road:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000007",
+      "rhs": 5,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:W1:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000008",
+      "rhs": 2,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_road:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000009",
+      "rhs": 5,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:W2:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000010",
+      "rhs": 9,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_rail:P0:0:0"
+        },
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_road:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000011",
+      "rhs": 1,
+      "sense": "le",
+      "source": "locations/storage_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "inventory:M0:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000012",
+      "rhs": 3,
+      "sense": "le",
+      "source": "locations/throughput_capacity",
+      "terms": [],
+      "type": "linear"
+    },
+    {
+      "id": "c000013",
+      "rhs": 6,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_rail:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000014",
+      "rhs": 0,
+      "sense": "le",
+      "source": "routes/truck_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_rail:P0:0:0"
+        },
+        {
+          "coefficient": -3,
+          "var": "trucks:R_W0_M0_rail:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000015",
+      "rhs": 6,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_road:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000016",
+      "rhs": 0,
+      "sense": "le",
+      "source": "routes/truck_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_W0_M0_road:P0:0:0"
+        },
+        {
+          "coefficient": -4,
+          "var": "trucks:R_W0_M0_road:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000017",
+      "rhs": 5,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_road:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000018",
+      "rhs": 0,
+      "sense": "le",
+      "source": "routes/truck_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_W1_M0_road:P0:0:0"
+        },
+        {
+          "coefficient": -4,
+          "var": "trucks:R_W1_M0_road:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000019",
+      "rhs": 8,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_rail:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000020",
+      "rhs": 0,
+      "sense": "le",
+      "source": "routes/truck_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_rail:P0:0:0"
+        },
+        {
+          "coefficient": -2,
+          "var": "trucks:R_W2_M0_rail:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000021",
+      "rhs": 9,
+      "sense": "le",
+      "source": "routes/capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_road:P0:0:0"
+        }
+      ],
+      "type": "linear"
+    },
+    {
+      "id": "c000022",
+      "rhs": 0,
+      "sense": "le",
+      "source": "routes/truck_capacity",
+      "terms": [
+        {
+          "coefficient": 1,
+          "var": "ship:R_W2_M0_road:P0:0:0"
+        },
+        {
+          "coefficient": -2,
+          "var": "trucks:R_W2_M0_road:0"
+        }
+      ],
+      "type": "linear"
+    }
+  ],
+  "objective": {
+    "constant": 0,
+    "sense": "min",
+    "terms": [
+      {
+        "coefficient": 5,
+        "var": "ship:R_W0_M0_rail:P0:0:0"
+      },
+      {
+        "coefficient": 4,
+        "var": "ship:R_W0_M0_road:P0:0:0"
+      },
+      {
+        "coefficient": 8,
+        "var": "ship:R_W1_M0_road:P0:0:0"
+      },
+      {
+        "coefficient": 5,
+        "var": "ship:R_W2_M0_rail:P0:0:0"
+      },
+      {
+        "coefficient": 6,
+        "var": "ship:R_W2_M0_road:P0:0:0"
+      },
+      {
+        "coefficient": 4,
+        "var": "trucks:R_W0_M0_rail:0"
+      },
+      {
+        "coefficient": 5,
+        "var": "trucks:R_W0_M0_road:0"
+      },
+      {
+        "coefficient": 3,
+        "var": "trucks:R_W1_M0_road:0"
+      },
+      {
+        "coefficient": 4,
+        "var": "trucks:R_W2_M0_rail:0"
+      },
+      {
+        "coefficient": 2,
+        "var": "trucks:R_W2_M0_road:0"
+      }
+    ]
+  },
+  "schema_version": "1.0.0",
+  "variables": [
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "M0",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:M0:P0:0:0",
+      "unit": "item",
+      "upper": 12
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W0",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:W0:P0:0:0",
+      "unit": "item",
+      "upper": 12
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W1",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:W1:P0:0:0",
+      "unit": "item",
+      "upper": 12
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "inventory",
+        "W2",
+        "P0",
+        0,
+        0
+      ],
+      "name": "inventory:W2:P0:0:0",
+      "unit": "item",
+      "upper": 12
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "serve",
+        "M0",
+        "P0",
+        0,
+        0
+      ],
+      "name": "serve:M0:P0:0:0",
+      "unit": "item",
+      "upper": 5
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_M0_rail",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W0_M0_rail:P0:0:0",
+      "unit": "item",
+      "upper": 6
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W0_M0_road",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W0_M0_road:P0:0:0",
+      "unit": "item",
+      "upper": 6
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W1_M0_road",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W1_M0_road:P0:0:0",
+      "unit": "item",
+      "upper": 5
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_M0_rail",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W2_M0_rail:P0:0:0",
+      "unit": "item",
+      "upper": 8
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "ship",
+        "R_W2_M0_road",
+        "P0",
+        0,
+        0
+      ],
+      "name": "ship:R_W2_M0_road:P0:0:0",
+      "unit": "item",
+      "upper": 9
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "trucks",
+        "R_W0_M0_rail",
+        0
+      ],
+      "name": "trucks:R_W0_M0_rail:0",
+      "unit": "truck",
+      "upper": 2
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "trucks",
+        "R_W0_M0_road",
+        0
+      ],
+      "name": "trucks:R_W0_M0_road:0",
+      "unit": "truck",
+      "upper": 2
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "trucks",
+        "R_W1_M0_road",
+        0
+      ],
+      "name": "trucks:R_W1_M0_road:0",
+      "unit": "truck",
+      "upper": 2
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "trucks",
+        "R_W2_M0_rail",
+        0
+      ],
+      "name": "trucks:R_W2_M0_rail:0",
+      "unit": "truck",
+      "upper": 4
+    },
+    {
+      "kind": "integer",
+      "lower": 0,
+      "meaning": [
+        "trucks",
+        "R_W2_M0_road",
+        0
+      ],
+      "name": "trucks:R_W2_M0_road:0",
+      "unit": "truck",
+      "upper": 5
+    }
+  ]
+}

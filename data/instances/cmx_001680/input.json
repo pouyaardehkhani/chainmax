@@ -1,0 +1,322 @@
+{
+  "demands": [
+    {
+      "node": "M0",
+      "period": 0,
+      "product": "P0",
+      "quantity": 6
+    },
+    {
+      "node": "M1",
+      "period": 0,
+      "product": "P0",
+      "quantity": 6
+    }
+  ],
+  "family": "F10",
+  "features": [
+    "transport",
+    "bounded_inventory",
+    "exact_demand",
+    "integer_bill_of_materials"
+  ],
+  "initial_stock": [
+    {
+      "age": 0,
+      "node": "W0",
+      "product": "RAW",
+      "quantity": 2
+    },
+    {
+      "age": 0,
+      "node": "W1",
+      "product": "RAW",
+      "quantity": 26
+    },
+    {
+      "age": 0,
+      "node": "W2",
+      "product": "RAW",
+      "quantity": 2
+    },
+    {
+      "age": 0,
+      "node": "W3",
+      "product": "RAW",
+      "quantity": 1
+    }
+  ],
+  "locations": [
+    {
+      "id": "W0",
+      "opening_cost": 0,
+      "role": "plant",
+      "storage_capacity": 4,
+      "throughput_capacity": 2
+    },
+    {
+      "id": "W1",
+      "opening_cost": 0,
+      "role": "plant",
+      "storage_capacity": 4,
+      "throughput_capacity": 12
+    },
+    {
+      "id": "W2",
+      "opening_cost": 0,
+      "role": "plant",
+      "storage_capacity": 3,
+      "throughput_capacity": 1
+    },
+    {
+      "id": "W3",
+      "opening_cost": 0,
+      "role": "plant",
+      "storage_capacity": 1,
+      "throughput_capacity": 2
+    },
+    {
+      "id": "M0",
+      "opening_cost": 0,
+      "role": "market",
+      "storage_capacity": 0,
+      "throughput_capacity": 0
+    },
+    {
+      "id": "M1",
+      "opening_cost": 0,
+      "role": "market",
+      "storage_capacity": 1,
+      "throughput_capacity": 0
+    }
+  ],
+  "narrative_template": 1,
+  "objective_constant": 0,
+  "periods": 1,
+  "products": [
+    {
+      "disposal_cost": 0,
+      "holding_cost": 0,
+      "id": "P0",
+      "shelf_life": null,
+      "volume": 1
+    },
+    {
+      "disposal_cost": 0,
+      "holding_cost": 0,
+      "id": "RAW",
+      "shelf_life": null,
+      "volume": 1
+    }
+  ],
+  "recipes": [
+    {
+      "capacity": 2,
+      "cost": 5,
+      "id": "B_W0",
+      "inputs": [
+        {
+          "product": "RAW",
+          "quantity": 2
+        }
+      ],
+      "node": "W0",
+      "output": "P0",
+      "output_quantity": 1
+    },
+    {
+      "capacity": 12,
+      "cost": 6,
+      "id": "B_W1",
+      "inputs": [
+        {
+          "product": "RAW",
+          "quantity": 2
+        }
+      ],
+      "node": "W1",
+      "output": "P0",
+      "output_quantity": 1
+    },
+    {
+      "capacity": 1,
+      "cost": 8,
+      "id": "B_W2",
+      "inputs": [
+        {
+          "product": "RAW",
+          "quantity": 3
+        }
+      ],
+      "node": "W2",
+      "output": "P0",
+      "output_quantity": 1
+    },
+    {
+      "capacity": 2,
+      "cost": 6,
+      "id": "B_W3",
+      "inputs": [
+        {
+          "product": "RAW",
+          "quantity": 2
+        }
+      ],
+      "node": "W3",
+      "output": "P0",
+      "output_quantity": 1
+    }
+  ],
+  "routes": [
+    {
+      "capacity": 3,
+      "destination": "M0",
+      "fixed_cost": 0,
+      "id": "R_W0_M0_standard",
+      "lead_time": 0,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0"
+      ],
+      "source": "W0",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 0
+    },
+    {
+      "capacity": 4,
+      "destination": "M1",
+      "fixed_cost": 0,
+      "id": "R_W0_M1_standard",
+      "lead_time": 0,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0"
+      ],
+      "source": "W0",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 1
+    },
+    {
+      "capacity": 8,
+      "destination": "M0",
+      "fixed_cost": 0,
+      "id": "R_W1_M0_standard",
+      "lead_time": 0,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0"
+      ],
+      "source": "W1",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 8
+    },
+    {
+      "capacity": 7,
+      "destination": "M1",
+      "fixed_cost": 0,
+      "id": "R_W1_M1_standard",
+      "lead_time": 0,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0"
+      ],
+      "source": "W1",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 8
+    },
+    {
+      "capacity": 5,
+      "destination": "M0",
+      "fixed_cost": 0,
+      "id": "R_W2_M0_standard",
+      "lead_time": 0,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0"
+      ],
+      "source": "W2",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 0
+    },
+    {
+      "capacity": 8,
+      "destination": "M1",
+      "fixed_cost": 0,
+      "id": "R_W2_M1_standard",
+      "lead_time": 0,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0"
+      ],
+      "source": "W2",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 9
+    },
+    {
+      "capacity": 9,
+      "destination": "M0",
+      "fixed_cost": 0,
+      "id": "R_W3_M0_standard",
+      "lead_time": 0,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0"
+      ],
+      "source": "W3",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 10
+    },
+    {
+      "capacity": 9,
+      "destination": "M1",
+      "fixed_cost": 0,
+      "id": "R_W3_M1_standard",
+      "lead_time": 0,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0"
+      ],
+      "source": "W3",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 11
+    }
+  ],
+  "schema_version": "1.0.0",
+  "sourcing": {
+    "dependencies": [],
+    "max_active_suppliers": null
+  },
+  "structural_level": "L4",
+  "units": {
+    "capacity": "volume_unit",
+    "currency": "cent",
+    "production": "batch",
+    "quantity": "item",
+    "time": "period",
+    "truck": "truck"
+  }
+}

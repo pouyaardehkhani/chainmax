@@ -1,0 +1,29 @@
+{
+  "assurance_level": "CROSS_CHECKED",
+  "exact_cost_agreement": true,
+  "maxsat": {
+    "cost": 43,
+    "seconds": 0.0006893000008858507,
+    "status": "OPTIMAL",
+    "violation_cost": 43
+  },
+  "maxsat_checker": {
+    "cost": 43,
+    "errors": [],
+    "valid": true
+  },
+  "native": {
+    "absolute_gap_limit": 0,
+    "best_bound": 43,
+    "cost": 43,
+    "relative_gap_limit": 0,
+    "seconds": 0.0013630999983433867,
+    "status": "OPTIMAL"
+  },
+  "native_checker": {
+    "cost": 43,
+    "errors": [],
+    "valid": true
+  },
+  "status": "VERIFIED"
+}

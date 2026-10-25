@@ -1,0 +1,132 @@
+{
+  "accepted_count": 100,
+  "config": {
+    "cost_unit": "cent",
+    "dataset_name": "ChainMax-1K",
+    "dataset_slug": "chainmax-1k",
+    "dataset_version": "1.0.0",
+    "demand_policy": "exact",
+    "encoding": {
+      "format": "legacy_dimacs_wcnf",
+      "integer_encoding": "binary",
+      "pb_encoder": "bdd"
+    },
+    "family_profile_overrides": {
+      "F06": {
+        "L4": {
+          "demand_max": 4,
+          "products": 1
+        }
+      },
+      "F09": {
+        "L3": {
+          "demand_max": 4,
+          "products": 1
+        },
+        "L4": {
+          "demand_max": 3,
+          "periods": 3,
+          "products": 2,
+          "sources": 3
+        }
+      }
+    },
+    "github_repository_name": "chainmax",
+    "instances_per_family": 100,
+    "instances_per_family_level": 25,
+    "profiles": {
+      "L1": {
+        "capacity_slack": 4,
+        "demand_max": 4,
+        "demand_min": 2,
+        "extra_route_probability": 0.65,
+        "markets": 1,
+        "periods": 2,
+        "products": 1,
+        "sources": 2,
+        "stock_slack": 3
+      },
+      "L2": {
+        "capacity_slack": 4,
+        "demand_max": 5,
+        "demand_min": 2,
+        "extra_route_probability": 0.75,
+        "markets": 1,
+        "periods": 3,
+        "products": 2,
+        "sources": 3,
+        "stock_slack": 3
+      },
+      "L3": {
+        "capacity_slack": 3,
+        "demand_max": 5,
+        "demand_min": 2,
+        "extra_route_probability": 0.8,
+        "markets": 2,
+        "periods": 3,
+        "products": 2,
+        "sources": 3,
+        "stock_slack": 2
+      },
+      "L4": {
+        "capacity_slack": 2,
+        "demand_max": 6,
+        "demand_min": 2,
+        "extra_route_probability": 0.85,
+        "markets": 2,
+        "periods": 4,
+        "products": 3,
+        "sources": 4,
+        "stock_slack": 2
+      }
+    },
+    "project_folder": "chainmax",
+    "project_name": "ChainMax",
+    "quantity_domain": "bounded_integer",
+    "reference": {
+      "maxsat_backend": "pysat_rc2",
+      "native_backend": "ortools_cp_sat",
+      "require_both_optimal": true,
+      "require_exact_cost_agreement": true
+    },
+    "resources": {
+      "attempts_per_slot": 8,
+      "candidate_memory_mb": 1536,
+      "candidate_seconds": 45,
+      "native_seconds": 15,
+      "worker_processes": 2
+    },
+    "review": {
+      "minimum_second_review_records": 100,
+      "require_primary_review_for_every_record": true
+    },
+    "schema_version": "1.0.0",
+    "seed": 20261025,
+    "shortages_allowed": false,
+    "structural_levels": [
+      "L1",
+      "L2",
+      "L3",
+      "L4"
+    ],
+    "target_base_instances": 1000
+  },
+  "config_hash": "80792a9f625f6407ad63d5251752a8579b3f792268a5a38c5cec223a41c361d8",
+  "failed_slots": [],
+  "source": {
+    "config_hash": "80792a9f625f6407ad63d5251752a8579b3f792268a5a38c5cec223a41c361d8",
+    "source_revision": "HEAD",
+    "source_tree_hash": "b8b512ee041468acb54b36d5925d6e6673b2d10ec027ff55aeccc95a4dc93d4e",
+    "tool_versions": {
+      "PyYAML": "6.0.3",
+      "chainmax-dataset": "1.0.0",
+      "jsonschema": "4.26.0",
+      "ortools": "9.15.6755",
+      "pindakaas": "0.6.1",
+      "psutil": "7.2.2",
+      "python": "3.12.0",
+      "python-sat": "1.9.dev17"
+    }
+  },
+  "status": "LOCAL_CONSTRUCTION_HUMAN_REVIEW_PENDING"
+}

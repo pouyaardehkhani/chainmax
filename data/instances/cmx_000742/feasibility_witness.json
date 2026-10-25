@@ -1,0 +1,18 @@
+{
+  "inventory:M0:P0:0:0": 0,
+  "inventory:M0:P0:1:0": 0,
+  "inventory:M0:P0:2:0": 0,
+  "inventory:W0:P0:0:0": 0,
+  "inventory:W0:P0:1:0": 0,
+  "inventory:W0:P0:2:0": 0,
+  "inventory:W1:P0:0:0": 6,
+  "inventory:W1:P0:1:0": 2,
+  "inventory:W1:P0:2:0": 2,
+  "inventory:W2:P0:0:0": 0,
+  "inventory:W2:P0:1:0": 0,
+  "inventory:W2:P0:2:0": 0,
+  "serve:M0:P0:2:0": 4,
+  "ship:R_W1_M0_standard:P0:0:0": 0,
+  "ship:R_W1_M0_standard:P0:1:0": 4,
+  "ship:R_W2_M0_standard:P0:0:0": 0
+}

@@ -1,0 +1,220 @@
+# Bounded integer reference model
+
+Minimize 0 + 1 dispose:M0:P0:0:0 + 1 dispose:M0:P0:0:1 + 1 dispose:M0:P0:0:2 + 1 dispose:M0:P0:0:3 + 1 dispose:M0:P0:1:0 + 1 dispose:M0:P0:1:1 + 1 dispose:M0:P0:1:2 + 1 dispose:M0:P0:1:3 + 1 dispose:M0:P0:2:0 + 1 dispose:M0:P0:2:1 + 1 dispose:M0:P0:2:2 + 1 dispose:M0:P0:2:3 + 1 dispose:W0:P0:0:0 + 1 dispose:W0:P0:0:1 + 1 dispose:W0:P0:0:2 + 1 dispose:W0:P0:0:3 + 1 dispose:W0:P0:1:0 + 1 dispose:W0:P0:1:1 + 1 dispose:W0:P0:1:2 + 1 dispose:W0:P0:1:3 + 1 dispose:W0:P0:2:0 + 1 dispose:W0:P0:2:1 + 1 dispose:W0:P0:2:2 + 1 dispose:W0:P0:2:3 + 1 dispose:W1:P0:0:0 + 1 dispose:W1:P0:0:1 + 1 dispose:W1:P0:0:2 + 1 dispose:W1:P0:0:3 + 1 dispose:W1:P0:1:0 + 1 dispose:W1:P0:1:1 + 1 dispose:W1:P0:1:2 + 1 dispose:W1:P0:1:3 + 1 dispose:W1:P0:2:0 + 1 dispose:W1:P0:2:1 + 1 dispose:W1:P0:2:2 + 1 dispose:W1:P0:2:3 + 1 dispose:W2:P0:0:0 + 1 dispose:W2:P0:0:1 + 1 dispose:W2:P0:0:2 + 1 dispose:W2:P0:0:3 + 1 dispose:W2:P0:1:0 + 1 dispose:W2:P0:1:1 + 1 dispose:W2:P0:1:2 + 1 dispose:W2:P0:1:3 + 1 dispose:W2:P0:2:0 + 1 dispose:W2:P0:2:1 + 1 dispose:W2:P0:2:2 + 1 dispose:W2:P0:2:3 + 1 inventory:M0:P0:0:0 + 1 inventory:M0:P0:0:1 + 1 inventory:M0:P0:0:2 + 1 inventory:M0:P0:0:3 + 1 inventory:M0:P0:1:0 + 1 inventory:M0:P0:1:1 + 1 inventory:M0:P0:1:2 + 1 inventory:M0:P0:1:3 + 1 inventory:M0:P0:2:0 + 1 inventory:M0:P0:2:1 + 1 inventory:M0:P0:2:2 + 1 inventory:M0:P0:2:3 + 1 inventory:W0:P0:0:0 + 1 inventory:W0:P0:0:1 + 1 inventory:W0:P0:0:2 + 1 inventory:W0:P0:0:3 + 1 inventory:W0:P0:1:0 + 1 inventory:W0:P0:1:1 + 1 inventory:W0:P0:1:2 + 1 inventory:W0:P0:1:3 + 1 inventory:W0:P0:2:0 + 1 inventory:W0:P0:2:1 + 1 inventory:W0:P0:2:2 + 1 inventory:W0:P0:2:3 + 1 inventory:W1:P0:0:0 + 1 inventory:W1:P0:0:1 + 1 inventory:W1:P0:0:2 + 1 inventory:W1:P0:0:3 + 1 inventory:W1:P0:1:0 + 1 inventory:W1:P0:1:1 + 1 inventory:W1:P0:1:2 + 1 inventory:W1:P0:1:3 + 1 inventory:W1:P0:2:0 + 1 inventory:W1:P0:2:1 + 1 inventory:W1:P0:2:2 + 1 inventory:W1:P0:2:3 + 1 inventory:W2:P0:0:0 + 1 inventory:W2:P0:0:1 + 1 inventory:W2:P0:0:2 + 1 inventory:W2:P0:0:3 + 1 inventory:W2:P0:1:0 + 1 inventory:W2:P0:1:1 + 1 inventory:W2:P0:1:2 + 1 inventory:W2:P0:1:3 + 1 inventory:W2:P0:2:0 + 1 inventory:W2:P0:2:1 + 1 inventory:W2:P0:2:2 + 1 inventory:W2:P0:2:3 + 10 ship:R_W0_M0_standard:P0:0:0 + 10 ship:R_W0_M0_standard:P0:0:1 + 10 ship:R_W0_M0_standard:P0:0:2 + 10 ship:R_W0_M0_standard:P0:1:0 + 10 ship:R_W0_M0_standard:P0:1:1 + 10 ship:R_W0_M0_standard:P0:1:2 + 11 ship:R_W1_M0_standard:P0:0:0 + 11 ship:R_W1_M0_standard:P0:0:1 + 11 ship:R_W1_M0_standard:P0:0:2 + 11 ship:R_W1_M0_standard:P0:0:3 + 11 ship:R_W1_M0_standard:P0:1:0 + 11 ship:R_W1_M0_standard:P0:1:1 + 11 ship:R_W1_M0_standard:P0:1:2 + 11 ship:R_W1_M0_standard:P0:1:3 + 11 ship:R_W1_M0_standard:P0:2:0 + 11 ship:R_W1_M0_standard:P0:2:1 + 11 ship:R_W1_M0_standard:P0:2:2 + 11 ship:R_W1_M0_standard:P0:2:3 + 1 ship:R_W2_M0_standard:P0:0:0 + 1 ship:R_W2_M0_standard:P0:0:1 + 1 ship:R_W2_M0_standard:P0:0:2 + 1 ship:R_W2_M0_standard:P0:1:0 + 1 ship:R_W2_M0_standard:P0:1:1 + 1 ship:R_W2_M0_standard:P0:1:2
+
+## Variables
+
+- `dispose:M0:P0:0:0`: integer in [0, 5], item.
+- `dispose:M0:P0:0:1`: integer in [0, 5], item.
+- `dispose:M0:P0:0:2`: integer in [0, 5], item.
+- `dispose:M0:P0:0:3`: integer in [0, 5], item.
+- `dispose:M0:P0:1:0`: integer in [0, 5], item.
+- `dispose:M0:P0:1:1`: integer in [0, 5], item.
+- `dispose:M0:P0:1:2`: integer in [0, 5], item.
+- `dispose:M0:P0:1:3`: integer in [0, 5], item.
+- `dispose:M0:P0:2:0`: integer in [0, 5], item.
+- `dispose:M0:P0:2:1`: integer in [0, 5], item.
+- `dispose:M0:P0:2:2`: integer in [0, 5], item.
+- `dispose:M0:P0:2:3`: integer in [0, 5], item.
+- `dispose:W0:P0:0:0`: integer in [0, 5], item.
+- `dispose:W0:P0:0:1`: integer in [0, 5], item.
+- `dispose:W0:P0:0:2`: integer in [0, 5], item.
+- `dispose:W0:P0:0:3`: integer in [0, 5], item.
+- `dispose:W0:P0:1:0`: integer in [0, 5], item.
+- `dispose:W0:P0:1:1`: integer in [0, 5], item.
+- `dispose:W0:P0:1:2`: integer in [0, 5], item.
+- `dispose:W0:P0:1:3`: integer in [0, 5], item.
+- `dispose:W0:P0:2:0`: integer in [0, 5], item.
+- `dispose:W0:P0:2:1`: integer in [0, 5], item.
+- `dispose:W0:P0:2:2`: integer in [0, 5], item.
+- `dispose:W0:P0:2:3`: integer in [0, 5], item.
+- `dispose:W1:P0:0:0`: integer in [0, 5], item.
+- `dispose:W1:P0:0:1`: integer in [0, 5], item.
+- `dispose:W1:P0:0:2`: integer in [0, 5], item.
+- `dispose:W1:P0:0:3`: integer in [0, 5], item.
+- `dispose:W1:P0:1:0`: integer in [0, 5], item.
+- `dispose:W1:P0:1:1`: integer in [0, 5], item.
+- `dispose:W1:P0:1:2`: integer in [0, 5], item.
+- `dispose:W1:P0:1:3`: integer in [0, 5], item.
+- `dispose:W1:P0:2:0`: integer in [0, 5], item.
+- `dispose:W1:P0:2:1`: integer in [0, 5], item.
+- `dispose:W1:P0:2:2`: integer in [0, 5], item.
+- `dispose:W1:P0:2:3`: integer in [0, 5], item.
+- `dispose:W2:P0:0:0`: integer in [0, 5], item.
+- `dispose:W2:P0:0:1`: integer in [0, 5], item.
+- `dispose:W2:P0:0:2`: integer in [0, 5], item.
+- `dispose:W2:P0:0:3`: integer in [0, 5], item.
+- `dispose:W2:P0:1:0`: integer in [0, 5], item.
+- `dispose:W2:P0:1:1`: integer in [0, 5], item.
+- `dispose:W2:P0:1:2`: integer in [0, 5], item.
+- `dispose:W2:P0:1:3`: integer in [0, 5], item.
+- `dispose:W2:P0:2:0`: integer in [0, 5], item.
+- `dispose:W2:P0:2:1`: integer in [0, 5], item.
+- `dispose:W2:P0:2:2`: integer in [0, 5], item.
+- `dispose:W2:P0:2:3`: integer in [0, 5], item.
+- `inventory:M0:P0:0:0`: integer in [0, 5], item.
+- `inventory:M0:P0:0:1`: integer in [0, 5], item.
+- `inventory:M0:P0:0:2`: integer in [0, 5], item.
+- `inventory:M0:P0:0:3`: integer in [0, 0], item.
+- `inventory:M0:P0:1:0`: integer in [0, 5], item.
+- `inventory:M0:P0:1:1`: integer in [0, 5], item.
+- `inventory:M0:P0:1:2`: integer in [0, 5], item.
+- `inventory:M0:P0:1:3`: integer in [0, 0], item.
+- `inventory:M0:P0:2:0`: integer in [0, 5], item.
+- `inventory:M0:P0:2:1`: integer in [0, 5], item.
+- `inventory:M0:P0:2:2`: integer in [0, 5], item.
+- `inventory:M0:P0:2:3`: integer in [0, 0], item.
+- `inventory:W0:P0:0:0`: integer in [0, 5], item.
+- `inventory:W0:P0:0:1`: integer in [0, 5], item.
+- `inventory:W0:P0:0:2`: integer in [0, 5], item.
+- `inventory:W0:P0:0:3`: integer in [0, 0], item.
+- `inventory:W0:P0:1:0`: integer in [0, 5], item.
+- `inventory:W0:P0:1:1`: integer in [0, 5], item.
+- `inventory:W0:P0:1:2`: integer in [0, 5], item.
+- `inventory:W0:P0:1:3`: integer in [0, 0], item.
+- `inventory:W0:P0:2:0`: integer in [0, 5], item.
+- `inventory:W0:P0:2:1`: integer in [0, 5], item.
+- `inventory:W0:P0:2:2`: integer in [0, 5], item.
+- `inventory:W0:P0:2:3`: integer in [0, 0], item.
+- `inventory:W1:P0:0:0`: integer in [0, 5], item.
+- `inventory:W1:P0:0:1`: integer in [0, 5], item.
+- `inventory:W1:P0:0:2`: integer in [0, 5], item.
+- `inventory:W1:P0:0:3`: integer in [0, 0], item.
+- `inventory:W1:P0:1:0`: integer in [0, 5], item.
+- `inventory:W1:P0:1:1`: integer in [0, 5], item.
+- `inventory:W1:P0:1:2`: integer in [0, 5], item.
+- `inventory:W1:P0:1:3`: integer in [0, 0], item.
+- `inventory:W1:P0:2:0`: integer in [0, 5], item.
+- `inventory:W1:P0:2:1`: integer in [0, 5], item.
+- `inventory:W1:P0:2:2`: integer in [0, 5], item.
+- `inventory:W1:P0:2:3`: integer in [0, 0], item.
+- `inventory:W2:P0:0:0`: integer in [0, 5], item.
+- `inventory:W2:P0:0:1`: integer in [0, 5], item.
+- `inventory:W2:P0:0:2`: integer in [0, 5], item.
+- `inventory:W2:P0:0:3`: integer in [0, 0], item.
+- `inventory:W2:P0:1:0`: integer in [0, 5], item.
+- `inventory:W2:P0:1:1`: integer in [0, 5], item.
+- `inventory:W2:P0:1:2`: integer in [0, 5], item.
+- `inventory:W2:P0:1:3`: integer in [0, 0], item.
+- `inventory:W2:P0:2:0`: integer in [0, 5], item.
+- `inventory:W2:P0:2:1`: integer in [0, 5], item.
+- `inventory:W2:P0:2:2`: integer in [0, 5], item.
+- `inventory:W2:P0:2:3`: integer in [0, 0], item.
+- `serve:M0:P0:1:0`: integer in [0, 2], item.
+- `serve:M0:P0:1:1`: integer in [0, 2], item.
+- `serve:M0:P0:1:2`: integer in [0, 2], item.
+- `serve:M0:P0:1:3`: integer in [0, 2], item.
+- `serve:M0:P0:2:0`: integer in [0, 2], item.
+- `serve:M0:P0:2:1`: integer in [0, 2], item.
+- `serve:M0:P0:2:2`: integer in [0, 2], item.
+- `serve:M0:P0:2:3`: integer in [0, 2], item.
+- `ship:R_W0_M0_standard:P0:0:0`: integer in [0, 5], item.
+- `ship:R_W0_M0_standard:P0:0:1`: integer in [0, 5], item.
+- `ship:R_W0_M0_standard:P0:0:2`: integer in [0, 5], item.
+- `ship:R_W0_M0_standard:P0:1:0`: integer in [0, 5], item.
+- `ship:R_W0_M0_standard:P0:1:1`: integer in [0, 5], item.
+- `ship:R_W0_M0_standard:P0:1:2`: integer in [0, 5], item.
+- `ship:R_W1_M0_standard:P0:0:0`: integer in [0, 4], item.
+- `ship:R_W1_M0_standard:P0:0:1`: integer in [0, 4], item.
+- `ship:R_W1_M0_standard:P0:0:2`: integer in [0, 4], item.
+- `ship:R_W1_M0_standard:P0:0:3`: integer in [0, 4], item.
+- `ship:R_W1_M0_standard:P0:1:0`: integer in [0, 4], item.
+- `ship:R_W1_M0_standard:P0:1:1`: integer in [0, 4], item.
+- `ship:R_W1_M0_standard:P0:1:2`: integer in [0, 4], item.
+- `ship:R_W1_M0_standard:P0:1:3`: integer in [0, 4], item.
+- `ship:R_W1_M0_standard:P0:2:0`: integer in [0, 4], item.
+- `ship:R_W1_M0_standard:P0:2:1`: integer in [0, 4], item.
+- `ship:R_W1_M0_standard:P0:2:2`: integer in [0, 4], item.
+- `ship:R_W1_M0_standard:P0:2:3`: integer in [0, 4], item.
+- `ship:R_W2_M0_standard:P0:0:0`: integer in [0, 5], item.
+- `ship:R_W2_M0_standard:P0:0:1`: integer in [0, 5], item.
+- `ship:R_W2_M0_standard:P0:0:2`: integer in [0, 5], item.
+- `ship:R_W2_M0_standard:P0:1:0`: integer in [0, 5], item.
+- `ship:R_W2_M0_standard:P0:1:1`: integer in [0, 5], item.
+- `ship:R_W2_M0_standard:P0:1:2`: integer in [0, 5], item.
+
+## Hard constraints
+
+- c000000: 1 dispose:W0:P0:0:0 + 1 inventory:W0:P0:0:0 + 1 ship:R_W0_M0_standard:P0:0:0 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000001: 1 dispose:W0:P0:0:1 + 1 inventory:W0:P0:0:1 + 1 ship:R_W0_M0_standard:P0:0:1 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000002: 1 dispose:W0:P0:0:2 + 1 inventory:W0:P0:0:2 + 1 ship:R_W0_M0_standard:P0:0:2 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000003: 1 dispose:W0:P0:0:3 + 1 inventory:W0:P0:0:3 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000004: 1 dispose:W0:P0:1:0 + 1 inventory:W0:P0:1:0 + 1 ship:R_W0_M0_standard:P0:1:0 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000005: 1 dispose:W0:P0:1:1 + -1 inventory:W0:P0:0:0 + 1 inventory:W0:P0:1:1 + 1 ship:R_W0_M0_standard:P0:1:1 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000006: 1 dispose:W0:P0:1:2 + -1 inventory:W0:P0:0:1 + 1 inventory:W0:P0:1:2 + 1 ship:R_W0_M0_standard:P0:1:2 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000007: 1 dispose:W0:P0:1:3 + -1 inventory:W0:P0:0:2 + 1 inventory:W0:P0:1:3 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000008: 1 dispose:W0:P0:2:0 + 1 inventory:W0:P0:2:0 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000009: 1 dispose:W0:P0:2:1 + -1 inventory:W0:P0:1:0 + 1 inventory:W0:P0:2:1 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000010: 1 dispose:W0:P0:2:2 + -1 inventory:W0:P0:1:1 + 1 inventory:W0:P0:2:2 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000011: 1 dispose:W0:P0:2:3 + -1 inventory:W0:P0:1:2 + 1 inventory:W0:P0:2:3 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000012: 1 dispose:W1:P0:0:0 + 1 inventory:W1:P0:0:0 + 1 ship:R_W1_M0_standard:P0:0:0 eq 5. Source: balance/initial_stock/routes/recipes.
+- c000013: 1 dispose:W1:P0:0:1 + 1 inventory:W1:P0:0:1 + 1 ship:R_W1_M0_standard:P0:0:1 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000014: 1 dispose:W1:P0:0:2 + 1 inventory:W1:P0:0:2 + 1 ship:R_W1_M0_standard:P0:0:2 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000015: 1 dispose:W1:P0:0:3 + 1 inventory:W1:P0:0:3 + 1 ship:R_W1_M0_standard:P0:0:3 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000016: 1 dispose:W1:P0:1:0 + 1 inventory:W1:P0:1:0 + 1 ship:R_W1_M0_standard:P0:1:0 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000017: 1 dispose:W1:P0:1:1 + -1 inventory:W1:P0:0:0 + 1 inventory:W1:P0:1:1 + 1 ship:R_W1_M0_standard:P0:1:1 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000018: 1 dispose:W1:P0:1:2 + -1 inventory:W1:P0:0:1 + 1 inventory:W1:P0:1:2 + 1 ship:R_W1_M0_standard:P0:1:2 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000019: 1 dispose:W1:P0:1:3 + -1 inventory:W1:P0:0:2 + 1 inventory:W1:P0:1:3 + 1 ship:R_W1_M0_standard:P0:1:3 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000020: 1 dispose:W1:P0:2:0 + 1 inventory:W1:P0:2:0 + 1 ship:R_W1_M0_standard:P0:2:0 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000021: 1 dispose:W1:P0:2:1 + -1 inventory:W1:P0:1:0 + 1 inventory:W1:P0:2:1 + 1 ship:R_W1_M0_standard:P0:2:1 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000022: 1 dispose:W1:P0:2:2 + -1 inventory:W1:P0:1:1 + 1 inventory:W1:P0:2:2 + 1 ship:R_W1_M0_standard:P0:2:2 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000023: 1 dispose:W1:P0:2:3 + -1 inventory:W1:P0:1:2 + 1 inventory:W1:P0:2:3 + 1 ship:R_W1_M0_standard:P0:2:3 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000024: 1 dispose:W2:P0:0:0 + 1 inventory:W2:P0:0:0 + 1 ship:R_W2_M0_standard:P0:0:0 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000025: 1 dispose:W2:P0:0:1 + 1 inventory:W2:P0:0:1 + 1 ship:R_W2_M0_standard:P0:0:1 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000026: 1 dispose:W2:P0:0:2 + 1 inventory:W2:P0:0:2 + 1 ship:R_W2_M0_standard:P0:0:2 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000027: 1 dispose:W2:P0:0:3 + 1 inventory:W2:P0:0:3 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000028: 1 dispose:W2:P0:1:0 + 1 inventory:W2:P0:1:0 + 1 ship:R_W2_M0_standard:P0:1:0 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000029: 1 dispose:W2:P0:1:1 + -1 inventory:W2:P0:0:0 + 1 inventory:W2:P0:1:1 + 1 ship:R_W2_M0_standard:P0:1:1 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000030: 1 dispose:W2:P0:1:2 + -1 inventory:W2:P0:0:1 + 1 inventory:W2:P0:1:2 + 1 ship:R_W2_M0_standard:P0:1:2 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000031: 1 dispose:W2:P0:1:3 + -1 inventory:W2:P0:0:2 + 1 inventory:W2:P0:1:3 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000032: 1 dispose:W2:P0:2:0 + 1 inventory:W2:P0:2:0 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000033: 1 dispose:W2:P0:2:1 + -1 inventory:W2:P0:1:0 + 1 inventory:W2:P0:2:1 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000034: 1 dispose:W2:P0:2:2 + -1 inventory:W2:P0:1:1 + 1 inventory:W2:P0:2:2 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000035: 1 dispose:W2:P0:2:3 + -1 inventory:W2:P0:1:2 + 1 inventory:W2:P0:2:3 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000036: 1 dispose:M0:P0:0:0 + 1 inventory:M0:P0:0:0 + -1 ship:R_W1_M0_standard:P0:0:0 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000037: 1 dispose:M0:P0:0:1 + 1 inventory:M0:P0:0:1 + -1 ship:R_W1_M0_standard:P0:0:1 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000038: 1 dispose:M0:P0:0:2 + 1 inventory:M0:P0:0:2 + -1 ship:R_W1_M0_standard:P0:0:2 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000039: 1 dispose:M0:P0:0:3 + 1 inventory:M0:P0:0:3 + -1 ship:R_W1_M0_standard:P0:0:3 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000040: 1 dispose:M0:P0:1:0 + 1 inventory:M0:P0:1:0 + 1 serve:M0:P0:1:0 + -1 ship:R_W1_M0_standard:P0:1:0 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000041: 1 dispose:M0:P0:1:1 + -1 inventory:M0:P0:0:0 + 1 inventory:M0:P0:1:1 + 1 serve:M0:P0:1:1 + -1 ship:R_W0_M0_standard:P0:0:0 + -1 ship:R_W1_M0_standard:P0:1:1 + -1 ship:R_W2_M0_standard:P0:0:0 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000042: 1 dispose:M0:P0:1:2 + -1 inventory:M0:P0:0:1 + 1 inventory:M0:P0:1:2 + 1 serve:M0:P0:1:2 + -1 ship:R_W0_M0_standard:P0:0:1 + -1 ship:R_W1_M0_standard:P0:1:2 + -1 ship:R_W2_M0_standard:P0:0:1 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000043: 1 dispose:M0:P0:1:3 + -1 inventory:M0:P0:0:2 + 1 inventory:M0:P0:1:3 + 1 serve:M0:P0:1:3 + -1 ship:R_W0_M0_standard:P0:0:2 + -1 ship:R_W1_M0_standard:P0:1:3 + -1 ship:R_W2_M0_standard:P0:0:2 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000044: 1 dispose:M0:P0:2:0 + 1 inventory:M0:P0:2:0 + 1 serve:M0:P0:2:0 + -1 ship:R_W1_M0_standard:P0:2:0 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000045: 1 dispose:M0:P0:2:1 + -1 inventory:M0:P0:1:0 + 1 inventory:M0:P0:2:1 + 1 serve:M0:P0:2:1 + -1 ship:R_W0_M0_standard:P0:1:0 + -1 ship:R_W1_M0_standard:P0:2:1 + -1 ship:R_W2_M0_standard:P0:1:0 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000046: 1 dispose:M0:P0:2:2 + -1 inventory:M0:P0:1:1 + 1 inventory:M0:P0:2:2 + 1 serve:M0:P0:2:2 + -1 ship:R_W0_M0_standard:P0:1:1 + -1 ship:R_W1_M0_standard:P0:2:2 + -1 ship:R_W2_M0_standard:P0:1:1 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000047: 1 dispose:M0:P0:2:3 + -1 inventory:M0:P0:1:2 + 1 inventory:M0:P0:2:3 + 1 serve:M0:P0:2:3 + -1 ship:R_W0_M0_standard:P0:1:2 + -1 ship:R_W1_M0_standard:P0:2:3 + -1 ship:R_W2_M0_standard:P0:1:2 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000048: 1 serve:M0:P0:1:0 + 1 serve:M0:P0:1:1 + 1 serve:M0:P0:1:2 + 1 serve:M0:P0:1:3 eq 2. Source: demands.
+- c000049: 1 serve:M0:P0:2:0 + 1 serve:M0:P0:2:1 + 1 serve:M0:P0:2:2 + 1 serve:M0:P0:2:3 eq 2. Source: demands.
+- c000050: 1 inventory:W0:P0:0:0 + 1 inventory:W0:P0:0:1 + 1 inventory:W0:P0:0:2 + 1 inventory:W0:P0:0:3 le 4. Source: locations/storage_capacity.
+- c000051: 1 ship:R_W0_M0_standard:P0:0:0 + 1 ship:R_W0_M0_standard:P0:0:1 + 1 ship:R_W0_M0_standard:P0:0:2 le 3. Source: locations/throughput_capacity.
+- c000052: 1 inventory:W0:P0:1:0 + 1 inventory:W0:P0:1:1 + 1 inventory:W0:P0:1:2 + 1 inventory:W0:P0:1:3 le 4. Source: locations/storage_capacity.
+- c000053: 1 ship:R_W0_M0_standard:P0:1:0 + 1 ship:R_W0_M0_standard:P0:1:1 + 1 ship:R_W0_M0_standard:P0:1:2 le 3. Source: locations/throughput_capacity.
+- c000054: 1 inventory:W0:P0:2:0 + 1 inventory:W0:P0:2:1 + 1 inventory:W0:P0:2:2 + 1 inventory:W0:P0:2:3 le 4. Source: locations/storage_capacity.
+- c000055: 0 le 3. Source: locations/throughput_capacity.
+- c000056: 1 inventory:W1:P0:0:0 + 1 inventory:W1:P0:0:1 + 1 inventory:W1:P0:0:2 + 1 inventory:W1:P0:0:3 le 5. Source: locations/storage_capacity.
+- c000057: 1 ship:R_W1_M0_standard:P0:0:0 + 1 ship:R_W1_M0_standard:P0:0:1 + 1 ship:R_W1_M0_standard:P0:0:2 + 1 ship:R_W1_M0_standard:P0:0:3 le 4. Source: locations/throughput_capacity.
+- c000058: 1 inventory:W1:P0:1:0 + 1 inventory:W1:P0:1:1 + 1 inventory:W1:P0:1:2 + 1 inventory:W1:P0:1:3 le 5. Source: locations/storage_capacity.
+- c000059: 1 ship:R_W1_M0_standard:P0:1:0 + 1 ship:R_W1_M0_standard:P0:1:1 + 1 ship:R_W1_M0_standard:P0:1:2 + 1 ship:R_W1_M0_standard:P0:1:3 le 4. Source: locations/throughput_capacity.
+- c000060: 1 inventory:W1:P0:2:0 + 1 inventory:W1:P0:2:1 + 1 inventory:W1:P0:2:2 + 1 inventory:W1:P0:2:3 le 5. Source: locations/storage_capacity.
+- c000061: 1 ship:R_W1_M0_standard:P0:2:0 + 1 ship:R_W1_M0_standard:P0:2:1 + 1 ship:R_W1_M0_standard:P0:2:2 + 1 ship:R_W1_M0_standard:P0:2:3 le 4. Source: locations/throughput_capacity.
+- c000062: 1 inventory:W2:P0:0:0 + 1 inventory:W2:P0:0:1 + 1 inventory:W2:P0:0:2 + 1 inventory:W2:P0:0:3 le 1. Source: locations/storage_capacity.
+- c000063: 1 ship:R_W2_M0_standard:P0:0:0 + 1 ship:R_W2_M0_standard:P0:0:1 + 1 ship:R_W2_M0_standard:P0:0:2 le 4. Source: locations/throughput_capacity.
+- c000064: 1 inventory:W2:P0:1:0 + 1 inventory:W2:P0:1:1 + 1 inventory:W2:P0:1:2 + 1 inventory:W2:P0:1:3 le 1. Source: locations/storage_capacity.
+- c000065: 1 ship:R_W2_M0_standard:P0:1:0 + 1 ship:R_W2_M0_standard:P0:1:1 + 1 ship:R_W2_M0_standard:P0:1:2 le 4. Source: locations/throughput_capacity.
+- c000066: 1 inventory:W2:P0:2:0 + 1 inventory:W2:P0:2:1 + 1 inventory:W2:P0:2:2 + 1 inventory:W2:P0:2:3 le 1. Source: locations/storage_capacity.
+- c000067: 0 le 4. Source: locations/throughput_capacity.
+- c000068: 1 inventory:M0:P0:0:0 + 1 inventory:M0:P0:0:1 + 1 inventory:M0:P0:0:2 + 1 inventory:M0:P0:0:3 le 0. Source: locations/storage_capacity.
+- c000069: 0 le 2. Source: locations/throughput_capacity.
+- c000070: 1 inventory:M0:P0:1:0 + 1 inventory:M0:P0:1:1 + 1 inventory:M0:P0:1:2 + 1 inventory:M0:P0:1:3 le 0. Source: locations/storage_capacity.
+- c000071: 0 le 2. Source: locations/throughput_capacity.
+- c000072: 1 inventory:M0:P0:2:0 + 1 inventory:M0:P0:2:1 + 1 inventory:M0:P0:2:2 + 1 inventory:M0:P0:2:3 le 0. Source: locations/storage_capacity.
+- c000073: 0 le 2. Source: locations/throughput_capacity.
+- c000074: 1 ship:R_W0_M0_standard:P0:0:0 + 1 ship:R_W0_M0_standard:P0:0:1 + 1 ship:R_W0_M0_standard:P0:0:2 le 5. Source: routes/capacity.
+- c000075: 1 ship:R_W0_M0_standard:P0:1:0 + 1 ship:R_W0_M0_standard:P0:1:1 + 1 ship:R_W0_M0_standard:P0:1:2 le 5. Source: routes/capacity.
+- c000076: 0 le 5. Source: routes/capacity.
+- c000077: 1 ship:R_W1_M0_standard:P0:0:0 + 1 ship:R_W1_M0_standard:P0:0:1 + 1 ship:R_W1_M0_standard:P0:0:2 + 1 ship:R_W1_M0_standard:P0:0:3 le 4. Source: routes/capacity.
+- c000078: 1 ship:R_W1_M0_standard:P0:1:0 + 1 ship:R_W1_M0_standard:P0:1:1 + 1 ship:R_W1_M0_standard:P0:1:2 + 1 ship:R_W1_M0_standard:P0:1:3 le 4. Source: routes/capacity.
+- c000079: 1 ship:R_W1_M0_standard:P0:2:0 + 1 ship:R_W1_M0_standard:P0:2:1 + 1 ship:R_W1_M0_standard:P0:2:2 + 1 ship:R_W1_M0_standard:P0:2:3 le 4. Source: routes/capacity.
+- c000080: 1 ship:R_W2_M0_standard:P0:0:0 + 1 ship:R_W2_M0_standard:P0:0:1 + 1 ship:R_W2_M0_standard:P0:0:2 le 5. Source: routes/capacity.
+- c000081: 1 ship:R_W2_M0_standard:P0:1:0 + 1 ship:R_W2_M0_standard:P0:1:1 + 1 ship:R_W2_M0_standard:P0:1:2 le 5. Source: routes/capacity.
+- c000082: 0 le 5. Source: routes/capacity.

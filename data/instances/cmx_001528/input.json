@@ -1,0 +1,306 @@
+{
+  "demands": [
+    {
+      "node": "M0",
+      "period": 0,
+      "product": "P0",
+      "quantity": 3
+    },
+    {
+      "node": "M1",
+      "period": 0,
+      "product": "P0",
+      "quantity": 5
+    }
+  ],
+  "family": "F02",
+  "features": [
+    "transport",
+    "bounded_inventory",
+    "exact_demand",
+    "multi_echelon"
+  ],
+  "initial_stock": [
+    {
+      "age": 0,
+      "node": "W0",
+      "product": "P0",
+      "quantity": 4
+    },
+    {
+      "age": 0,
+      "node": "W1",
+      "product": "P0",
+      "quantity": 6
+    },
+    {
+      "age": 0,
+      "node": "W2",
+      "product": "P0",
+      "quantity": 1
+    },
+    {
+      "age": 0,
+      "node": "W3",
+      "product": "P0",
+      "quantity": 1
+    }
+  ],
+  "locations": [
+    {
+      "id": "W0",
+      "opening_cost": 0,
+      "role": "supplier",
+      "storage_capacity": 2,
+      "throughput_capacity": 5
+    },
+    {
+      "id": "W1",
+      "opening_cost": 0,
+      "role": "supplier",
+      "storage_capacity": 2,
+      "throughput_capacity": 6
+    },
+    {
+      "id": "W2",
+      "opening_cost": 0,
+      "role": "supplier",
+      "storage_capacity": 2,
+      "throughput_capacity": 2
+    },
+    {
+      "id": "W3",
+      "opening_cost": 0,
+      "role": "supplier",
+      "storage_capacity": 2,
+      "throughput_capacity": 0
+    },
+    {
+      "id": "H0",
+      "opening_cost": 0,
+      "role": "hub",
+      "storage_capacity": 2,
+      "throughput_capacity": 4
+    },
+    {
+      "id": "H1",
+      "opening_cost": 0,
+      "role": "hub",
+      "storage_capacity": 0,
+      "throughput_capacity": 7
+    },
+    {
+      "id": "M0",
+      "opening_cost": 0,
+      "role": "market",
+      "storage_capacity": 2,
+      "throughput_capacity": 2
+    },
+    {
+      "id": "M1",
+      "opening_cost": 0,
+      "role": "market",
+      "storage_capacity": 1,
+      "throughput_capacity": 2
+    }
+  ],
+  "narrative_template": 1,
+  "objective_constant": 0,
+  "periods": 1,
+  "products": [
+    {
+      "disposal_cost": 0,
+      "holding_cost": 0,
+      "id": "P0",
+      "shelf_life": null,
+      "volume": 1
+    }
+  ],
+  "recipes": [],
+  "routes": [
+    {
+      "capacity": 4,
+      "destination": "M0",
+      "fixed_cost": 0,
+      "id": "R_H0_M0_standard",
+      "lead_time": 0,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0"
+      ],
+      "source": "H0",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 10
+    },
+    {
+      "capacity": 4,
+      "destination": "M1",
+      "fixed_cost": 0,
+      "id": "R_H0_M1_standard",
+      "lead_time": 0,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0"
+      ],
+      "source": "H0",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 12
+    },
+    {
+      "capacity": 7,
+      "destination": "M0",
+      "fixed_cost": 0,
+      "id": "R_H1_M0_standard",
+      "lead_time": 0,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0"
+      ],
+      "source": "H1",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 3
+    },
+    {
+      "capacity": 6,
+      "destination": "M1",
+      "fixed_cost": 0,
+      "id": "R_H1_M1_standard",
+      "lead_time": 0,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0"
+      ],
+      "source": "H1",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 8
+    },
+    {
+      "capacity": 5,
+      "destination": "H0",
+      "fixed_cost": 0,
+      "id": "R_W0_H0_standard",
+      "lead_time": 0,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0"
+      ],
+      "source": "W0",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 12
+    },
+    {
+      "capacity": 5,
+      "destination": "H1",
+      "fixed_cost": 0,
+      "id": "R_W0_H1_standard",
+      "lead_time": 0,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0"
+      ],
+      "source": "W0",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 0
+    },
+    {
+      "capacity": 8,
+      "destination": "H0",
+      "fixed_cost": 0,
+      "id": "R_W1_H0_standard",
+      "lead_time": 0,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0"
+      ],
+      "source": "W1",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 10
+    },
+    {
+      "capacity": 5,
+      "destination": "H1",
+      "fixed_cost": 0,
+      "id": "R_W1_H1_standard",
+      "lead_time": 0,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0"
+      ],
+      "source": "W1",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 1
+    },
+    {
+      "capacity": 7,
+      "destination": "H0",
+      "fixed_cost": 0,
+      "id": "R_W2_H0_standard",
+      "lead_time": 0,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0"
+      ],
+      "source": "W2",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 12
+    },
+    {
+      "capacity": 5,
+      "destination": "H1",
+      "fixed_cost": 0,
+      "id": "R_W2_H1_standard",
+      "lead_time": 0,
+      "max_trucks": 0,
+      "minimum_lot": 0,
+      "mode": "standard",
+      "products": [
+        "P0"
+      ],
+      "source": "W2",
+      "truck_capacity": 0,
+      "truck_cost": 0,
+      "unit_cost": 6
+    }
+  ],
+  "schema_version": "1.0.0",
+  "sourcing": {
+    "dependencies": [],
+    "max_active_suppliers": null
+  },
+  "structural_level": "L4",
+  "units": {
+    "capacity": "volume_unit",
+    "currency": "cent",
+    "production": "batch",
+    "quantity": "item",
+    "time": "period",
+    "truck": "truck"
+  }
+}

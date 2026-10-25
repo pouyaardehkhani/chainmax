@@ -1,0 +1,149 @@
+# Bounded integer reference model
+
+Minimize 0 + 12 active:R_W0_M0_road:0 + 16 active:R_W0_M1_rail:0 + 12 active:R_W0_M1_road:0 + 7 active:R_W1_M0_road:0 + 7 active:R_W1_M1_road:0 + 16 active:R_W2_M0_road:0 + 11 active:R_W2_M1_road:0 + 6 active:R_W3_M0_road:0 + 9 active:R_W3_M1_road:0 + 2 ship:R_W0_M0_road:P0:0:0 + 2 ship:R_W0_M0_road:P1:0:0 + 2 ship:R_W0_M0_road:P2:0:0 + 8 ship:R_W0_M1_rail:P0:0:0 + 8 ship:R_W0_M1_rail:P1:0:0 + 8 ship:R_W0_M1_road:P0:0:0 + 8 ship:R_W0_M1_road:P1:0:0 + 8 ship:R_W0_M1_road:P2:0:0 + 4 ship:R_W1_M1_road:P0:0:0 + 4 ship:R_W1_M1_road:P1:0:0 + 4 ship:R_W1_M1_road:P2:0:0 + 2 ship:R_W2_M0_road:P0:0:0 + 2 ship:R_W2_M0_road:P1:0:0 + 2 ship:R_W2_M0_road:P2:0:0 + 4 ship:R_W2_M1_road:P0:0:0 + 4 ship:R_W2_M1_road:P1:0:0 + 4 ship:R_W2_M1_road:P2:0:0 + 6 ship:R_W3_M0_road:P0:0:0 + 6 ship:R_W3_M0_road:P1:0:0 + 6 ship:R_W3_M0_road:P2:0:0 + 3 ship:R_W3_M1_road:P0:0:0 + 3 ship:R_W3_M1_road:P1:0:0 + 3 ship:R_W3_M1_road:P2:0:0 + 6 trucks:R_W0_M0_road:0 + 6 trucks:R_W0_M1_rail:0 + 3 trucks:R_W0_M1_road:0 + 10 trucks:R_W1_M0_road:0 + 3 trucks:R_W1_M1_road:0 + 7 trucks:R_W2_M0_road:0 + 9 trucks:R_W2_M1_road:0 + 7 trucks:R_W3_M0_road:0 + 11 trucks:R_W3_M1_road:0
+
+## Variables
+
+- `active:R_W0_M0_road:0`: boolean in [0, 1], activation.
+- `active:R_W0_M1_rail:0`: boolean in [0, 1], activation.
+- `active:R_W0_M1_road:0`: boolean in [0, 1], activation.
+- `active:R_W1_M0_road:0`: boolean in [0, 1], activation.
+- `active:R_W1_M1_road:0`: boolean in [0, 1], activation.
+- `active:R_W2_M0_road:0`: boolean in [0, 1], activation.
+- `active:R_W2_M1_road:0`: boolean in [0, 1], activation.
+- `active:R_W3_M0_road:0`: boolean in [0, 1], activation.
+- `active:R_W3_M1_road:0`: boolean in [0, 1], activation.
+- `inventory:M0:P0:0:0`: integer in [0, 34], item.
+- `inventory:M0:P1:0:0`: integer in [0, 34], item.
+- `inventory:M0:P2:0:0`: integer in [0, 34], item.
+- `inventory:M1:P0:0:0`: integer in [0, 34], item.
+- `inventory:M1:P1:0:0`: integer in [0, 34], item.
+- `inventory:M1:P2:0:0`: integer in [0, 34], item.
+- `inventory:W0:P0:0:0`: integer in [0, 34], item.
+- `inventory:W0:P1:0:0`: integer in [0, 34], item.
+- `inventory:W0:P2:0:0`: integer in [0, 34], item.
+- `inventory:W1:P0:0:0`: integer in [0, 34], item.
+- `inventory:W1:P1:0:0`: integer in [0, 34], item.
+- `inventory:W1:P2:0:0`: integer in [0, 34], item.
+- `inventory:W2:P0:0:0`: integer in [0, 34], item.
+- `inventory:W2:P1:0:0`: integer in [0, 34], item.
+- `inventory:W2:P2:0:0`: integer in [0, 34], item.
+- `inventory:W3:P0:0:0`: integer in [0, 34], item.
+- `inventory:W3:P1:0:0`: integer in [0, 34], item.
+- `inventory:W3:P2:0:0`: integer in [0, 34], item.
+- `serve:M0:P0:0:0`: integer in [0, 4], item.
+- `serve:M0:P1:0:0`: integer in [0, 3], item.
+- `serve:M0:P2:0:0`: integer in [0, 5], item.
+- `serve:M1:P0:0:0`: integer in [0, 4], item.
+- `serve:M1:P1:0:0`: integer in [0, 6], item.
+- `serve:M1:P2:0:0`: integer in [0, 2], item.
+- `ship:R_W0_M0_road:P0:0:0`: integer in [0, 22], item.
+- `ship:R_W0_M0_road:P1:0:0`: integer in [0, 11], item.
+- `ship:R_W0_M0_road:P2:0:0`: integer in [0, 11], item.
+- `ship:R_W0_M1_rail:P0:0:0`: integer in [0, 6], item.
+- `ship:R_W0_M1_rail:P1:0:0`: integer in [0, 3], item.
+- `ship:R_W0_M1_road:P0:0:0`: integer in [0, 9], item.
+- `ship:R_W0_M1_road:P1:0:0`: integer in [0, 4], item.
+- `ship:R_W0_M1_road:P2:0:0`: integer in [0, 4], item.
+- `ship:R_W1_M0_road:P0:0:0`: integer in [0, 14], item.
+- `ship:R_W1_M0_road:P1:0:0`: integer in [0, 7], item.
+- `ship:R_W1_M0_road:P2:0:0`: integer in [0, 7], item.
+- `ship:R_W1_M1_road:P0:0:0`: integer in [0, 12], item.
+- `ship:R_W1_M1_road:P1:0:0`: integer in [0, 6], item.
+- `ship:R_W1_M1_road:P2:0:0`: integer in [0, 6], item.
+- `ship:R_W2_M0_road:P0:0:0`: integer in [0, 8], item.
+- `ship:R_W2_M0_road:P1:0:0`: integer in [0, 4], item.
+- `ship:R_W2_M0_road:P2:0:0`: integer in [0, 4], item.
+- `ship:R_W2_M1_road:P0:0:0`: integer in [0, 13], item.
+- `ship:R_W2_M1_road:P1:0:0`: integer in [0, 6], item.
+- `ship:R_W2_M1_road:P2:0:0`: integer in [0, 6], item.
+- `ship:R_W3_M0_road:P0:0:0`: integer in [0, 14], item.
+- `ship:R_W3_M0_road:P1:0:0`: integer in [0, 7], item.
+- `ship:R_W3_M0_road:P2:0:0`: integer in [0, 7], item.
+- `ship:R_W3_M1_road:P0:0:0`: integer in [0, 20], item.
+- `ship:R_W3_M1_road:P1:0:0`: integer in [0, 10], item.
+- `ship:R_W3_M1_road:P2:0:0`: integer in [0, 10], item.
+- `trucks:R_W0_M0_road:0`: integer in [0, 5], truck.
+- `trucks:R_W0_M1_rail:0`: integer in [0, 3], truck.
+- `trucks:R_W0_M1_road:0`: integer in [0, 3], truck.
+- `trucks:R_W1_M0_road:0`: integer in [0, 5], truck.
+- `trucks:R_W1_M1_road:0`: integer in [0, 3], truck.
+- `trucks:R_W2_M0_road:0`: integer in [0, 2], truck.
+- `trucks:R_W2_M1_road:0`: integer in [0, 3], truck.
+- `trucks:R_W3_M0_road:0`: integer in [0, 7], truck.
+- `trucks:R_W3_M1_road:0`: integer in [0, 5], truck.
+
+## Hard constraints
+
+- c000000: 1 inventory:W0:P0:0:0 + 1 ship:R_W0_M0_road:P0:0:0 + 1 ship:R_W0_M1_rail:P0:0:0 + 1 ship:R_W0_M1_road:P0:0:0 eq 8. Source: balance/initial_stock/routes/recipes.
+- c000001: 1 inventory:W0:P1:0:0 + 1 ship:R_W0_M0_road:P1:0:0 + 1 ship:R_W0_M1_rail:P1:0:0 + 1 ship:R_W0_M1_road:P1:0:0 eq 4. Source: balance/initial_stock/routes/recipes.
+- c000002: 1 inventory:W0:P2:0:0 + 1 ship:R_W0_M0_road:P2:0:0 + 1 ship:R_W0_M1_road:P2:0:0 eq 7. Source: balance/initial_stock/routes/recipes.
+- c000003: 1 inventory:W1:P0:0:0 + 1 ship:R_W1_M0_road:P0:0:0 + 1 ship:R_W1_M1_road:P0:0:0 eq 2. Source: balance/initial_stock/routes/recipes.
+- c000004: 1 inventory:W1:P1:0:0 + 1 ship:R_W1_M0_road:P1:0:0 + 1 ship:R_W1_M1_road:P1:0:0 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000005: 1 inventory:W1:P2:0:0 + 1 ship:R_W1_M0_road:P2:0:0 + 1 ship:R_W1_M1_road:P2:0:0 eq 2. Source: balance/initial_stock/routes/recipes.
+- c000006: 1 inventory:W2:P0:0:0 + 1 ship:R_W2_M0_road:P0:0:0 + 1 ship:R_W2_M1_road:P0:0:0 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000007: 1 inventory:W2:P1:0:0 + 1 ship:R_W2_M0_road:P1:0:0 + 1 ship:R_W2_M1_road:P1:0:0 eq 6. Source: balance/initial_stock/routes/recipes.
+- c000008: 1 inventory:W2:P2:0:0 + 1 ship:R_W2_M0_road:P2:0:0 + 1 ship:R_W2_M1_road:P2:0:0 eq 2. Source: balance/initial_stock/routes/recipes.
+- c000009: 1 inventory:W3:P0:0:0 + 1 ship:R_W3_M0_road:P0:0:0 + 1 ship:R_W3_M1_road:P0:0:0 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000010: 1 inventory:W3:P1:0:0 + 1 ship:R_W3_M0_road:P1:0:0 + 1 ship:R_W3_M1_road:P1:0:0 eq 1. Source: balance/initial_stock/routes/recipes.
+- c000011: 1 inventory:W3:P2:0:0 + 1 ship:R_W3_M0_road:P2:0:0 + 1 ship:R_W3_M1_road:P2:0:0 eq 2. Source: balance/initial_stock/routes/recipes.
+- c000012: 1 inventory:M0:P0:0:0 + 1 serve:M0:P0:0:0 + -1 ship:R_W0_M0_road:P0:0:0 + -1 ship:R_W1_M0_road:P0:0:0 + -1 ship:R_W2_M0_road:P0:0:0 + -1 ship:R_W3_M0_road:P0:0:0 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000013: 1 inventory:M0:P1:0:0 + 1 serve:M0:P1:0:0 + -1 ship:R_W0_M0_road:P1:0:0 + -1 ship:R_W1_M0_road:P1:0:0 + -1 ship:R_W2_M0_road:P1:0:0 + -1 ship:R_W3_M0_road:P1:0:0 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000014: 1 inventory:M0:P2:0:0 + 1 serve:M0:P2:0:0 + -1 ship:R_W0_M0_road:P2:0:0 + -1 ship:R_W1_M0_road:P2:0:0 + -1 ship:R_W2_M0_road:P2:0:0 + -1 ship:R_W3_M0_road:P2:0:0 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000015: 1 inventory:M1:P0:0:0 + 1 serve:M1:P0:0:0 + -1 ship:R_W0_M1_rail:P0:0:0 + -1 ship:R_W0_M1_road:P0:0:0 + -1 ship:R_W1_M1_road:P0:0:0 + -1 ship:R_W2_M1_road:P0:0:0 + -1 ship:R_W3_M1_road:P0:0:0 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000016: 1 inventory:M1:P1:0:0 + 1 serve:M1:P1:0:0 + -1 ship:R_W0_M1_rail:P1:0:0 + -1 ship:R_W0_M1_road:P1:0:0 + -1 ship:R_W1_M1_road:P1:0:0 + -1 ship:R_W2_M1_road:P1:0:0 + -1 ship:R_W3_M1_road:P1:0:0 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000017: 1 inventory:M1:P2:0:0 + 1 serve:M1:P2:0:0 + -1 ship:R_W0_M1_road:P2:0:0 + -1 ship:R_W1_M1_road:P2:0:0 + -1 ship:R_W2_M1_road:P2:0:0 + -1 ship:R_W3_M1_road:P2:0:0 eq 0. Source: balance/initial_stock/routes/recipes.
+- c000018: 1 serve:M0:P0:0:0 eq 4. Source: demands.
+- c000019: 1 serve:M0:P1:0:0 eq 3. Source: demands.
+- c000020: 1 serve:M0:P2:0:0 eq 5. Source: demands.
+- c000021: 1 serve:M1:P0:0:0 eq 4. Source: demands.
+- c000022: 1 serve:M1:P1:0:0 eq 6. Source: demands.
+- c000023: 1 serve:M1:P2:0:0 eq 2. Source: demands.
+- c000024: 1 inventory:W0:P0:0:0 + 2 inventory:W0:P1:0:0 + 2 inventory:W0:P2:0:0 le 4. Source: locations/storage_capacity.
+- c000025: 1 ship:R_W0_M0_road:P0:0:0 + 2 ship:R_W0_M0_road:P1:0:0 + 2 ship:R_W0_M0_road:P2:0:0 + 1 ship:R_W0_M1_rail:P0:0:0 + 2 ship:R_W0_M1_rail:P1:0:0 + 1 ship:R_W0_M1_road:P0:0:0 + 2 ship:R_W0_M1_road:P1:0:0 + 2 ship:R_W0_M1_road:P2:0:0 le 28. Source: locations/throughput_capacity.
+- c000026: 1 inventory:W1:P0:0:0 + 2 inventory:W1:P1:0:0 + 2 inventory:W1:P2:0:0 le 7. Source: locations/storage_capacity.
+- c000027: 1 ship:R_W1_M0_road:P0:0:0 + 2 ship:R_W1_M0_road:P1:0:0 + 2 ship:R_W1_M0_road:P2:0:0 + 1 ship:R_W1_M1_road:P0:0:0 + 2 ship:R_W1_M1_road:P1:0:0 + 2 ship:R_W1_M1_road:P2:0:0 le 0. Source: locations/throughput_capacity.
+- c000028: 1 inventory:W2:P0:0:0 + 2 inventory:W2:P1:0:0 + 2 inventory:W2:P2:0:0 le 6. Source: locations/storage_capacity.
+- c000029: 1 ship:R_W2_M0_road:P0:0:0 + 2 ship:R_W2_M0_road:P1:0:0 + 2 ship:R_W2_M0_road:P2:0:0 + 1 ship:R_W2_M1_road:P0:0:0 + 2 ship:R_W2_M1_road:P1:0:0 + 2 ship:R_W2_M1_road:P2:0:0 le 14. Source: locations/throughput_capacity.
+- c000030: 1 inventory:W3:P0:0:0 + 2 inventory:W3:P1:0:0 + 2 inventory:W3:P2:0:0 le 7. Source: locations/storage_capacity.
+- c000031: 1 ship:R_W3_M0_road:P0:0:0 + 2 ship:R_W3_M0_road:P1:0:0 + 2 ship:R_W3_M0_road:P2:0:0 + 1 ship:R_W3_M1_road:P0:0:0 + 2 ship:R_W3_M1_road:P1:0:0 + 2 ship:R_W3_M1_road:P2:0:0 le 0. Source: locations/throughput_capacity.
+- c000032: 1 inventory:M0:P0:0:0 + 2 inventory:M0:P1:0:0 + 2 inventory:M0:P2:0:0 le 2. Source: locations/storage_capacity.
+- c000033: 0 le 1. Source: locations/throughput_capacity.
+- c000034: 1 inventory:M1:P0:0:0 + 2 inventory:M1:P1:0:0 + 2 inventory:M1:P2:0:0 le 2. Source: locations/storage_capacity.
+- c000035: 0 le 0. Source: locations/throughput_capacity.
+- c000036: 1 ship:R_W0_M0_road:P0:0:0 + 2 ship:R_W0_M0_road:P1:0:0 + 2 ship:R_W0_M0_road:P2:0:0 le 22. Source: routes/capacity.
+- c000037: -44 active:R_W0_M0_road:0 + 1 ship:R_W0_M0_road:P0:0:0 + 1 ship:R_W0_M0_road:P1:0:0 + 1 ship:R_W0_M0_road:P2:0:0 le 0. Source: routes/activation.
+- c000038: -1 active:R_W0_M0_road:0 + 1 ship:R_W0_M0_road:P0:0:0 + 1 ship:R_W0_M0_road:P1:0:0 + 1 ship:R_W0_M0_road:P2:0:0 ge 0. Source: routes/minimum_lot.
+- c000039: 1 ship:R_W0_M0_road:P0:0:0 + 2 ship:R_W0_M0_road:P1:0:0 + 2 ship:R_W0_M0_road:P2:0:0 + -5 trucks:R_W0_M0_road:0 le 0. Source: routes/truck_capacity.
+- c000040: 1 ship:R_W0_M1_rail:P0:0:0 + 2 ship:R_W0_M1_rail:P1:0:0 le 6. Source: routes/capacity.
+- c000041: -9 active:R_W0_M1_rail:0 + 1 ship:R_W0_M1_rail:P0:0:0 + 1 ship:R_W0_M1_rail:P1:0:0 le 0. Source: routes/activation.
+- c000042: -1 active:R_W0_M1_rail:0 + 1 ship:R_W0_M1_rail:P0:0:0 + 1 ship:R_W0_M1_rail:P1:0:0 ge 0. Source: routes/minimum_lot.
+- c000043: 1 ship:R_W0_M1_rail:P0:0:0 + 2 ship:R_W0_M1_rail:P1:0:0 + -2 trucks:R_W0_M1_rail:0 le 0. Source: routes/truck_capacity.
+- c000044: 1 ship:R_W0_M1_road:P0:0:0 + 2 ship:R_W0_M1_road:P1:0:0 + 2 ship:R_W0_M1_road:P2:0:0 le 9. Source: routes/capacity.
+- c000045: -17 active:R_W0_M1_road:0 + 1 ship:R_W0_M1_road:P0:0:0 + 1 ship:R_W0_M1_road:P1:0:0 + 1 ship:R_W0_M1_road:P2:0:0 le 0. Source: routes/activation.
+- c000046: -1 active:R_W0_M1_road:0 + 1 ship:R_W0_M1_road:P0:0:0 + 1 ship:R_W0_M1_road:P1:0:0 + 1 ship:R_W0_M1_road:P2:0:0 ge 0. Source: routes/minimum_lot.
+- c000047: 1 ship:R_W0_M1_road:P0:0:0 + 2 ship:R_W0_M1_road:P1:0:0 + 2 ship:R_W0_M1_road:P2:0:0 + -3 trucks:R_W0_M1_road:0 le 0. Source: routes/truck_capacity.
+- c000048: 1 ship:R_W1_M0_road:P0:0:0 + 2 ship:R_W1_M0_road:P1:0:0 + 2 ship:R_W1_M0_road:P2:0:0 le 14. Source: routes/capacity.
+- c000049: -28 active:R_W1_M0_road:0 + 1 ship:R_W1_M0_road:P0:0:0 + 1 ship:R_W1_M0_road:P1:0:0 + 1 ship:R_W1_M0_road:P2:0:0 le 0. Source: routes/activation.
+- c000050: -1 active:R_W1_M0_road:0 + 1 ship:R_W1_M0_road:P0:0:0 + 1 ship:R_W1_M0_road:P1:0:0 + 1 ship:R_W1_M0_road:P2:0:0 ge 0. Source: routes/minimum_lot.
+- c000051: 1 ship:R_W1_M0_road:P0:0:0 + 2 ship:R_W1_M0_road:P1:0:0 + 2 ship:R_W1_M0_road:P2:0:0 + -3 trucks:R_W1_M0_road:0 le 0. Source: routes/truck_capacity.
+- c000052: 1 ship:R_W1_M1_road:P0:0:0 + 2 ship:R_W1_M1_road:P1:0:0 + 2 ship:R_W1_M1_road:P2:0:0 le 12. Source: routes/capacity.
+- c000053: -24 active:R_W1_M1_road:0 + 1 ship:R_W1_M1_road:P0:0:0 + 1 ship:R_W1_M1_road:P1:0:0 + 1 ship:R_W1_M1_road:P2:0:0 le 0. Source: routes/activation.
+- c000054: -1 active:R_W1_M1_road:0 + 1 ship:R_W1_M1_road:P0:0:0 + 1 ship:R_W1_M1_road:P1:0:0 + 1 ship:R_W1_M1_road:P2:0:0 ge 0. Source: routes/minimum_lot.
+- c000055: 1 ship:R_W1_M1_road:P0:0:0 + 2 ship:R_W1_M1_road:P1:0:0 + 2 ship:R_W1_M1_road:P2:0:0 + -5 trucks:R_W1_M1_road:0 le 0. Source: routes/truck_capacity.
+- c000056: 1 ship:R_W2_M0_road:P0:0:0 + 2 ship:R_W2_M0_road:P1:0:0 + 2 ship:R_W2_M0_road:P2:0:0 le 8. Source: routes/capacity.
+- c000057: -16 active:R_W2_M0_road:0 + 1 ship:R_W2_M0_road:P0:0:0 + 1 ship:R_W2_M0_road:P1:0:0 + 1 ship:R_W2_M0_road:P2:0:0 le 0. Source: routes/activation.
+- c000058: -1 active:R_W2_M0_road:0 + 1 ship:R_W2_M0_road:P0:0:0 + 1 ship:R_W2_M0_road:P1:0:0 + 1 ship:R_W2_M0_road:P2:0:0 ge 0. Source: routes/minimum_lot.
+- c000059: 1 ship:R_W2_M0_road:P0:0:0 + 2 ship:R_W2_M0_road:P1:0:0 + 2 ship:R_W2_M0_road:P2:0:0 + -5 trucks:R_W2_M0_road:0 le 0. Source: routes/truck_capacity.
+- c000060: 1 ship:R_W2_M1_road:P0:0:0 + 2 ship:R_W2_M1_road:P1:0:0 + 2 ship:R_W2_M1_road:P2:0:0 le 13. Source: routes/capacity.
+- c000061: -25 active:R_W2_M1_road:0 + 1 ship:R_W2_M1_road:P0:0:0 + 1 ship:R_W2_M1_road:P1:0:0 + 1 ship:R_W2_M1_road:P2:0:0 le 0. Source: routes/activation.
+- c000062: -1 active:R_W2_M1_road:0 + 1 ship:R_W2_M1_road:P0:0:0 + 1 ship:R_W2_M1_road:P1:0:0 + 1 ship:R_W2_M1_road:P2:0:0 ge 0. Source: routes/minimum_lot.
+- c000063: 1 ship:R_W2_M1_road:P0:0:0 + 2 ship:R_W2_M1_road:P1:0:0 + 2 ship:R_W2_M1_road:P2:0:0 + -5 trucks:R_W2_M1_road:0 le 0. Source: routes/truck_capacity.
+- c000064: 1 ship:R_W3_M0_road:P0:0:0 + 2 ship:R_W3_M0_road:P1:0:0 + 2 ship:R_W3_M0_road:P2:0:0 le 14. Source: routes/capacity.
+- c000065: -28 active:R_W3_M0_road:0 + 1 ship:R_W3_M0_road:P0:0:0 + 1 ship:R_W3_M0_road:P1:0:0 + 1 ship:R_W3_M0_road:P2:0:0 le 0. Source: routes/activation.
+- c000066: -1 active:R_W3_M0_road:0 + 1 ship:R_W3_M0_road:P0:0:0 + 1 ship:R_W3_M0_road:P1:0:0 + 1 ship:R_W3_M0_road:P2:0:0 ge 0. Source: routes/minimum_lot.
+- c000067: 1 ship:R_W3_M0_road:P0:0:0 + 2 ship:R_W3_M0_road:P1:0:0 + 2 ship:R_W3_M0_road:P2:0:0 + -2 trucks:R_W3_M0_road:0 le 0. Source: routes/truck_capacity.
+- c000068: 1 ship:R_W3_M1_road:P0:0:0 + 2 ship:R_W3_M1_road:P1:0:0 + 2 ship:R_W3_M1_road:P2:0:0 le 20. Source: routes/capacity.
+- c000069: -40 active:R_W3_M1_road:0 + 1 ship:R_W3_M1_road:P0:0:0 + 1 ship:R_W3_M1_road:P1:0:0 + 1 ship:R_W3_M1_road:P2:0:0 le 0. Source: routes/activation.
+- c000070: -1 active:R_W3_M1_road:0 + 1 ship:R_W3_M1_road:P0:0:0 + 1 ship:R_W3_M1_road:P1:0:0 + 1 ship:R_W3_M1_road:P2:0:0 ge 0. Source: routes/minimum_lot.
+- c000071: 1 ship:R_W3_M1_road:P0:0:0 + 2 ship:R_W3_M1_road:P1:0:0 + 2 ship:R_W3_M1_road:P2:0:0 + -4 trucks:R_W3_M1_road:0 le 0. Source: routes/truck_capacity.
