@@ -30,5 +30,5 @@ def versions():
 
 
 def source_hash(root):
-    files = sorted(p for folder in ("src","schemas","configs") for p in (root/folder).rglob("*") if p.is_file() and "__pycache__" not in p.parts and p.suffix not in (".pyc",))
+    files = sorted(p for folder in ("src","schemas","configs") for p in (root/folder).rglob("*") if p.is_file() and "__pycache__" not in p.parts and not any(part.endswith(".egg-info") for part in p.parts) and p.suffix not in (".pyc",))
     return digest("\n".join(f'{p.relative_to(root).as_posix()} {digest(p.read_bytes())}' for p in files))

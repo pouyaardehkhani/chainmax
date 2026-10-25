@@ -1,6 +1,7 @@
 import argparse
 import json
 from pathlib import Path
+from .identity import CATALOG_PATH
 
 
 def main():
@@ -9,13 +10,13 @@ def main():
     sub.add_parser("doctor")
     p = sub.add_parser("build")
     p.add_argument("--config",default="configs/v1.yaml")
-    p.add_argument("--accepted-limit",type=int,default=1000)
+    p.add_argument("--accepted-limit",type=int,default=2000)
     p.add_argument("--resume",action="store_true")
     p = sub.add_parser("audit")
-    p.add_argument("--dataset",default="data/chainmax-1k.jsonl")
+    p.add_argument("--dataset",default=CATALOG_PATH)
     p.add_argument("--all",action="store_true",required=True)
     p = sub.add_parser("package")
-    p.add_argument("--dataset",default="data/chainmax-1k.jsonl")
+    p.add_argument("--dataset",default=CATALOG_PATH)
     p.add_argument("--output",default="releases/v1.0.0")
     p = sub.add_parser("review-import")
     p.add_argument("--file",required=True)

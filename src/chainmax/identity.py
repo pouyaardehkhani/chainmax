@@ -1,0 +1,6 @@
+"""Current corpus identity; the Python package and source repository stay chainmax."""
+DATASET_NAME = "chainmax-2k"
+DATASET_SLUG = "chainmax-2k"
+DATASET_VERSION = "1.0.0"
+CATALOG_PATH = "data/chainmax-2k.jsonl"
+ARCHIVE_NAME = "chainmax-2k-v1.0.0.tar.gz"

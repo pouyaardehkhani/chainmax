@@ -15,6 +15,7 @@ from .rendering import render,consistency,ASSUMPTIONS
 from .checking import check
 from .native_reference import solve as solve_native
 from .encoding import compile_wcnf,solve as solve_maxsat
+from .identity import DATASET_NAME,DATASET_VERSION,CATALOG_PATH
 
 
 def make_candidate(job):
@@ -52,7 +53,7 @@ def make_candidate(job):
     prefix = f'data/instances/{job["instance_id"]}/'
     refs = dict(zip(("input","description","ir","mathematical","wcnf","variable_map","solution","verification","provenance","review"),
                     [prefix+x for x in ("input.json","problem.md","reference_model.json","reference_model.md","reference.wcnf","variable_map.json","reference_solution.json","verification.json","provenance.json","review.json")]))
-    record = {"dataset_name":"ChainMax-1K","dataset_version":"1.0.0","schema_version":"1.0.0","instance_id":job["instance_id"],
+    record = {"dataset_name":DATASET_NAME,"dataset_version":DATASET_VERSION,"schema_version":"1.0.0","instance_id":job["instance_id"],
               "family":d["family"],"structural_level":d["structural_level"],"features":d["features"],"source_type":"synthetic","units":d["units"],
               "problem":{"description":description,"data":d,"assumptions":ASSUMPTIONS},"reference":refs,"reference_optimum":native["cost"],
               "objective_transform":mapping["objective_transform"],"verification":verification,"provenance":provenance,"review":review,
@@ -66,9 +67,23 @@ def load_config(path):
     c = yaml.safe_load(raw)
     if c["target_base_instances"] != len(FAMILIES)*len(c["structural_levels"])*c["instances_per_family_level"] or c["instances_per_family"] != len(c["structural_levels"])*c["instances_per_family_level"]:
         raise ValueError("inconsistent quotas")
-    if c["dataset_name"] != "ChainMax-1K" or c["dataset_version"] != "1.0.0" or "splits" in c:
+    if c["dataset_name"] not in (DATASET_NAME,"ChainMax-1K") or c["dataset_version"] != DATASET_VERSION or "splits" in c:
         raise ValueError("unsupported identity/policy")
     return c,digest(raw)
+
+
+def construction_config(root, record, current, current_hash):
+    """Preserve original construction provenance for the explicitly migrated 1K core."""
+    provenance = record["provenance"]
+    if provenance["config_hash"] == current_hash:
+        return current
+    migration = provenance.get("dataset_migration")
+    if not migration or migration["dataset_config_hash"] != current_hash or migration["from_dataset"] != "ChainMax-1K":
+        raise ValueError("configuration differs from accepted record; no valid migration")
+    legacy, legacy_hash = load_config(root/"configs/chainmax-1k.yaml")
+    if provenance["config_hash"] != legacy_hash or int(record["instance_id"][4:]) > legacy["target_base_instances"]:
+        raise ValueError("invalid legacy construction configuration")
+    return legacy
 
 
 def read_catalog(path):
@@ -77,7 +92,7 @@ def read_catalog(path):
 
 
 def save_catalog(root, records):
-    atomic(root/"data/chainmax-1k.jsonl", "".join(json.dumps(r,sort_keys=True)+"\n" for r in sorted(records,key=lambda r:r["instance_id"])))
+    atomic(root/CATALOG_PATH, "".join(json.dumps(r,sort_keys=True)+"\n" for r in sorted(records,key=lambda r:r["instance_id"])))
 
 
 def build(root, config_path, limit, resume=False):
@@ -85,7 +100,7 @@ def build(root, config_path, limit, resume=False):
     c,ch = load_config(config_path)
     if limit < 1 or limit > c["target_base_instances"]:
         raise ValueError("accepted-limit outside configured corpus")
-    catalog = root/"data/chainmax-1k.jsonl"
+    catalog = root/CATALOG_PATH
     # A single writer owns catalog and resume state. A stale lock must be inspected.
     lock=root/"audit/build.lock"
     lock.parent.mkdir(parents=True,exist_ok=True)
@@ -93,8 +108,8 @@ def build(root, config_path, limit, resume=False):
     records = read_catalog(catalog)
     if records and not resume:
         raise ValueError("catalog exists; use --resume")
-    if any(r["provenance"]["config_hash"] != ch for r in records):
-        raise ValueError("configuration differs from immutable accepted records")
+    for record in records:
+        construction_config(root,record,c,ch)
     revision = subprocess.run(["git","rev-parse","HEAD"],cwd=root,capture_output=True,text=True).stdout.strip() or None
     provenance = {"config_hash":ch,"source_revision":revision,"source_tree_hash":source_hash(root),"tool_versions":versions()}
     previous = read_catalog(root/"audit/candidate_ledger.jsonl")
@@ -105,8 +120,7 @@ def build(root, config_path, limit, resume=False):
     for completed in sorted((root/"data/instances").glob("*/_record.json")):
         rec = json.loads(completed.read_text())
         if rec["instance_id"] not in {r["instance_id"] for r in records}:
-            if rec["provenance"]["config_hash"] != ch:
-                raise ValueError("orphan record config mismatch")
+            construction_config(root,rec,c,ch)
             for path,h in rec["content_hashes"].items():
                 if digest((root/path).read_bytes()) != h:
                     raise ValueError("orphan checksum mismatch")

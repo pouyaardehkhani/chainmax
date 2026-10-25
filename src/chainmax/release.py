@@ -9,7 +9,8 @@ import tarfile
 from pathlib import Path
 from pysat.formula import WCNF
 from .io import atomic,dumps,digest,versions,source_hash
-from .pipeline import read_catalog,load_config,save_catalog
+from .pipeline import read_catalog,load_config,save_catalog,construction_config
+from .identity import DATASET_NAME,DATASET_VERSION,CATALOG_PATH,ARCHIVE_NAME
 from .schemas import validate,validate_ir,validate_domain
 from .checking import check
 from .model_builder import build_ir,render_math
@@ -48,16 +49,22 @@ def audit(root,dataset):
     sizes=[]; times=[]; bindings=[]
     revisions=collections.Counter()
     review_queue=[]
-    sample_ids={f"cmx_{i:06}" for i in list(range(1,81))+[81+4*f+l for f in range(10) for l in (0,1)]}
+    target=config["target_base_instances"]
+    second_required=config["review"]["minimum_second_review_records"]
+    sample_ids={f"cmx_{i:06}" for i in range(1,second_required+1)}
     for record in records:
         iid=record.get("instance_id","unknown")
         try:
             validate("instance",record)
             if iid in ids: raise ValueError("duplicate ID")
             ids.add(iid)
-            if record["provenance"]["config_hash"]!=ch: raise ValueError("config hash mismatch")
+            original_config=construction_config(root,record,config,ch)
             d=record["problem"]["data"]
             validate_domain(d)
+            if any(record[k]!=d[k] for k in ("family","structural_level","features","units")):
+                raise ValueError("catalog metadata differs from business data")
+            if record["verification"]["assurance_level"] == "UNVERIFIED":
+                raise ValueError("unverified record cannot enter the corpus")
             for path,h in record["content_hashes"].items():
                 if digest(safe_path(root,path).read_bytes()) != h:
                     raise ValueError(f"checksum mismatch: {path}")
@@ -71,7 +78,7 @@ def audit(root,dataset):
             if vm!=mapping or text!=safe_path(root,record["reference"]["wcnf"]).read_text(): raise ValueError("encoding regeneration mismatch")
             if render_math(ir)!=safe_path(root,record["reference"]["mathematical"]).read_text(): raise ValueError("mathematical rendering mismatch")
             if not consistency(d,record["problem"]["description"]) or record["problem"]["description"]!=safe_path(root,record["reference"]["description"]).read_text(): raise ValueError("description mismatch")
-            profile={**config["profiles"][d["structural_level"]],**config.get("family_profile_overrides",{}).get(d["family"],{}).get(d["structural_level"],{})}
+            profile={**original_config["profiles"][d["structural_level"]],**original_config.get("family_profile_overrides",{}).get(d["family"],{}).get(d["structural_level"],{})}
             regenerated,_=generate(d["family"],d["structural_level"],record["provenance"]["seed"],profile)
             if regenerated!=d: raise ValueError("seed reproduction mismatch")
             verification=load("verification")
@@ -117,15 +124,16 @@ def audit(root,dataset):
     calibration=read_catalog(root/"audit/calibration_initial/candidate_ledger.jsonl")
     by_cell=collections.defaultdict(collections.Counter)
     for r in ledger: by_cell[r["family"]+"/"+r["level"]][r["status"]]+=1
-    quota_ok=len(records)==1000 and len(cells)==40 and set(cells.values())=={25}
+    quota_ok=len(records)==target and len(cells)==40 and set(cells.values())=={config["instances_per_family_level"]} and ids=={f"cmx_{i:06}" for i in range(1,target+1)}
     sample_reviewed=sum(bool(r["second"] and r["second"]["approved"]) for r in review_queue if r["second_review_required"])
-    ready=not errors and quota_ok and primary==1000 and sample_reviewed>=100
+    ready=not errors and quota_ok and primary==target and sample_reviewed>=second_required
     def stats(values):
         return {"min":min(values,default=0),"max":max(values,default=0),"mean":sum(values)/len(values) if values else 0}
     report={"status":"RELEASE_READY" if ready else "INCOMPLETE_RELEASE", "record_count":len(records),"errors":errors,"quota_satisfied":quota_ok,
             "family_counts":dict(collections.Counter(r["family"] for r in records)),"family_level_counts":dict(sorted(cells.items())),"assurance_counts":dict(assurance),
             "primary_reviews_completed":primary,"second_reviews_completed":second,"stratified_second_reviews_completed":sample_reviewed,
-            "release_blockers":([] if primary==1000 else ["Human consistency review required for every description"])+([] if sample_reviewed>=100 else ["Stratified second review required for at least 100 descriptions"])+([] if quota_ok else ["Corpus quotas incomplete"]),
+            "release_blockers":([] if primary==target else ["Human consistency review required for every description"])+([] if sample_reviewed>=second_required else [f"Stratified second review required for at least {second_required} descriptions"])+([] if quota_ok else ["Corpus quotas incomplete"]),
+            "target_record_count":target,"second_reviews_required":second_required,
             "exact_duplicate_groups":duplicate_groups,"topology_group_count":len(topologies),"repeated_topology_groups":[v for v in topologies.values() if len(v)>1],
             "near_duplicate_method":"Identical topology/product-eligibility/lead-time/shelf-life signature; numeric values omitted. This is a screening report, not a semantic equivalence proof.",
             "encoder_statistics":{k:stats([s[k] for s in sizes]) for k in ("variables","clauses","wcnf_bytes")},"reference_seconds":stats(times),"binding_inequalities":stats(bindings),
@@ -141,7 +149,7 @@ def audit(root,dataset):
 def import_reviews(root,path):
     """Import explicit human attestations; no automatic approval or inferred reviewer."""
     updates=read_catalog(path)
-    records=read_catalog(root/"data/chainmax-1k.jsonl")
+    records=read_catalog(root/CATALOG_PATH)
     by_id={r["instance_id"]:r for r in records}
     changes=[]
     for u in updates:
@@ -174,17 +182,17 @@ def package(root,dataset,output):
     output.mkdir(parents=True,exist_ok=True)
     records=read_catalog(dataset)
     # Report readiness truthfully even though a provisional review bundle is useful.
-    tracked=subprocess.run(["git","ls-files","--","data/","audit/","releases/"],cwd=root,capture_output=True,text=True,check=True).stdout
-    if tracked.strip(): raise ValueError("generated artifacts are tracked in Git")
     source_commit=subprocess.run(["git","rev-parse","HEAD"],cwd=root,capture_output=True,text=True).stdout.strip() or None
-    files={"data/chainmax-1k.jsonl":dataset.read_bytes()}
+    files={CATALOG_PATH:dataset.read_bytes()}
     for rec in records:
         for p in rec["content_hashes"]: files[p]=(root/p).read_bytes()
-    for p in ("audit/quality_report.json","audit/build_manifest.json","audit/candidate_ledger.jsonl","audit/rejected_candidates.jsonl","audit/review_queue.jsonl","README.md","DATASET_CARD.md","DATA_LICENSE","DATASET_NOTICE.md","configs/v1.yaml","requirements.lock"):
+    for p in ("audit/quality_report.json","audit/build_manifest.json","audit/candidate_ledger.jsonl","audit/rejected_candidates.jsonl","audit/review_queue.jsonl","README.md","DATASET_CARD.md","DATA_LICENSE","DATASET_NOTICE.md","configs/v1.yaml","configs/chainmax-1k.yaml","requirements.lock"):
         files[p]=(root/p).read_bytes()
+    for p in (root/"audit/history").glob("*.json"):
+        files[p.relative_to(root).as_posix()]=p.read_bytes()
     for p in (root/"audit/calibration_initial").glob("*.json*"):
         files[p.relative_to(root).as_posix()]=p.read_bytes()
-    archive=output/"chainmax-1k-v1.0.0.tar.gz"
+    archive=output/ARCHIVE_NAME
     # Deterministic tar metadata; run-dependent evidence remains explicitly included.
     with archive.open("wb") as raw:
         with gzip.GzipFile(filename="",mode="wb",fileobj=raw,mtime=0) as gz:
@@ -193,14 +201,14 @@ def package(root,dataset,output):
                     info=tarfile.TarInfo(name); info.size=len(data); info.mtime=0; info.mode=0o644
                     tar.addfile(info,io.BytesIO(data))
     checksum=digest(archive.read_bytes())
-    manifest={"dataset_name":"ChainMax-1K","dataset_version":"1.0.0","status":report["status"],"published":False,"record_count":len(records),
+    manifest={"dataset_name":DATASET_NAME,"dataset_version":DATASET_VERSION,"status":report["status"],"published":False,"record_count":len(records),
               "family_counts":report["family_counts"],"family_level_counts":report["family_level_counts"],"assurance_counts":report["assurance_counts"],
               "release_blockers":report["release_blockers"],"source_commit":source_commit,"source_tree_hash":source_hash(root),
               "config_hash":digest((root/"configs/v1.yaml").read_bytes()),"tool_versions":versions(),"archive_sha256":checksum,"archive_bytes":archive.stat().st_size,
-              "encoding_dialect":"legacy_dimacs_wcnf","catalog_path":"data/chainmax-1k.jsonl","files":{n:digest(b) for n,b in sorted(files.items())}}
+              "encoding_dialect":"legacy_dimacs_wcnf","catalog_path":CATALOG_PATH,"files":{n:digest(b) for n,b in sorted(files.items())}}
     atomic(output/"release_manifest.json",dumps(manifest))
     atomic(output/"SHA256SUMS",f"{checksum}  {archive.name}\n{digest((output/'release_manifest.json').read_bytes())}  release_manifest.json\n")
-    atomic(output/"release_notes.md",f"# ChainMax-1K v1.0.0 preparation\n\nStatus: {report['status']}. Not published.\n\n{len(records)} cross-checked local problems. Human review is required before a final release.\n\n"+"\n".join(f"- {x}" for x in report["release_blockers"])+"\n")
+    atomic(output/"release_notes.md",f"# {DATASET_NAME} v{DATASET_VERSION}\n\nReference status: {report['status']}.\n\n{len(records)} cross-checked problems. This is a provisional corpus with human review pending.\n\n"+"\n".join(f"- {x}" for x in report["release_blockers"])+"\n")
     # Verify every member and its checksum through a fresh decompression stream.
     with tarfile.open(archive,"r:gz") as tar:
         members=tar.getmembers()

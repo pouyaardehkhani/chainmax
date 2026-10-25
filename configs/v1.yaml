@@ -1,14 +1,14 @@
 schema_version: '1.0.0'
 project_name: ChainMax
 project_folder: chainmax
-dataset_name: ChainMax-1K
-dataset_slug: chainmax-1k
+dataset_name: chainmax-2k
+dataset_slug: chainmax-2k
 dataset_version: '1.0.0'
 github_repository_name: chainmax
 seed: 20261025
-target_base_instances: 1000
-instances_per_family: 100
-instances_per_family_level: 25
+target_base_instances: 2000
+instances_per_family: 200
+instances_per_family_level: 50
 structural_levels: [L1, L2, L3, L4]
 quantity_domain: bounded_integer
 cost_unit: cent
@@ -25,7 +25,7 @@ encoding:
   pb_encoder: bdd
 review:
   require_primary_review_for_every_record: true
-  minimum_second_review_records: 100
+  minimum_second_review_records: 200
 resources:
   native_seconds: 15
   candidate_seconds: 45

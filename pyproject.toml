@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "chainmax-dataset"
 version = "1.0.0"
-description = "ChainMax-1K: verified supply-chain problems for LLM formulation and MaxSAT optimization."
+description = "chainmax-2k: 2,000 supply-chain problems with cross-checked reference formulations and MaxSAT optima."
 requires-python = ">=3.12,<3.13"
 dependencies = ["ortools==9.15.6755", "python-sat[pb]==1.9.dev17", "jsonschema==4.26.0", "PyYAML==6.0.3", "psutil==7.2.2"]
 

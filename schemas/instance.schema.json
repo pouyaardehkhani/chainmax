@@ -4,7 +4,7 @@
   "properties": {
     "dataset_name": {
       "enum": [
-        "ChainMax-1K"
+        "chainmax-2k"
       ]
     },
     "dataset_version": {
@@ -889,6 +889,40 @@
         "generated_at": {
           "type": "string",
           "minLength": 1
+        },
+        "dataset_migration": {
+          "type": "object",
+          "properties": {
+            "from_dataset": {
+              "enum": [
+                "ChainMax-1K"
+              ]
+            },
+            "from_catalog_sha256": {
+              "type": "string",
+              "minLength": 1
+            },
+            "dataset_config_hash": {
+              "type": "string",
+              "minLength": 1
+            },
+            "migration_source_revision": {
+              "type": "string",
+              "minLength": 1
+            },
+            "migrated_at": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "from_dataset",
+            "from_catalog_sha256",
+            "dataset_config_hash",
+            "migration_source_revision",
+            "migrated_at"
+          ],
+          "additionalProperties": false
         }
       },
       "required": [

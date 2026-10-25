@@ -1,6 +1,19 @@
-/data/
-/audit/
-/releases/
+# The user explicitly authorized publishing the corpus and release archive.
+/data/instances/*/_record.json
+/data/instances/.staging_*/
+/audit/*
+!/audit/candidate_ledger.jsonl
+!/audit/rejected_candidates.jsonl
+!/audit/build_manifest.json
+!/audit/quality_report.json
+!/audit/review_queue.jsonl
+!/audit/migration_report.json
+!/audit/archive_extraction_verification.json
+!/audit/history/
+/audit/history/*
+!/audit/history/*.json
+!/audit/history/*.jsonl
+/releases/calibration-*/
 /.venv/
 __pycache__/
 *.py[cod]
