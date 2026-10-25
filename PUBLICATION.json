@@ -4,6 +4,28 @@
   "visibility": "PUBLIC",
   "description": "chainmax-2k: 2,000 synthetic supply-chain problems with cross-checked formulations, MaxSAT encodings, and optimal solutions.",
   "dataset_name": "chainmax-2k",
-  "status": "REPOSITORY_CREATED_UPLOAD_PENDING",
-  "human_review_status": "PENDING"
+  "status": "PUBLISHED",
+  "human_review_status": "PENDING",
+  "record_count": 2000,
+  "data_files": 22001,
+  "initial_data_commit": "3a8f4220d4b0e9be9719bbf85e3a2649456e19b9",
+  "verified_at_utc": "2026-10-25T12:24:21.777304+00:00",
+  "archive_path": "releases/v1.0.0/chainmax-2k-v1.0.0.tar.gz",
+  "archive_sha256": "f2f26b17d4d87cec036b1620d30ef52a393ac945251d8f5e817d3f4d5523dbbb",
+  "archive_bytes": 31674439,
+  "remote_blob_identity_verified": [
+    "data/chainmax-2k.jsonl",
+    "releases/v1.0.0/chainmax-2k-v1.0.0.tar.gz",
+    "releases/v1.0.0/SHA256SUMS"
+  ],
+  "ci_verified_commit": "3a8f4220d4b0e9be9719bbf85e3a2649456e19b9",
+  "ci_status": "SUCCESS",
+  "ci_run_url": "https://github.com/pouyaardehkhani/chainmax/actions/runs/40192626176",
+  "ci_platforms": [
+    "ubuntu-latest",
+    "windows-latest"
+  ],
+  "reference_assurance": "CROSS_CHECKED",
+  "human_primary_reviews_pending": 2000,
+  "human_second_reviews_pending": 200
 }
