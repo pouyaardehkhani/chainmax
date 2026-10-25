@@ -53,10 +53,11 @@ verification = obj({"status":enum("VERIFIED"),"assurance_level":enum("CROSS_CHEC
 review = obj({"automated_consistency":B,"primary":nullable(obj({"reviewer":S,"date":S,"issues":arr(S),"resolution":S,"approved":B})),
               "second":nullable(obj({"reviewer":S,"date":S,"issues":arr(S),"resolution":S,"approved":B})),"status":enum("PENDING_HUMAN_REVIEW","APPROVED")})
 provenance = obj({"seed":{"type":"integer","minimum":0,"maximum":2**32-1},"attempt":N,"config_hash":S,"source_revision":nullable(S),"source_tree_hash":S,"tool_versions":mapping(S),"generated_at":S})
-record = obj({"dataset_name":enum("ChainMax-1K"),"dataset_version":V,"instance_id":{"type":"string","pattern":"^cmx_[0-9]{6}$"},"schema_version":V,
+provenance["properties"]["dataset_migration"] = obj({"from_dataset":enum("ChainMax-1K"),"from_catalog_sha256":S,"dataset_config_hash":S,"migration_source_revision":S,"migrated_at":S})
+record = obj({"dataset_name":enum("chainmax-2k"),"dataset_version":V,"instance_id":{"type":"string","pattern":"^cmx_[0-9]{6}$"},"schema_version":V,
               "family":domain["properties"]["family"],"structural_level":domain["properties"]["structural_level"],"features":arr(S),"source_type":enum("synthetic"),"units":units,
               "problem":obj({"description":S,"data":domain,"assumptions":arr(S)}),"reference":obj({k:S for k in ("input","ir","mathematical","wcnf","variable_map","solution","verification","provenance","review","description")}),
               "reference_optimum":N,"objective_transform":transform,"verification":verification,"provenance":provenance,"review":review,"content_hashes":mapping(S)})
 for name, schema in {"domain":domain,"model_ir":ir,"variable_map":vm,"verification":verification,"instance":record}.items():
     schema = {"$schema":"https://json-schema.org/draft/2020-12/schema",**schema}
-    Path(f"schemas/{name}.schema.json").write_text(json.dumps(schema,indent=2)+"\n",encoding="utf-8")
+    Path(f"schemas/{name}.schema.json").write_text(json.dumps(schema,indent=2)+"\n",encoding="utf-8",newline="\n")

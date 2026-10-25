@@ -1,0 +1,9 @@
+{
+  "repository_url": "https://github.com/pouyaardehkhani/chainmax",
+  "repository": "pouyaardehkhani/chainmax",
+  "visibility": "PUBLIC",
+  "description": "chainmax-2k: 2,000 synthetic supply-chain problems with cross-checked formulations, MaxSAT encodings, and optimal solutions.",
+  "dataset_name": "chainmax-2k",
+  "status": "REPOSITORY_CREATED_UPLOAD_PENDING",
+  "human_review_status": "PENDING"
+}

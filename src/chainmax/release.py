@@ -121,7 +121,8 @@ def audit(root,dataset):
     if duplicate_groups: errors.append({"error":"exact business duplicates","groups":duplicate_groups})
     ledger=read_catalog(root/"audit/candidate_ledger.jsonl")
     outcomes=collections.Counter(r["status"] for r in ledger)
-    calibration=read_catalog(root/"audit/calibration_initial/candidate_ledger.jsonl")
+    calibration_path=root/"audit/history/calibration_initial-candidate_ledger.jsonl"
+    calibration=read_catalog(calibration_path if calibration_path.exists() else root/"audit/calibration_initial/candidate_ledger.jsonl")
     by_cell=collections.defaultdict(collections.Counter)
     for r in ledger: by_cell[r["family"]+"/"+r["level"]][r["status"]]+=1
     quota_ok=len(records)==target and len(cells)==40 and set(cells.values())=={config["instances_per_family_level"]} and ids=={f"cmx_{i:06}" for i in range(1,target+1)}
@@ -188,9 +189,7 @@ def package(root,dataset,output):
         for p in rec["content_hashes"]: files[p]=(root/p).read_bytes()
     for p in ("audit/quality_report.json","audit/build_manifest.json","audit/candidate_ledger.jsonl","audit/rejected_candidates.jsonl","audit/review_queue.jsonl","README.md","DATASET_CARD.md","DATA_LICENSE","DATASET_NOTICE.md","configs/v1.yaml","configs/chainmax-1k.yaml","requirements.lock"):
         files[p]=(root/p).read_bytes()
-    for p in (root/"audit/history").glob("*.json"):
-        files[p.relative_to(root).as_posix()]=p.read_bytes()
-    for p in (root/"audit/calibration_initial").glob("*.json*"):
+    for p in (root/"audit/history").glob("*.json*"):
         files[p.relative_to(root).as_posix()]=p.read_bytes()
     archive=output/ARCHIVE_NAME
     # Deterministic tar metadata; run-dependent evidence remains explicitly included.
@@ -201,7 +200,7 @@ def package(root,dataset,output):
                     info=tarfile.TarInfo(name); info.size=len(data); info.mtime=0; info.mode=0o644
                     tar.addfile(info,io.BytesIO(data))
     checksum=digest(archive.read_bytes())
-    manifest={"dataset_name":DATASET_NAME,"dataset_version":DATASET_VERSION,"status":report["status"],"published":False,"record_count":len(records),
+    manifest={"dataset_name":DATASET_NAME,"dataset_version":DATASET_VERSION,"status":report["status"],"publication_status_at_packaging":"UPLOAD_PENDING","publication_receipt":"PUBLICATION.json","record_count":len(records),
               "family_counts":report["family_counts"],"family_level_counts":report["family_level_counts"],"assurance_counts":report["assurance_counts"],
               "release_blockers":report["release_blockers"],"source_commit":source_commit,"source_tree_hash":source_hash(root),
               "config_hash":digest((root/"configs/v1.yaml").read_bytes()),"tool_versions":versions(),"archive_sha256":checksum,"archive_bytes":archive.stat().st_size,

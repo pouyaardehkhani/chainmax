@@ -21,6 +21,9 @@ assert len({r["instance_id"] for r in records})==2000
 expected={CATALOG_PATH}|{path for r in records for path in r["content_hashes"]}
 for path in expected:
     assert (root/path).is_file(),f"missing artifact: {path}"
+for record in records:
+    for path,wanted in record["content_hashes"].items():
+        assert hashlib.sha256((root/path).read_bytes()).hexdigest()==wanted,f"artifact checksum mismatch: {path}"
 package=root/"releases/v1.0.0"
 for line in (package/"SHA256SUMS").read_text().splitlines():
     wanted,name=line.split(None,1)

@@ -18,6 +18,6 @@ for file in [root/"README.md",root/"docs/reproduction.md"]:
         with contextlib.redirect_stdout(io.StringIO()):
             exec(compile(snippet,str(file),"exec"),{})
 citation=yaml.safe_load((root/"CITATION.cff").read_text())
-assert citation["title"]=="ChainMax-1K" and citation["authors"][0]["name"]=="pouyaardehkhani"
+assert citation["title"]=="chainmax-2k" and citation["authors"][0]["name"]=="pouyaardehkhani"
 if errors: raise SystemExit("Broken links: "+str(errors))
 print(f"Checked local links in {len(files)} documents and executed README/reproduction Python examples.")

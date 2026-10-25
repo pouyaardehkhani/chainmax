@@ -1,3 +1,5 @@
+> Historical 1K specification. The owner subsequently requested 2,000 records, the name chainmax-2k, and inclusion of the full dataset and archive in GitHub. Those later instructions supersede this document on naming, size, and storage policy. See README.md and configs/v1.yaml.
+
 # ChainMax-1K: Codex dataset development plan
 
 **Purpose:** Give Codex an implementation plan for creating ChainMax-1K, a verified supply-chain dataset for inference-only LLM formulation methods, including in-context learning.

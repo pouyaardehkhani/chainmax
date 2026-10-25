@@ -1,36 +1,50 @@
-# Future publication sequence
+# GitHub publication policy
 
-No remote repository or dataset release has been published. The intended repository
-name is `chainmax`; the owner/destination and data hosting service must be supplied
-or verified before publishing. Do not infer them from a local user name.
+The owner requested expanding to 2,000 records, naming the dataset `chainmax-2k`,
+and committing the full dataset and archive to GitHub. This supersedes the earlier
+ChainMax-1K plan's no-data rule. The Python package/project and repository remain
+`chainmax`. The connected account is verified as `pouyaardehkhani`.
 
-Repository description: ChainMax-1K: verified supply-chain problems for LLM
-formulation and MaxSAT optimization.
+Repository description:
 
-1. Complete all primary human description reviews and the stratified 100-record
-   independent second review, resolving all disputed cases. Rerun tests and audit.
-2. Confirm the actual source repository destination and separate dataset hosting
-   destination. Reuse an existing ChainMax repository when supplied. Check current
-   hosting limits against the actual archive size before selecting the destination.
-3. Verify `git ls-files -- data/ audit/ releases/` returns no entries. Keep the
-   root-anchored exclusions and CI tracked-file guard. Never add data/.gitkeep.
-4. Commit only code, locked dependencies, configs, schemas, small fixtures, and
-   documentation. Verify the commit, frozen config hash, and package manifest.
-   Regenerate the package after review imports and final source changes.
-5. Create or reuse the confirmed source repository, push source/documents, and
-   create the matching `v1.0.0` tag after all acceptance requirements pass.
-6. Publish chainmax-1k-v1.0.0.tar.gz, SHA256SUMS, release_manifest.json, and
-   release_notes.md through the chosen dataset host or versioned release assets.
-   These generated files remain excluded from source Git history.
-7. Verify an actual download, archive checksum, extracted catalog count, complete
-   artifacts, and full audit. The archive restores data/chainmax-1k.jsonl and all
-   data/instances/cmx_*/ companions from the project root.
-8. Replace the README's textual DATASET_DOWNLOAD_URL with the verified actual URL.
-   Record publication results only after the remote actions succeed.
+> chainmax-2k: 2,000 synthetic supply-chain problems with cross-checked formulations, MaxSAT encodings, and optimal solutions.
 
-The manifest is external to the archive to avoid self-referential checksum claims.
-It records every member hash, archive hash, source revision, exact quotas, config
-hash and versions. SHA256SUMS hashes both the archive and external manifest. Audit
-logs, reviewer queue, dataset card, input config and license accompany the data.
-The source checkout and dataset bundle are separate; neither should be mistaken
-for a published final release while human review remains pending.
+## Included contents
+
+- Code, pinned dependencies, configuration, schemas, tests and documentation.
+- data/chainmax-2k.jsonl and every referenced problem/model/solver/verification file.
+- Candidate and rejection ledgers, quality/build reports, review queue and migration
+  evidence, including historical audit summaries.
+- The full checksummed 2K archive, manifest and release notes under releases/v1.0.0/.
+- The preserved original 1K archive and manifest in its historical release folder.
+
+Virtual environments, credentials, caches, extraction copies, incomplete staging,
+build locks and redundant recovery files remain local. They are construction tools,
+not corpus contents. The original development plan is retained as historical context
+with a clear supersession notice.
+
+## Publication sequence
+
+1. Complete both reference paths and the full audit for all 2,000 records. Retain
+   pending human review flags; publish this as a provisional corpus.
+2. Run correctness tests, fresh construction smoke checks and publication preflight.
+   Check every Git blob is below GitHub's 100 MiB limit and that all required data
+   files and the archive are tracked. Do not commit scratch directories.
+3. Create the public repository `pouyaardehkhani/chainmax` with the description above,
+   using the verified authenticated account; reuse it if an authorized existing
+   repository is supplied. Record actual creation output before claiming success.
+4. Update README/repository metadata using the actual created URL, package the final
+   archive, and commit source, complete data, audit evidence and release files.
+5. Push main, verify the remote commit and required file paths, and inspect CI results.
+6. Record the actual upload receipt in PUBLICATION.json. The receipt identifies the
+   initial data commit and archive checksum; it is not a human review approval.
+
+When human reviews are later completed, import actual attestations, resolve issues,
+rerun audit and create a new reviewed package/version. Public availability now does
+not imply completion of human/domain-expert review or a checked formal proof.
+
+The package manifest is external to the archive to avoid checksum self-reference.
+It records construction/packaging source provenance, exact counts, configuration,
+tool versions, member hashes and archive hash. SHA256SUMS verifies the archive and
+external manifest. Git clone gives the full corpus; the archive provides a separate
+portable download of the same catalog and reference artifacts.
