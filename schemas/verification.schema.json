@@ -1,0 +1,172 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "status": {
+      "enum": [
+        "VERIFIED"
+      ]
+    },
+    "assurance_level": {
+      "enum": [
+        "CROSS_CHECKED",
+        "EXHAUSTIVE",
+        "PROOF_CHECKED",
+        "UNVERIFIED"
+      ]
+    },
+    "native": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "seconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "cost": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000000
+        },
+        "absolute_gap_limit": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000000
+        },
+        "relative_gap_limit": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000000
+        },
+        "best_bound": {
+          "type": "integer",
+          "minimum": -1152921504606846975,
+          "maximum": 1152921504606846975
+        },
+        "violation_cost": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000000
+        }
+      },
+      "required": [
+        "status",
+        "seconds",
+        "cost"
+      ],
+      "additionalProperties": false
+    },
+    "maxsat": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "seconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "cost": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000000
+        },
+        "absolute_gap_limit": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000000
+        },
+        "relative_gap_limit": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000000
+        },
+        "best_bound": {
+          "type": "integer",
+          "minimum": -1152921504606846975,
+          "maximum": 1152921504606846975
+        },
+        "violation_cost": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000000
+        }
+      },
+      "required": [
+        "status",
+        "seconds",
+        "cost"
+      ],
+      "additionalProperties": false
+    },
+    "native_checker": {
+      "type": "object",
+      "properties": {
+        "valid": {
+          "type": "boolean"
+        },
+        "errors": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "cost": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000000
+        }
+      },
+      "required": [
+        "valid",
+        "errors",
+        "cost"
+      ],
+      "additionalProperties": false
+    },
+    "maxsat_checker": {
+      "type": "object",
+      "properties": {
+        "valid": {
+          "type": "boolean"
+        },
+        "errors": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "cost": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000000
+        }
+      },
+      "required": [
+        "valid",
+        "errors",
+        "cost"
+      ],
+      "additionalProperties": false
+    },
+    "exact_cost_agreement": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "status",
+    "assurance_level",
+    "native",
+    "maxsat",
+    "native_checker",
+    "maxsat_checker",
+    "exact_cost_agreement"
+  ],
+  "additionalProperties": false
+}

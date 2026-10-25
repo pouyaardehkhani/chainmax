@@ -1,0 +1,14 @@
+/data/
+/audit/
+/releases/
+/.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+*.tmp
+*.log
+.env
+credentials*

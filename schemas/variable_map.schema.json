@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "enum": [
+        "1.0.0"
+      ]
+    },
+    "variables": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "integer",
+              "boolean"
+            ]
+          },
+          "lower": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1000000000
+          },
+          "upper": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1000000000
+          },
+          "unit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "meaning": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 1000000000
+                }
+              ]
+            }
+          },
+          "bits": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1000000000
+            }
+          }
+        },
+        "required": [
+          "name",
+          "kind",
+          "lower",
+          "upper",
+          "unit",
+          "meaning",
+          "bits"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "primary_end": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1000000000
+    },
+    "auxiliary_range": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 1000000000
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "encoder": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dialect": {
+      "enum": [
+        "legacy_dimacs_wcnf"
+      ]
+    },
+    "variable_count": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1000000000
+    },
+    "hard_clauses": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1000000000
+    },
+    "soft_clauses": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1000000000
+    },
+    "soft_weight_sum": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1000000000
+    },
+    "top": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1000000000
+    },
+    "objective_transform": {
+      "type": "object",
+      "properties": {
+        "multiplier": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 1000000000
+        },
+        "offset": {
+          "type": "integer",
+          "minimum": -1152921504606846975,
+          "maximum": 1152921504606846975
+        }
+      },
+      "required": [
+        "multiplier",
+        "offset"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "variables",
+    "primary_end",
+    "auxiliary_range",
+    "encoder",
+    "dialect",
+    "variable_count",
+    "hard_clauses",
+    "soft_clauses",
+    "soft_weight_sum",
+    "top",
+    "objective_transform"
+  ],
+  "additionalProperties": false
+}

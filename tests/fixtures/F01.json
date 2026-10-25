@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "family": "F01",
+  "structural_level": "L1",
+  "features": [
+    "transport"
+  ],
+  "periods": 1,
+  "units": {
+    "quantity": "item",
+    "currency": "cent",
+    "time": "period",
+    "capacity": "volume_unit",
+    "truck": "truck",
+    "production": "batch"
+  },
+  "products": [
+    {
+      "id": "P",
+      "volume": 1,
+      "shelf_life": null,
+      "holding_cost": 0,
+      "disposal_cost": 0
+    }
+  ],
+  "locations": [
+    {
+      "id": "A",
+      "role": "warehouse",
+      "storage_capacity": 1,
+      "throughput_capacity": 1,
+      "opening_cost": 0
+    },
+    {
+      "id": "M",
+      "role": "market",
+      "storage_capacity": 1,
+      "throughput_capacity": 1,
+      "opening_cost": 0
+    }
+  ],
+  "initial_stock": [
+    {
+      "node": "A",
+      "product": "P",
+      "age": 0,
+      "quantity": 1
+    }
+  ],
+  "demands": [
+    {
+      "node": "M",
+      "product": "P",
+      "period": 0,
+      "quantity": 1
+    }
+  ],
+  "routes": [
+    {
+      "id": "A",
+      "source": "A",
+      "destination": "M",
+      "products": [
+        "P"
+      ],
+      "lead_time": 0,
+      "capacity": 1,
+      "unit_cost": 2,
+      "fixed_cost": 0,
+      "minimum_lot": 0,
+      "truck_capacity": 0,
+      "max_trucks": 0,
+      "truck_cost": 0,
+      "mode": "standard"
+    }
+  ],
+  "recipes": [],
+  "sourcing": {
+    "max_active_suppliers": null,
+    "dependencies": []
+  },
+  "objective_constant": 0,
+  "narrative_template": 0
+}

@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite ChainMax-1K and identify the dataset version and source revision used."
+type: dataset
+title: ChainMax-1K
+version: 1.0.0
+abstract: "A synthetic supply-chain corpus for inference-only formulation and MaxSAT optimization; local construction with human description review pending."
+authors:
+  - name: pouyaardehkhani
+license: CC-BY-4.0
+# Pseudonym verified from the existing Git configuration. No DOI, publication
+# date, repository owner, or hosted URL has been invented.

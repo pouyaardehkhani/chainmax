@@ -1,0 +1,1038 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "dataset_name": {
+      "enum": [
+        "ChainMax-1K"
+      ]
+    },
+    "dataset_version": {
+      "enum": [
+        "1.0.0"
+      ]
+    },
+    "instance_id": {
+      "type": "string",
+      "pattern": "^cmx_[0-9]{6}$"
+    },
+    "schema_version": {
+      "enum": [
+        "1.0.0"
+      ]
+    },
+    "family": {
+      "enum": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F05",
+        "F06",
+        "F07",
+        "F08",
+        "F09",
+        "F10"
+      ]
+    },
+    "structural_level": {
+      "enum": [
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ]
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "source_type": {
+      "enum": [
+        "synthetic"
+      ]
+    },
+    "units": {
+      "type": "object",
+      "properties": {
+        "quantity": {
+          "enum": [
+            "item"
+          ]
+        },
+        "currency": {
+          "enum": [
+            "cent"
+          ]
+        },
+        "time": {
+          "enum": [
+            "period"
+          ]
+        },
+        "capacity": {
+          "enum": [
+            "volume_unit"
+          ]
+        },
+        "truck": {
+          "enum": [
+            "truck"
+          ]
+        },
+        "production": {
+          "enum": [
+            "batch"
+          ]
+        }
+      },
+      "required": [
+        "quantity",
+        "currency",
+        "time",
+        "capacity",
+        "truck",
+        "production"
+      ],
+      "additionalProperties": false
+    },
+    "problem": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "schema_version": {
+              "enum": [
+                "1.0.0"
+              ]
+            },
+            "family": {
+              "enum": [
+                "F01",
+                "F02",
+                "F03",
+                "F04",
+                "F05",
+                "F06",
+                "F07",
+                "F08",
+                "F09",
+                "F10"
+              ]
+            },
+            "structural_level": {
+              "enum": [
+                "L1",
+                "L2",
+                "L3",
+                "L4"
+              ]
+            },
+            "features": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            },
+            "periods": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1000000000
+            },
+            "units": {
+              "type": "object",
+              "properties": {
+                "quantity": {
+                  "enum": [
+                    "item"
+                  ]
+                },
+                "currency": {
+                  "enum": [
+                    "cent"
+                  ]
+                },
+                "time": {
+                  "enum": [
+                    "period"
+                  ]
+                },
+                "capacity": {
+                  "enum": [
+                    "volume_unit"
+                  ]
+                },
+                "truck": {
+                  "enum": [
+                    "truck"
+                  ]
+                },
+                "production": {
+                  "enum": [
+                    "batch"
+                  ]
+                }
+              },
+              "required": [
+                "quantity",
+                "currency",
+                "time",
+                "capacity",
+                "truck",
+                "production"
+              ],
+              "additionalProperties": false
+            },
+            "products": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z][A-Za-z0-9_]*$"
+                  },
+                  "volume": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 1000000000
+                  },
+                  "shelf_life": {
+                    "anyOf": [
+                      {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 1000000000
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "holding_cost": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000
+                  },
+                  "disposal_cost": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000
+                  }
+                },
+                "required": [
+                  "id",
+                  "volume",
+                  "shelf_life",
+                  "holding_cost",
+                  "disposal_cost"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 1
+            },
+            "locations": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z][A-Za-z0-9_]*$"
+                  },
+                  "role": {
+                    "enum": [
+                      "warehouse",
+                      "supplier",
+                      "hub",
+                      "market",
+                      "plant"
+                    ]
+                  },
+                  "storage_capacity": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000
+                  },
+                  "throughput_capacity": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000
+                  },
+                  "opening_cost": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000
+                  }
+                },
+                "required": [
+                  "id",
+                  "role",
+                  "storage_capacity",
+                  "throughput_capacity",
+                  "opening_cost"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 1
+            },
+            "initial_stock": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "node": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z][A-Za-z0-9_]*$"
+                  },
+                  "product": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z][A-Za-z0-9_]*$"
+                  },
+                  "age": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000
+                  },
+                  "quantity": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000
+                  }
+                },
+                "required": [
+                  "node",
+                  "product",
+                  "age",
+                  "quantity"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "demands": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "node": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z][A-Za-z0-9_]*$"
+                  },
+                  "product": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z][A-Za-z0-9_]*$"
+                  },
+                  "period": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000
+                  },
+                  "quantity": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 1000000000
+                  }
+                },
+                "required": [
+                  "node",
+                  "product",
+                  "period",
+                  "quantity"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 1
+            },
+            "routes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z][A-Za-z0-9_]*$"
+                  },
+                  "source": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z][A-Za-z0-9_]*$"
+                  },
+                  "destination": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z][A-Za-z0-9_]*$"
+                  },
+                  "products": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^[A-Za-z][A-Za-z0-9_]*$"
+                    },
+                    "uniqueItems": true
+                  },
+                  "lead_time": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000
+                  },
+                  "capacity": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000
+                  },
+                  "unit_cost": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000
+                  },
+                  "fixed_cost": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000
+                  },
+                  "minimum_lot": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000
+                  },
+                  "truck_capacity": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000
+                  },
+                  "max_trucks": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000
+                  },
+                  "truck_cost": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000
+                  },
+                  "mode": {
+                    "enum": [
+                      "standard",
+                      "road",
+                      "rail"
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "source",
+                  "destination",
+                  "products",
+                  "lead_time",
+                  "capacity",
+                  "unit_cost",
+                  "fixed_cost",
+                  "minimum_lot",
+                  "truck_capacity",
+                  "max_trucks",
+                  "truck_cost",
+                  "mode"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "recipes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z][A-Za-z0-9_]*$"
+                  },
+                  "node": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z][A-Za-z0-9_]*$"
+                  },
+                  "inputs": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "product": {
+                          "type": "string",
+                          "pattern": "^[A-Za-z][A-Za-z0-9_]*$"
+                        },
+                        "quantity": {
+                          "type": "integer",
+                          "minimum": 1,
+                          "maximum": 1000000000
+                        }
+                      },
+                      "required": [
+                        "product",
+                        "quantity"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "minItems": 1
+                  },
+                  "output": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z][A-Za-z0-9_]*$"
+                  },
+                  "output_quantity": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 1000000000
+                  },
+                  "capacity": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 1000000000
+                  },
+                  "cost": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000
+                  }
+                },
+                "required": [
+                  "id",
+                  "node",
+                  "inputs",
+                  "output",
+                  "output_quantity",
+                  "capacity",
+                  "cost"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "sourcing": {
+              "type": "object",
+              "properties": {
+                "max_active_suppliers": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 1000000000
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "dependencies": {
+                  "type": "array",
+                  "items": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^[A-Za-z][A-Za-z0-9_]*$"
+                    },
+                    "minItems": 2,
+                    "maxItems": 2
+                  }
+                }
+              },
+              "required": [
+                "max_active_suppliers",
+                "dependencies"
+              ],
+              "additionalProperties": false
+            },
+            "objective_constant": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000
+            },
+            "narrative_template": {
+              "enum": [
+                0,
+                1,
+                2
+              ]
+            }
+          },
+          "required": [
+            "schema_version",
+            "family",
+            "structural_level",
+            "features",
+            "periods",
+            "units",
+            "products",
+            "locations",
+            "initial_stock",
+            "demands",
+            "routes",
+            "recipes",
+            "sourcing",
+            "objective_constant",
+            "narrative_template"
+          ],
+          "additionalProperties": false
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "description",
+        "data",
+        "assumptions"
+      ],
+      "additionalProperties": false
+    },
+    "reference": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ir": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mathematical": {
+          "type": "string",
+          "minLength": 1
+        },
+        "wcnf": {
+          "type": "string",
+          "minLength": 1
+        },
+        "variable_map": {
+          "type": "string",
+          "minLength": 1
+        },
+        "solution": {
+          "type": "string",
+          "minLength": 1
+        },
+        "verification": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provenance": {
+          "type": "string",
+          "minLength": 1
+        },
+        "review": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "input",
+        "ir",
+        "mathematical",
+        "wcnf",
+        "variable_map",
+        "solution",
+        "verification",
+        "provenance",
+        "review",
+        "description"
+      ],
+      "additionalProperties": false
+    },
+    "reference_optimum": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1000000000
+    },
+    "objective_transform": {
+      "type": "object",
+      "properties": {
+        "multiplier": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 1000000000
+        },
+        "offset": {
+          "type": "integer",
+          "minimum": -1152921504606846975,
+          "maximum": 1152921504606846975
+        }
+      },
+      "required": [
+        "multiplier",
+        "offset"
+      ],
+      "additionalProperties": false
+    },
+    "verification": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "VERIFIED"
+          ]
+        },
+        "assurance_level": {
+          "enum": [
+            "CROSS_CHECKED",
+            "EXHAUSTIVE",
+            "PROOF_CHECKED",
+            "UNVERIFIED"
+          ]
+        },
+        "native": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "minLength": 1
+            },
+            "seconds": {
+              "type": "number",
+              "minimum": 0
+            },
+            "cost": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000
+            },
+            "absolute_gap_limit": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000
+            },
+            "relative_gap_limit": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000
+            },
+            "best_bound": {
+              "type": "integer",
+              "minimum": -1152921504606846975,
+              "maximum": 1152921504606846975
+            },
+            "violation_cost": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000
+            }
+          },
+          "required": [
+            "status",
+            "seconds",
+            "cost"
+          ],
+          "additionalProperties": false
+        },
+        "maxsat": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "minLength": 1
+            },
+            "seconds": {
+              "type": "number",
+              "minimum": 0
+            },
+            "cost": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000
+            },
+            "absolute_gap_limit": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000
+            },
+            "relative_gap_limit": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000
+            },
+            "best_bound": {
+              "type": "integer",
+              "minimum": -1152921504606846975,
+              "maximum": 1152921504606846975
+            },
+            "violation_cost": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000
+            }
+          },
+          "required": [
+            "status",
+            "seconds",
+            "cost"
+          ],
+          "additionalProperties": false
+        },
+        "native_checker": {
+          "type": "object",
+          "properties": {
+            "valid": {
+              "type": "boolean"
+            },
+            "errors": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "cost": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000
+            }
+          },
+          "required": [
+            "valid",
+            "errors",
+            "cost"
+          ],
+          "additionalProperties": false
+        },
+        "maxsat_checker": {
+          "type": "object",
+          "properties": {
+            "valid": {
+              "type": "boolean"
+            },
+            "errors": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "cost": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000
+            }
+          },
+          "required": [
+            "valid",
+            "errors",
+            "cost"
+          ],
+          "additionalProperties": false
+        },
+        "exact_cost_agreement": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "status",
+        "assurance_level",
+        "native",
+        "maxsat",
+        "native_checker",
+        "maxsat_checker",
+        "exact_cost_agreement"
+      ],
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "seed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "attempt": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000000
+        },
+        "config_hash": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_revision": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_tree_hash": {
+          "type": "string",
+          "minLength": 1
+        },
+        "tool_versions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "generated_at": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "seed",
+        "attempt",
+        "config_hash",
+        "source_revision",
+        "source_tree_hash",
+        "tool_versions",
+        "generated_at"
+      ],
+      "additionalProperties": false
+    },
+    "review": {
+      "type": "object",
+      "properties": {
+        "automated_consistency": {
+          "type": "boolean"
+        },
+        "primary": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "reviewer": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "date": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "issues": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "resolution": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "approved": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "reviewer",
+                "date",
+                "issues",
+                "resolution",
+                "approved"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "second": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "reviewer": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "date": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "issues": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "resolution": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "approved": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "reviewer",
+                "date",
+                "issues",
+                "resolution",
+                "approved"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "status": {
+          "enum": [
+            "PENDING_HUMAN_REVIEW",
+            "APPROVED"
+          ]
+        }
+      },
+      "required": [
+        "automated_consistency",
+        "primary",
+        "second",
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "content_hashes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "required": [
+    "dataset_name",
+    "dataset_version",
+    "instance_id",
+    "schema_version",
+    "family",
+    "structural_level",
+    "features",
+    "source_type",
+    "units",
+    "problem",
+    "reference",
+    "reference_optimum",
+    "objective_transform",
+    "verification",
+    "provenance",
+    "review",
+    "content_hashes"
+  ],
+  "additionalProperties": false
+}

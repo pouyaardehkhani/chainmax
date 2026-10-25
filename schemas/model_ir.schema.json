@@ -1,0 +1,322 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "enum": [
+        "1.0.0"
+      ]
+    },
+    "variables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "integer",
+              "boolean"
+            ]
+          },
+          "lower": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1000000000
+          },
+          "upper": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1000000000
+          },
+          "unit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "meaning": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 1000000000
+                }
+              ]
+            }
+          }
+        },
+        "required": [
+          "name",
+          "kind",
+          "lower",
+          "upper",
+          "unit",
+          "meaning"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "type": {
+                "enum": [
+                  "linear"
+                ]
+              },
+              "terms": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "var": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "coefficient": {
+                      "type": "integer",
+                      "minimum": -1152921504606846975,
+                      "maximum": 1152921504606846975
+                    }
+                  },
+                  "required": [
+                    "var",
+                    "coefficient"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "sense": {
+                "enum": [
+                  "eq",
+                  "le",
+                  "ge"
+                ]
+              },
+              "rhs": {
+                "type": "integer",
+                "minimum": -1152921504606846975,
+                "maximum": 1152921504606846975
+              },
+              "source": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "terms",
+              "sense",
+              "rhs",
+              "source"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "type": {
+                "enum": [
+                  "clause"
+                ]
+              },
+              "literals": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "var": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "positive": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "var",
+                    "positive"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "source": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "literals",
+              "source"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "type": {
+                "enum": [
+                  "indicator"
+                ]
+              },
+              "activation": {
+                "type": "object",
+                "properties": {
+                  "var": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "value": {
+                    "enum": [
+                      0,
+                      1
+                    ]
+                  }
+                },
+                "required": [
+                  "var",
+                  "value"
+                ],
+                "additionalProperties": false
+              },
+              "body": {
+                "type": "object",
+                "properties": {
+                  "terms": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "var": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "coefficient": {
+                          "type": "integer",
+                          "minimum": -1152921504606846975,
+                          "maximum": 1152921504606846975
+                        }
+                      },
+                      "required": [
+                        "var",
+                        "coefficient"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "sense": {
+                    "enum": [
+                      "eq",
+                      "le",
+                      "ge"
+                    ]
+                  },
+                  "rhs": {
+                    "type": "integer",
+                    "minimum": -1152921504606846975,
+                    "maximum": 1152921504606846975
+                  }
+                },
+                "required": [
+                  "terms",
+                  "sense",
+                  "rhs"
+                ],
+                "additionalProperties": false
+              },
+              "source": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "activation",
+              "body",
+              "source"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      }
+    },
+    "objective": {
+      "type": "object",
+      "properties": {
+        "sense": {
+          "enum": [
+            "min"
+          ]
+        },
+        "constant": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000000
+        },
+        "terms": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "var": {
+                "type": "string",
+                "minLength": 1
+              },
+              "coefficient": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000
+              }
+            },
+            "required": [
+              "var",
+              "coefficient"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "sense",
+        "constant",
+        "terms"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "variables",
+    "constraints",
+    "objective"
+  ],
+  "additionalProperties": false
+}
