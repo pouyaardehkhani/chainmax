@@ -29,3 +29,12 @@ signed coefficients, indicators, expiry boundary, deliberate model/cost/text
 mutations, and metamorphic transformations. Human review is not performed by these
 automated tests. The frozen configuration will be measured on 40 and then 100
 records before the remaining corpus is generated.
+
+M4 frozen run: 40 and then 100 records completed optimally. Full deterministic
+artifact regeneration, schema and checksum validation, WCNF parsing, both stored
+business solutions and Boolean clause/cost checks passed for all 100. One candidate
+timed out and its next recorded attempt completed. The prepared 100-record package
+was decompressed and every member hash verified. No quotas or human reviews were
+claimed complete. These pre-commit construction artifacts are retained in
+audit/calibration_frozen100/ so the final corpus can be rebuilt from the committed
+source revision with a non-null commit recorded on every final instance.
