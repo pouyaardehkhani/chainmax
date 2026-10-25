@@ -97,8 +97,8 @@ def test_composed_activation_trucks_minimum_lot():
     assert check(d,b["assignment"])["valid"]
 
 def test_binary_bound_omission_counterexample():
-    from test_encoding import small_ir
-    ir=small_ir("ge",0,(0,0)); ir["objective"]["terms"]=[]
+    ir={"schema_version":"1.0.0","variables":[{"name":"x","kind":"integer","lower":0,"upper":2,"unit":"item","meaning":["x"]}],
+        "constraints":[],"objective":{"sense":"min","constant":0,"terms":[]}}
     text,vm=compile_wcnf(ir)
     fix=vm["variables"]["x"]["bits"] # 11 represents 3 > upper 2
     with Solver(name="g3",bootstrap_with=WCNF(from_string=text).hard) as s: assert not s.solve(assumptions=fix)

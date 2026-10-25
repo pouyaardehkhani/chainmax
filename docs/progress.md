@@ -38,3 +38,11 @@ was decompressed and every member hash verified. No quotas or human reviews were
 claimed complete. These pre-commit construction artifacts are retained in
 audit/calibration_frozen100/ so the final corpus can be rebuilt from the committed
 source revision with a non-null commit recorded on every final instance.
+
+M5/M6 automated work: exactly 1,000 records constructed with all 40 cell quotas
+satisfied; 1012 candidate outcomes recorded. Full artifact audit: zero errors,
+zero exact duplicates. 63 tests, source-only smoke build/audit, documented Python
+examples and links passed. All final records identify the construction source
+commit. Human review remains incomplete (0/1,000 primary, 0/100 stratified second),
+so final acceptance is INCOMPLETE_RELEASE. The package is prepared for review,
+not published. See BUILD_REPORT.md for the remaining work.

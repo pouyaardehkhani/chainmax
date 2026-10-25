@@ -8,11 +8,13 @@ realistic synthetic planning problems with exact demand, bounded integer quantit
 Boolean activations, and nonnegative integer costs in cents. It is one labeled
 corpus with no training or dataset splits. No models are trained or fine-tuned.
 
-**Status:** 100 local problems have completed independent reference verification
-during staged construction toward 1,000. Required human description reviews are
+**Status:** All 1,000 local base problems have completed independent reference
+verification. The full artifact audit and 63 software tests pass. Required human description reviews are
 pending. This is not a published release or a claim of domain-expert approval.
 Source and generated data are separate. The intended source repository is named
 `chainmax`; its remote owner/destination has not been configured.
+See the [local build report](BUILD_REPORT.md) for completed checks and outstanding
+human-review requirements.
 
 ## Quick start
 
@@ -91,13 +93,13 @@ is [tests/fixtures/nine_cent.json](tests/fixtures/nine_cent.json).
 
 ## Coverage
 
-The frozen target is 100 base problems per family and 25 in every family/level
-cell: ten families × four structural levels × 25 = 1,000. L1–L4 describe topology,
+The corpus contains 100 base problems per family and 25 in every family/level
+cell: ten families Ã— four structural levels Ã— 25 = 1,000. L1â€“L4 describe topology,
 dimensions and interacting features, not measured solver hardness. Narrative
 template choice is independent of level. [Configuration](configs/v1.yaml) records
 dimensions, calibrated family overrides, seeds, and resource/attempt budgets.
 
-| ID | Family | Target count |
+| ID | Family | Base count |
 | --- | --- | ---: |
 | F01 | Capacitated warehouse-to-market transport | 100 |
 | F02 | Multi-echelon distribution | 100 |
@@ -211,7 +213,8 @@ continuous quantities, vehicle tours, arbitrary nonlinear costs and multiple
 objectives are outside v1. No LLM performance measurements have been conducted.
 
 Code: [MIT](LICENSE). Dataset: [CC BY 4.0](DATA_LICENSE), selected by the owner;
-see [attribution notice](DATASET_NOTICE.md). Dependency licenses remain their own.
+see [attribution notice](DATASET_NOTICE.md). See [dependency notices](THIRD_PARTY_NOTICES.md)
+for the licenses reported by the installed distributions.
 Use [CITATION.cff](CITATION.cff) and cite ChainMax-1K version 1.0.0, creator pseudonym
 pouyaardehkhani, source revision, config hash and archive checksum for a local build.
 No DOI or hosted release URL is claimed. See the [dataset card](DATASET_CARD.md)

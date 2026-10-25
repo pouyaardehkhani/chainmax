@@ -2,7 +2,8 @@
 
 Version 1.0.0, local construction; unpublished. The target is one labeled corpus
 of 1,000 unique base problems, with no dataset splits and no model training.
-100 local problems have completed reference cross-checking during staged build.
+All 1,000 local base problems have completed reference cross-checking and the
+full artifact audit.
 Human consistency reviews are pending for every description. There has been no
 domain-expert review. License choices are MIT code and CC BY 4.0 data.
 
@@ -20,7 +21,7 @@ benchmarks are outside this project.
 Synthetic, deterministic, realistic supply-chain planning data generated from
 sampled feasible paths, with independent variation in demands, costs, slack,
 routes, product/mode eligibility, periods, ages, lot sizes and recipes. The target
-has 100 records per F01–F10 and 25 per L1–L4 cell; see [README](README.md). Levels
+has 100 records per F01â€“F10 and 25 per L1â€“L4 cell; see [README](README.md). Levels
 describe structural dimensions/couplings, not empirical hardness. Narrative
 templates vary independently and do not create extra base IDs. No operational
 company data or industrial deployment evidence is included.
@@ -83,3 +84,33 @@ See [publication procedure](docs/github_release.md), [citation](CITATION.cff),
 [data license](DATA_LICENSE), [notice](DATASET_NOTICE.md), and [changelog](CHANGELOG.md).
 Creator/owner pseudonym comes from existing Git configuration; the remote
 repository destination, DOI, and publication date have not been invented.
+
+## Observed local-build statistics
+
+The final corpus has 1,000 records, 100 per family, 25 per cell,
+and 1,000 CROSS_CHECKED labels. The full audit
+reported zero errors and zero exact business duplicates.
+
+Frozen-build candidate outcomes: `{"COMPLETED_OPTIMAL": 1000, "TIMEOUT": 12}`.
+Accepted 98.81% of 1,012 recorded candidate attempts. Initial
+calibration outcomes (outside the corpus): `{"COMPLETED_OPTIMAL": 38, "MALFORMED_OR_ERROR": 20, "TIMEOUT": 8}`.
+The separately archived frozen 100-record calibration run completed 100 optima
+and one timeout. See the candidate ledgers for per-cell outcomes and seeds.
+
+| Encoding statistic | Minimum | Mean | Maximum |
+| --- | ---: | ---: | ---: |
+| variables | 24 | 539.32 | 9,577 |
+| clauses | 57 | 1,864.24 | 35,850 |
+| wcnf_bytes | 648 | 32,276.68 | 713,885 |
+
+Combined native and MaxSAT reference time: mean 0.471 s, maximum
+41.773 s per accepted candidate, excluding generation, encoding and file
+writes. These are construction observations, not a solver benchmark. There are
+329 topology signatures; 106 signatures repeat,
+covering 777 records. Repeated topology alone does not imply
+duplicate numerical/business problems. The full group membership and screening
+method are in audit/quality_report.json.
+
+Human primary reviews: 0/1,000. Independent
+stratified second reviews: 0/100.
+Status remains **INCOMPLETE_RELEASE** until the listed review requirements are met.
